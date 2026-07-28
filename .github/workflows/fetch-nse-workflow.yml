@@ -1,1 +1,30 @@
+name: Fetch NSE stock data
 
+on:
+  schedule:
+    # Cron is in UTC. IST = UTC+5:30.
+    # Runs hourly, roughly 9:45 AM to 3:45 PM IST, Mon-Fri (market is 9:15-3:30 IST).
+    # 9:45, 10:45, 11:45, 12:45, 13:45, 14:45, 15:45 IST
+    # ->  4:15,  5:15,  6:15,  7:15,  8:15,  9:15,  10:15 UTC
+    - cron: '15 4,5,6,7,8,9,10 * * 1-5'
+  workflow_dispatch: {}   # lets you trigger a manual run from the Actions tab
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install axios firebase-admin
+
+      - name: Run fetch script
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: node fetchNSE.js
