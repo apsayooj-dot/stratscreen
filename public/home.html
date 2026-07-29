@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home &mdash; StratScreen</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="navbar">
+  <div class="brand"><a href="home.html" style="color:#fff;text-decoration:none;">Strat<span>Screen</span></a></div>
+  <nav>
+    <a href="home.html" class="active">Home</a>
+    <a href="dashboard.html">Screens</a>
+    <a href="radar.html">Under Radar</a>
+    <span id="user-name" style="color:#94a3b8;font-size:0.9rem;margin-left:20px;"></span>
+    <button id="logout-btn" class="linklike">Log out</button>
+  </nav>
+</div>
+
+<div class="disclaimer-banner">
+  <strong>Educational tool only.</strong> Not registered investment advice. Data sourced from public
+  screener.in company pages and NSE archives. Always do your own research before investing.
+</div>
+
+<div class="container">
+  <div class="home-layout">
+
+    <div class="home-left">
+      <div class="index-card">
+        <div class="index-name">Nifty 50</div>
+        <div class="index-value" id="nifty50-value">&ndash;</div>
+        <div class="index-change" id="nifty50-change">&ndash;</div>
+        <canvas id="nifty50-chart"></canvas>
+      </div>
+      <div class="index-card">
+        <div class="index-name">Sensex</div>
+        <div class="index-value" id="sensex-value">&ndash;</div>
+        <div class="index-change" id="sensex-change">&ndash;</div>
+        <canvas id="sensex-chart"></canvas>
+      </div>
+      <div class="index-card">
+        <div class="index-name">Bank Nifty</div>
+        <div class="index-value" id="banknifty-value">&ndash;</div>
+        <div class="index-change" id="banknifty-change">&ndash;</div>
+        <canvas id="banknifty-chart"></canvas>
+      </div>
+      <div style="font-size:0.75rem;color:var(--text-muted);" id="indices-updated"></div>
+    </div>
+
+    <div class="home-main">
+      <div class="search-card">
+        <label for="stock-search" style="display:block;font-weight:600;margin-bottom:8px;">Search any stock (Nifty 500)</label>
+        <input type="search" id="stock-search" placeholder="Try RELIANCE, TCS, HDFC Bank..." autocomplete="off" />
+        <div class="search-results" id="search-results"></div>
+      </div>
+
+      <div id="stock-detail">
+        <div class="stock-detail-card">
+          <p class="empty-hint">Search for a stock above to see its price, key ratios, and quarterly &amp; yearly financial performance for the last 3 years.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="site-footer">
+  Data referenced from <a href="https://www.screener.in" target="_blank" rel="noopener">screener.in</a> and NSE archives.
+  Not affiliated with or endorsed by Screener / Mittal Analytics / NSE. Not SEBI-registered investment advice.
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/home.js"></script>
+<script>requireAuth();</script>
+</body>
+</html>
