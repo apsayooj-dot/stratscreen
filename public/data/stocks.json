@@ -1,0 +1,39 @@
+{
+    "snapshot_date": "2026-07-28",
+    "source": "https://www.screener.in/ (company pages, public data)",
+    "disclaimer": "Educational/informational content only. Not registered investment advice under SEBI or any other regulator. Accuracy percentages are a simple historical correlation within this small tracked universe, not a forward-looking guarantee. Always do your own research.",
+    "methodology_note": "Strategy picks are computed relative to the median of this tracked watchlist, not the whole market. 'Accuracy' checks whether stocks meeting a strategy's criteria also had a positive historical stock price CAGR over a comparable window. Sample size is small - treat as illustrative, not statistically robust.",
+    "strategies": {
+          "value": {
+                  "label": "Value",
+                  "description": "Below-median P/E and above-median ROE within the tracked universe.",
+                  "accuracy": { "picks": 3, "hits": 0, "accuracy_pct": 0.0, "picked_symbols": ["TCS", "INFY", "ITC"] }
+          },
+          "growth": {
+                  "label": "Growth",
+                  "description": "Above-median 3-year profit growth and above-median 3-year sales growth.",
+                  "accuracy": { "picks": 4, "hits": 3, "accuracy_pct": 75.0, "picked_symbols": ["HDFCBANK", "ICICIBANK", "BHARTIARTL", "MARUTI"] }
+          },
+          "technical": {
+                  "label": "Technical / Momentum",
+                  "description": "1-year stock price CAGR at or above the tracked universe's median (proxy for momentum; see README for the full 50/200-day moving-average backtest available via scrape_and_backtest.py).",
+                  "accuracy": { "picks": 5, "hits": 4, "accuracy_pct": 80.0, "picked_symbols": ["RELIANCE", "ICICIBANK", "HINDUNILVR", "BHARTIARTL", "MARUTI"] }
+          },
+          "smartpick": {
+                  "label": "Smart Pick",
+                  "description": "Qualifies under at least 2 of the 3 strategies above (Value/Growth/Technical).",
+                  "accuracy": { "picks": 3, "hits": 3, "accuracy_pct": 100.0, "picked_symbols": ["ICICIBANK", "BHARTIARTL", "MARUTI"] }
+          }
+    },
+    "stocks": [
+          { "symbol": "TCS", "name": "Tata Consultancy Services Ltd", "sector": "IT Services", "screener_url": "https://www.screener.in/company/TCS/consolidated/", "price": 1983, "market_cap_cr": 716423, "pe": 13.7, "book_value": 296, "div_yield": 3.23, "roce": 63.0, "roe": 51.8, "sales_growth_3y": 6, "profit_growth_3y": 8, "price_cagr_1y": -42, "price_cagr_3y": -16, "roe_3y_avg": 52, "price_to_book": 6.7, "categories": ["bluechip", "smartpick"], "strategies": { "value": true, "growth": false, "technical": false }, "smart_pick_qualified": false },
+          { "symbol": "RELIANCE", "name": "Reliance Industries Ltd", "sector": "Energy", "screener_url": "https://www.screener.in/company/RELIANCE/consolidated/", "price": 1278, "market_cap_cr": 1729458, "pe": 23.1, "book_value": 668, "div_yield": 0.47, "roce": 10.3, "roe": 8.91, "sales_growth_3y": 6, "profit_growth_3y": 5, "price_cagr_1y": -8, "price_cagr_3y": 1, "roe_3y_avg": 9, "price_to_book": 1.91, "categories": ["bluechip", "smartpick"], "strategies": { "value": false, "growth": false, "technical": true }, "smart_pick_qualified": false },
+          { "symbol": "INFY", "name": "Infosys Ltd", "sector": "IT Services", "screener_url": "https://www.screener.in/company/INFY/consolidated/", "price": 1070, "market_cap_cr": 433958, "pe": 14.5, "book_value": 229, "div_yield": 4.51, "roce": 40.0, "roe": 31.9, "sales_growth_3y": 7, "profit_growth_3y": 8, "price_cagr_1y": -35, "price_cagr_3y": -8, "roe_3y_avg": 31, "price_to_book": 4.67, "categories": ["bluechip", "smartpick"], "strategies": { "value": true, "growth": false, "technical": false }, "smart_pick_qualified": false },
+          { "symbol": "HDFCBANK", "name": "HDFC Bank Ltd", "sector": "Banking", "screener_url": "https://www.screener.in/company/HDFCBANK/", "price": 825, "market_cap_cr": 1270533, "pe": 17.0, "book_value": 363, "div_yield": 1.58, "roce": 6.92, "roe": 14.1, "sales_growth_3y": 24, "profit_growth_3y": 19, "price_cagr_1y": -17, "price_cagr_3y": 0, "roe_3y_avg": 15, "price_to_book": 2.27, "categories": ["bluechip", "smartpick"], "strategies": { "value": false, "growth": true, "technical": false }, "smart_pick_qualified": false },
+          { "symbol": "ICICIBANK", "name": "ICICI Bank Ltd", "sector": "Banking", "screener_url": "https://www.screener.in/company/ICICIBANK/", "price": 1388, "market_cap_cr": 995034, "pe": 19.8, "book_value": 467, "div_yield": 0.79, "roce": 6.92, "roe": 16.0, "sales_growth_3y": 16, "profit_growth_3y": 16, "price_cagr_1y": -3, "price_cagr_3y": 14, "roe_3y_avg": 17, "price_to_book": 2.97, "categories": ["bluechip", "smartpick"], "strategies": { "value": false, "growth": true, "technical": true }, "smart_pick_qualified": true },
+          { "symbol": "HINDUNILVR", "name": "Hindustan Unilever Ltd", "sector": "FMCG", "screener_url": "https://www.screener.in/company/HINDUNILVR/consolidated/", "price": 2170, "market_cap_cr": 509961, "pe": 33.5, "book_value": 207, "div_yield": 1.89, "roce": 28.4, "roe": 31.0, "sales_growth_3y": 2, "profit_growth_3y": 14, "price_cagr_1y": -5, "price_cagr_3y": -5, "roe_3y_avg": 24, "price_to_book": 10.48, "categories": ["bluechip", "smartpick"], "strategies": { "value": false, "growth": false, "technical": true }, "smart_pick_qualified": false },
+          { "symbol": "ITC", "name": "ITC Ltd", "sector": "FMCG", "screener_url": "https://www.screener.in/company/ITC/consolidated/", "price": 281, "market_cap_cr": 351702, "pe": 16.8, "book_value": 57.9, "div_yield": 5.17, "roce": 38.9, "roe": 29.3, "sales_growth_3y": 4, "profit_growth_3y": 3, "price_cagr_1y": -34, "price_cagr_3y": -15, "roe_3y_avg": 35, "price_to_book": 4.85, "categories": ["bluechip", "smartpick"], "strategies": { "value": true, "growth": false, "technical": false }, "smart_pick_qualified": false },
+          { "symbol": "BHARTIARTL", "name": "Bharti Airtel Ltd", "sector": "Telecom", "screener_url": "https://www.screener.in/company/BHARTIARTL/consolidated/", "price": 1888, "market_cap_cr": 1150472, "pe": 40.1, "book_value": 245, "div_yield": 0.85, "roce": 18.5, "roe": 21.9, "sales_growth_3y": 15, "profit_growth_3y": 49, "price_cagr_1y": -7, "price_cagr_3y": 29, "roe_3y_avg": 20, "price_to_book": 7.71, "categories": ["bluechip", "smartpick"], "strategies": { "value": false, "growth": true, "technical": true }, "smart_pick_qualified": true },
+          { "symbol": "MARUTI", "name": "Maruti Suzuki India Ltd", "sector": "Automobile", "screener_url": "https://www.screener.in/company/MARUTI/consolidated/", "price": 13073, "market_cap_cr": 411109, "pe": 28.0, "book_value": 3408, "div_yield": 1.03, "roce": 19.0, "roe": 14.4, "sales_growth_3y": 16, "profit_growth_3y": 30, "price_cagr_1y": 4, "price_cagr_3y": 11, "roe_3y_avg": 16, "price_to_book": 3.84, "categories": ["bluechip", "smartpick"], "strategies": { "value": false, "growth": true, "technical": true }, "smart_pick_qualified": true }
+    ]
+}
