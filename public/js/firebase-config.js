@@ -1,9 +1,7 @@
 // Firebase project config for StratScreen.
-// Safe to be public - this is how every Firebase web app ships its config;
-// real security comes from Firebase Authentication + security rules, not
-// from hiding this file.
+// Safe to be public - security comes from Firebase Auth + rules, not from hiding this file.
 const firebaseConfig = {
-    apiKey: "AIzaSyDhalHP2Sv_a74g0kT9jYVjI1QoMSoCCkw",
+    apiKey: "AIzaSyDhalHP2Sv_a74gOkT9jYVjI1QoMSoCCkw",
     authDomain: "stratscreen.firebaseapp.com",
     projectId: "stratscreen",
     storageBucket: "stratscreen.firebasestorage.app",
