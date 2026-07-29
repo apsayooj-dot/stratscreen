@@ -1,39 +1,6298 @@
 {
-    "snapshot_date": "2026-07-28",
-    "source": "https://www.screener.in/ (company pages, public data)",
-    "disclaimer": "Educational/informational content only. Not registered investment advice under SEBI or any other regulator. Accuracy percentages are a simple historical correlation within this small tracked universe, not a forward-looking guarantee. Always do your own research.",
-    "methodology_note": "Strategy picks are computed relative to the median of this tracked watchlist, not the whole market. 'Accuracy' checks whether stocks meeting a strategy's criteria also had a positive historical stock price CAGR over a comparable window. Sample size is small - treat as illustrative, not statistically robust.",
-    "strategies": {
-          "value": {
-                  "label": "Value",
-                  "description": "Below-median P/E and above-median ROE within the tracked universe.",
-                  "accuracy": { "picks": 3, "hits": 0, "accuracy_pct": 0.0, "picked_symbols": ["TCS", "INFY", "ITC"] }
-          },
-          "growth": {
-                  "label": "Growth",
-                  "description": "Above-median 3-year profit growth and above-median 3-year sales growth.",
-                  "accuracy": { "picks": 4, "hits": 3, "accuracy_pct": 75.0, "picked_symbols": ["HDFCBANK", "ICICIBANK", "BHARTIARTL", "MARUTI"] }
-          },
-          "technical": {
-                  "label": "Technical / Momentum",
-                  "description": "1-year stock price CAGR at or above the tracked universe's median (proxy for momentum; see README for the full 50/200-day moving-average backtest available via scrape_and_backtest.py).",
-                  "accuracy": { "picks": 5, "hits": 4, "accuracy_pct": 80.0, "picked_symbols": ["RELIANCE", "ICICIBANK", "HINDUNILVR", "BHARTIARTL", "MARUTI"] }
-          },
-          "smartpick": {
-                  "label": "Smart Pick",
-                  "description": "Qualifies under at least 2 of the 3 strategies above (Value/Growth/Technical).",
-                  "accuracy": { "picks": 3, "hits": 3, "accuracy_pct": 100.0, "picked_symbols": ["ICICIBANK", "BHARTIARTL", "MARUTI"] }
-          }
+  "snapshot_date": "2026-07-29",
+  "source": "https://www.screener.in/ (company pages, public data)",
+  "disclaimer": "Educational/informational content only. Not registered investment advice under SEBI or any other regulator. Accuracy percentages are a simple historical correlation within this tracked universe, not a forward-looking guarantee. Always do your own research.",
+  "methodology_note": "Strategy picks are computed relative to the median of this 217-stock tracked watchlist (40 Blue Chip / 40 Emerging / 200 Smart Pick universe, de-duplicated), not the whole market. 'Accuracy' checks whether stocks meeting a strategy's criteria also had a positive historical stock price CAGR over a comparable window. This is a larger sample than the original 9-stock demo but still an illustrative cross-sectional check, not a rigorous walk-forward backtest. Some financial-services/newly-listed stocks show 'null' for a field screener.in doesn't report for that company type (e.g. ROCE for banks/NBFCs, or CAGR for recent IPOs) - these are excluded from that specific median/strategy check rather than treated as zero.",
+  "category_counts": {
+    "bluechip": 40,
+    "emerging": 40,
+    "smartpick": 200
+  },
+  "strategies": {
+    "value": {
+      "label": "Value",
+      "description": "Below-median P/E and above-median ROE within the 217-stock tracked universe.",
+      "accuracy": {
+        "picks": 53,
+        "hits": 41,
+        "accuracy_pct": 77.4,
+        "picked_symbols": [
+          "ADANIPORTS",
+          "ADANIPOWER",
+          "AIAENG",
+          "ALKEM",
+          "ASHOKLEY",
+          "BAJAJ-AUTO",
+          "BAJFINANCE",
+          "BPCL",
+          "CANBK",
+          "CHOLAFIN",
+          "COALINDIA",
+          "COROMANDEL",
+          "GLENMARK",
+          "GODFRYPHLP",
+          "HAL",
+          "HCLTECH",
+          "HEROMOTOCO",
+          "HINDPETRO",
+          "HINDUNILVR",
+          "HINDZINC",
+          "HUDCO",
+          "HYUNDAI",
+          "ICICIBANK",
+          "ICICIGI",
+          "INDIANB"
+        ]
+      }
     },
-    "stocks": [
-          { "symbol": "TCS", "name": "Tata Consultancy Services Ltd", "sector": "IT Services", "screener_url": "https://www.screener.in/company/TCS/consolidated/", "price": 1983, "market_cap_cr": 716423, "pe": 13.7, "book_value": 296, "div_yield": 3.23, "roce": 63.0, "roe": 51.8, "sales_growth_3y": 6, "profit_growth_3y": 8, "price_cagr_1y": -42, "price_cagr_3y": -16, "roe_3y_avg": 52, "price_to_book": 6.7, "categories": ["bluechip", "smartpick"], "strategies": { "value": true, "growth": false, "technical": false }, "smart_pick_qualified": false },
-          { "symbol": "RELIANCE", "name": "Reliance Industries Ltd", "sector": "Energy", "screener_url": "https://www.screener.in/company/RELIANCE/consolidated/", "price": 1278, "market_cap_cr": 1729458, "pe": 23.1, "book_value": 668, "div_yield": 0.47, "roce": 10.3, "roe": 8.91, "sales_growth_3y": 6, "profit_growth_3y": 5, "price_cagr_1y": -8, "price_cagr_3y": 1, "roe_3y_avg": 9, "price_to_book": 1.91, "categories": ["bluechip", "smartpick"], "strategies": { "value": false, "growth": false, "technical": true }, "smart_pick_qualified": false },
-          { "symbol": "INFY", "name": "Infosys Ltd", "sector": "IT Services", "screener_url": "https://www.screener.in/company/INFY/consolidated/", "price": 1070, "market_cap_cr": 433958, "pe": 14.5, "book_value": 229, "div_yield": 4.51, "roce": 40.0, "roe": 31.9, "sales_growth_3y": 7, "profit_growth_3y": 8, "price_cagr_1y": -35, "price_cagr_3y": -8, "roe_3y_avg": 31, "price_to_book": 4.67, "categories": ["bluechip", "smartpick"], "strategies": { "value": true, "growth": false, "technical": false }, "smart_pick_qualified": false },
-          { "symbol": "HDFCBANK", "name": "HDFC Bank Ltd", "sector": "Banking", "screener_url": "https://www.screener.in/company/HDFCBANK/", "price": 825, "market_cap_cr": 1270533, "pe": 17.0, "book_value": 363, "div_yield": 1.58, "roce": 6.92, "roe": 14.1, "sales_growth_3y": 24, "profit_growth_3y": 19, "price_cagr_1y": -17, "price_cagr_3y": 0, "roe_3y_avg": 15, "price_to_book": 2.27, "categories": ["bluechip", "smartpick"], "strategies": { "value": false, "growth": true, "technical": false }, "smart_pick_qualified": false },
-          { "symbol": "ICICIBANK", "name": "ICICI Bank Ltd", "sector": "Banking", "screener_url": "https://www.screener.in/company/ICICIBANK/", "price": 1388, "market_cap_cr": 995034, "pe": 19.8, "book_value": 467, "div_yield": 0.79, "roce": 6.92, "roe": 16.0, "sales_growth_3y": 16, "profit_growth_3y": 16, "price_cagr_1y": -3, "price_cagr_3y": 14, "roe_3y_avg": 17, "price_to_book": 2.97, "categories": ["bluechip", "smartpick"], "strategies": { "value": false, "growth": true, "technical": true }, "smart_pick_qualified": true },
-          { "symbol": "HINDUNILVR", "name": "Hindustan Unilever Ltd", "sector": "FMCG", "screener_url": "https://www.screener.in/company/HINDUNILVR/consolidated/", "price": 2170, "market_cap_cr": 509961, "pe": 33.5, "book_value": 207, "div_yield": 1.89, "roce": 28.4, "roe": 31.0, "sales_growth_3y": 2, "profit_growth_3y": 14, "price_cagr_1y": -5, "price_cagr_3y": -5, "roe_3y_avg": 24, "price_to_book": 10.48, "categories": ["bluechip", "smartpick"], "strategies": { "value": false, "growth": false, "technical": true }, "smart_pick_qualified": false },
-          { "symbol": "ITC", "name": "ITC Ltd", "sector": "FMCG", "screener_url": "https://www.screener.in/company/ITC/consolidated/", "price": 281, "market_cap_cr": 351702, "pe": 16.8, "book_value": 57.9, "div_yield": 5.17, "roce": 38.9, "roe": 29.3, "sales_growth_3y": 4, "profit_growth_3y": 3, "price_cagr_1y": -34, "price_cagr_3y": -15, "roe_3y_avg": 35, "price_to_book": 4.85, "categories": ["bluechip", "smartpick"], "strategies": { "value": true, "growth": false, "technical": false }, "smart_pick_qualified": false },
-          { "symbol": "BHARTIARTL", "name": "Bharti Airtel Ltd", "sector": "Telecom", "screener_url": "https://www.screener.in/company/BHARTIARTL/consolidated/", "price": 1888, "market_cap_cr": 1150472, "pe": 40.1, "book_value": 245, "div_yield": 0.85, "roce": 18.5, "roe": 21.9, "sales_growth_3y": 15, "profit_growth_3y": 49, "price_cagr_1y": -7, "price_cagr_3y": 29, "roe_3y_avg": 20, "price_to_book": 7.71, "categories": ["bluechip", "smartpick"], "strategies": { "value": false, "growth": true, "technical": true }, "smart_pick_qualified": true },
-          { "symbol": "MARUTI", "name": "Maruti Suzuki India Ltd", "sector": "Automobile", "screener_url": "https://www.screener.in/company/MARUTI/consolidated/", "price": 13073, "market_cap_cr": 411109, "pe": 28.0, "book_value": 3408, "div_yield": 1.03, "roce": 19.0, "roe": 14.4, "sales_growth_3y": 16, "profit_growth_3y": 30, "price_cagr_1y": 4, "price_cagr_3y": 11, "roe_3y_avg": 16, "price_to_book": 3.84, "categories": ["bluechip", "smartpick"], "strategies": { "value": false, "growth": true, "technical": true }, "smart_pick_qualified": true }
-    ]
+    "growth": {
+      "label": "Growth",
+      "description": "Above-median 3-year profit growth and above-median 3-year sales growth.",
+      "accuracy": {
+        "picks": 77,
+        "hits": 66,
+        "accuracy_pct": 85.7,
+        "picked_symbols": [
+          "360ONE",
+          "3MINDIA",
+          "ADANIENSOL",
+          "ADANIPORTS",
+          "AIIL",
+          "AJANTPHARM",
+          "ANTHEM",
+          "APLAPOLLO",
+          "APOLLOHOSP",
+          "AUBANK",
+          "AXISBANK",
+          "BAJAJ-AUTO",
+          "BAJAJHFL",
+          "BAJAJHLDNG",
+          "BAJFINANCE",
+          "BANKINDIA",
+          "BEL",
+          "BHARTIARTL",
+          "BHEL",
+          "BLUESTARCO",
+          "BSE",
+          "CANBK",
+          "CHOLAFIN",
+          "COCHINSHIP",
+          "COFORGE"
+        ]
+      }
+    },
+    "technical": {
+      "label": "Technical / Momentum",
+      "description": "1-year stock price CAGR at or above the tracked universe's median (proxy for momentum).",
+      "accuracy": {
+        "picks": 108,
+        "hits": 105,
+        "accuracy_pct": 97.2,
+        "picked_symbols": [
+          "3MINDIA",
+          "ABB",
+          "ABCAPITAL",
+          "ADANIENSOL",
+          "ADANIENT",
+          "ADANIGREEN",
+          "ADANIPORTS",
+          "ADANIPOWER",
+          "AIAENG",
+          "AJANTPHARM",
+          "ALKEM",
+          "APARINDS",
+          "APOLLOHOSP",
+          "ASHOKLEY",
+          "ASIANPAINT",
+          "ASTRAL",
+          "ATGL",
+          "AUBANK",
+          "AUROPHARMA",
+          "AXISBANK",
+          "BAJAJ-AUTO",
+          "BAJFINANCE",
+          "BANKBARODA",
+          "BANKINDIA",
+          "BEL"
+        ]
+      }
+    },
+    "smartpick": {
+      "label": "Smart Pick",
+      "description": "Qualifies under at least 2 of the 3 strategies above (Value/Growth/Technical).",
+      "accuracy": {
+        "picks": 59,
+        "hits": 56,
+        "accuracy_pct": 94.9,
+        "picked_symbols": [
+          "3MINDIA",
+          "ADANIENSOL",
+          "ADANIPORTS",
+          "ADANIPOWER",
+          "AIAENG",
+          "AJANTPHARM",
+          "ALKEM",
+          "APOLLOHOSP",
+          "ASHOKLEY",
+          "AUBANK",
+          "AXISBANK",
+          "BAJAJ-AUTO",
+          "BAJFINANCE",
+          "BANKINDIA",
+          "BEL",
+          "BHEL",
+          "BLUESTARCO",
+          "BSE",
+          "CANBK",
+          "CHOLAFIN",
+          "COALINDIA",
+          "CUMMINSIND",
+          "EICHERMOT",
+          "ETERNAL",
+          "FORTIS"
+        ]
+      }
+    }
+  },
+  "stocks": [
+    {
+      "symbol": "360ONE",
+      "name": "360 ONE WAM Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/360ONE/consolidated/",
+      "price": 1129,
+      "market_cap_cr": 45915,
+      "pe": 37.8,
+      "book_value": 242,
+      "div_yield": 1.06,
+      "roce": 12.1,
+      "roe": 14.4,
+      "sales_growth_3y": 28,
+      "profit_growth_3y": 23,
+      "price_cagr_1y": -5,
+      "price_cagr_3y": 31,
+      "roe_3y_avg": 18,
+      "price_to_book": 4.66,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "3MINDIA",
+      "name": "3M India Ltd",
+      "sector": "Diversified",
+      "screener_url": "https://www.screener.in/company/3MINDIA/consolidated/",
+      "price": 32405,
+      "market_cap_cr": 36542,
+      "pe": 59.8,
+      "book_value": 1906,
+      "div_yield": 0.49,
+      "roce": 40.5,
+      "roe": 30.5,
+      "sales_growth_3y": 17,
+      "profit_growth_3y": 53,
+      "price_cagr_1y": 9,
+      "price_cagr_3y": 7,
+      "roe_3y_avg": 22,
+      "price_to_book": 17.0,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "ABB",
+      "name": "ABB India Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/ABB/consolidated/",
+      "price": 7253,
+      "market_cap_cr": 153697,
+      "pe": 101,
+      "book_value": 370,
+      "div_yield": 0.54,
+      "roce": 29.9,
+      "roe": 22.4,
+      "sales_growth_3y": null,
+      "profit_growth_3y": null,
+      "price_cagr_1y": 21,
+      "price_cagr_3y": 23,
+      "roe_3y_avg": null,
+      "price_to_book": 19.6,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ABBOTINDIA",
+      "name": "Abbott India Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/ABBOTINDIA/",
+      "price": 26073,
+      "market_cap_cr": 55405,
+      "pe": 35.7,
+      "book_value": 2247,
+      "div_yield": 1.83,
+      "roce": 44.9,
+      "roe": 34.5,
+      "sales_growth_3y": 9,
+      "profit_growth_3y": 18,
+      "price_cagr_1y": -19,
+      "price_cagr_3y": 6,
+      "roe_3y_avg": 35,
+      "price_to_book": 11.6,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ABCAPITAL",
+      "name": "Aditya Birla Capital Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/ABCAPITAL/consolidated/",
+      "price": 401,
+      "market_cap_cr": 109710,
+      "pe": 28.8,
+      "book_value": 131,
+      "div_yield": 0.0,
+      "roce": 8.72,
+      "roe": 11.7,
+      "sales_growth_3y": 15,
+      "profit_growth_3y": -7,
+      "price_cagr_1y": 46,
+      "price_cagr_3y": 29,
+      "roe_3y_avg": 12,
+      "price_to_book": 3.06,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ACC",
+      "name": "ACC Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/ACC/consolidated/",
+      "price": 1314,
+      "market_cap_cr": 24672,
+      "pe": 11.6,
+      "book_value": 1094,
+      "div_yield": 0.58,
+      "roce": 11.2,
+      "roe": 10.9,
+      "sales_growth_3y": 5,
+      "profit_growth_3y": 31,
+      "price_cagr_1y": -30,
+      "price_cagr_3y": -11,
+      "roe_3y_avg": 13,
+      "price_to_book": 1.2,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ADANIENSOL",
+      "name": "Adani Energy Solutions Ltd",
+      "sector": "Utilities",
+      "screener_url": "https://www.screener.in/company/ADANIENSOL/consolidated/",
+      "price": 1542,
+      "market_cap_cr": 185232,
+      "pe": 82.6,
+      "book_value": 212,
+      "div_yield": 0.0,
+      "roce": 9.65,
+      "roe": 9.44,
+      "sales_growth_3y": 28,
+      "profit_growth_3y": 21,
+      "price_cagr_1y": 82,
+      "price_cagr_3y": 26,
+      "roe_3y_avg": 10,
+      "price_to_book": 7.27,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "ADANIENT",
+      "name": "Adani Enterprises Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/ADANIENT/consolidated/",
+      "price": 3107,
+      "market_cap_cr": 404261,
+      "pe": null,
+      "book_value": 627,
+      "div_yield": 0.04,
+      "roce": 5.8,
+      "roe": -3.38,
+      "sales_growth_3y": -8,
+      "profit_growth_3y": null,
+      "price_cagr_1y": 24,
+      "price_cagr_3y": 10,
+      "roe_3y_avg": 2,
+      "price_to_book": 4.96,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ADANIGREEN",
+      "name": "Adani Green Energy Ltd",
+      "sector": "Utilities",
+      "screener_url": "https://www.screener.in/company/ADANIGREEN/consolidated/",
+      "price": 1514,
+      "market_cap_cr": 249366,
+      "pe": 136,
+      "book_value": 121,
+      "div_yield": 0.0,
+      "roce": 7.39,
+      "roe": 11.4,
+      "sales_growth_3y": 18,
+      "profit_growth_3y": 17,
+      "price_cagr_1y": 47,
+      "price_cagr_3y": 16,
+      "roe_3y_avg": 13,
+      "price_to_book": 12.51,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "name": "Adani Ports & Special Economic Zone Ltd",
+      "sector": "Services",
+      "screener_url": "https://www.screener.in/company/ADANIPORTS/consolidated/",
+      "price": 1827,
+      "market_cap_cr": 421037,
+      "pe": 32.5,
+      "book_value": 416,
+      "div_yield": 0.41,
+      "roce": 14.1,
+      "roe": 16.4,
+      "sales_growth_3y": 23,
+      "profit_growth_3y": 27,
+      "price_cagr_1y": 35,
+      "price_cagr_3y": 37,
+      "roe_3y_avg": 18,
+      "price_to_book": 4.39,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "ADANIPOWER",
+      "name": "Adani Power Ltd",
+      "sector": "Utilities",
+      "screener_url": "https://www.screener.in/company/ADANIPOWER/consolidated/",
+      "price": 224,
+      "market_cap_cr": 431302,
+      "pe": 33.7,
+      "book_value": 33.7,
+      "div_yield": 0.0,
+      "roce": 17.2,
+      "roe": 21.1,
+      "sales_growth_3y": 12,
+      "profit_growth_3y": 6,
+      "price_cagr_1y": 77,
+      "price_cagr_3y": 65,
+      "roe_3y_avg": 32,
+      "price_to_book": 6.65,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "AIAENG",
+      "name": "AIA Engineering Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/AIAENG/consolidated/",
+      "price": 4334,
+      "market_cap_cr": 40442,
+      "pe": 31.8,
+      "book_value": 860,
+      "div_yield": 0.37,
+      "roce": 21.1,
+      "roe": 17.0,
+      "sales_growth_3y": -3,
+      "profit_growth_3y": 7,
+      "price_cagr_1y": 26,
+      "price_cagr_3y": 9,
+      "roe_3y_avg": 17,
+      "price_to_book": 5.04,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "AIIL",
+      "name": "Authum Investment & Infrastructure Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/AIIL/consolidated/",
+      "price": 552,
+      "market_cap_cr": 46848,
+      "pe": 24.3,
+      "book_value": 173,
+      "div_yield": 0.04,
+      "roce": 13.7,
+      "roe": 13.1,
+      "sales_growth_3y": 69,
+      "profit_growth_3y": 217,
+      "price_cagr_1y": -2,
+      "price_cagr_3y": 96,
+      "roe_3y_avg": 30,
+      "price_to_book": 3.19,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "AJANTPHARM",
+      "name": "Ajanta Pharma Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/AJANTPHARM/consolidated/",
+      "price": 3120,
+      "market_cap_cr": 38986,
+      "pe": 36.9,
+      "book_value": 362,
+      "div_yield": 0.92,
+      "roce": 32.3,
+      "roe": 25.4,
+      "sales_growth_3y": 13,
+      "profit_growth_3y": 21,
+      "price_cagr_1y": 19,
+      "price_cagr_3y": 35,
+      "roe_3y_avg": 25,
+      "price_to_book": 8.62,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "ALKEM",
+      "name": "Alkem Laboratories Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/ALKEM/consolidated/",
+      "price": 5458,
+      "market_cap_cr": 65253,
+      "pe": 27.2,
+      "book_value": 1116,
+      "div_yield": 0.84,
+      "roce": 20.4,
+      "roe": 19.4,
+      "sales_growth_3y": 7,
+      "profit_growth_3y": 9,
+      "price_cagr_1y": 5,
+      "price_cagr_3y": 18,
+      "roe_3y_avg": 17,
+      "price_to_book": 4.89,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "AMBUJACEM",
+      "name": "Ambuja Cements Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/AMBUJACEM/consolidated/",
+      "price": 420,
+      "market_cap_cr": 104362,
+      "pe": 20.9,
+      "book_value": 240,
+      "div_yield": 0.47,
+      "roce": 5.61,
+      "roe": 8.85,
+      "sales_growth_3y": 1,
+      "profit_growth_3y": 21,
+      "price_cagr_1y": -26,
+      "price_cagr_3y": 1,
+      "roe_3y_avg": 9,
+      "price_to_book": 1.75,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ANTHEM",
+      "name": "Anthem Biosciences Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/ANTHEM/consolidated/",
+      "price": 770,
+      "market_cap_cr": 43349,
+      "pe": 71.2,
+      "book_value": 54.2,
+      "div_yield": 0.26,
+      "roce": 30.4,
+      "roe": 22.3,
+      "sales_growth_3y": 26,
+      "profit_growth_3y": 21,
+      "price_cagr_1y": null,
+      "price_cagr_3y": null,
+      "roe_3y_avg": 21,
+      "price_to_book": 14.21,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "APARINDS",
+      "name": "Apar Industries Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/APARINDS/consolidated/",
+      "price": 15986,
+      "market_cap_cr": 64223,
+      "pe": 64.2,
+      "book_value": 1343,
+      "div_yield": 0.32,
+      "roce": 31.1,
+      "roe": 20.2,
+      "sales_growth_3y": 17,
+      "profit_growth_3y": 16,
+      "price_cagr_1y": 107,
+      "price_cagr_3y": 72,
+      "roe_3y_avg": 22,
+      "price_to_book": 11.9,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "APLAPOLLO",
+      "name": "APL Apollo Tubes Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/APLAPOLLO/consolidated/",
+      "price": 1818,
+      "market_cap_cr": 50470,
+      "pe": 42.0,
+      "book_value": 191,
+      "div_yield": 0.32,
+      "roce": 31.6,
+      "roe": 25.3,
+      "sales_growth_3y": 13,
+      "profit_growth_3y": 23,
+      "price_cagr_1y": -3,
+      "price_cagr_3y": 14,
+      "roe_3y_avg": 22,
+      "price_to_book": 9.52,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "APOLLOHOSP",
+      "name": "Apollo Hospitals Enterprise Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/APOLLOHOSP/consolidated/",
+      "price": 7636,
+      "market_cap_cr": 109801,
+      "pe": 60.5,
+      "book_value": 632,
+      "div_yield": 0.25,
+      "roce": 16.6,
+      "roe": 18.4,
+      "sales_growth_3y": 14,
+      "profit_growth_3y": 18,
+      "price_cagr_1y": 10,
+      "price_cagr_3y": 19,
+      "roe_3y_avg": 15,
+      "price_to_book": 12.09,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "APOLLOTYRE",
+      "name": "Apollo Tyres Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/APOLLOTYRE/consolidated/",
+      "price": 428,
+      "market_cap_cr": 27217,
+      "pe": 13.2,
+      "book_value": 263,
+      "div_yield": 1.41,
+      "roce": 13.9,
+      "roe": 13.1,
+      "sales_growth_3y": 5,
+      "profit_growth_3y": 26,
+      "price_cagr_1y": -7,
+      "price_cagr_3y": 1,
+      "roe_3y_avg": 12,
+      "price_to_book": 1.63,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ASHOKLEY",
+      "name": "Ashok Leyland Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/ASHOKLEY/consolidated/",
+      "price": 145,
+      "market_cap_cr": 85306,
+      "pe": 22.9,
+      "book_value": 24.2,
+      "div_yield": 2.41,
+      "roce": 13.8,
+      "roe": 28.1,
+      "sales_growth_3y": 11,
+      "profit_growth_3y": 46,
+      "price_cagr_1y": 24,
+      "price_cagr_3y": 25,
+      "roe_3y_avg": 28,
+      "price_to_book": 5.99,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "name": "Asian Paints Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/ASIANPAINT/consolidated/",
+      "price": 2693,
+      "market_cap_cr": 258293,
+      "pe": 58.1,
+      "book_value": 223,
+      "div_yield": 1.02,
+      "roce": 26.3,
+      "roe": 21.8,
+      "sales_growth_3y": 1,
+      "profit_growth_3y": 2,
+      "price_cagr_1y": 13,
+      "price_cagr_3y": -9,
+      "roe_3y_avg": 24,
+      "price_to_book": 12.08,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ASTRAL",
+      "name": "Astral Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/ASTRAL/consolidated/",
+      "price": 1570,
+      "market_cap_cr": 42190,
+      "pe": 81.9,
+      "book_value": 141,
+      "div_yield": 0.24,
+      "roce": 19.7,
+      "roe": 14.9,
+      "sales_growth_3y": 10,
+      "profit_growth_3y": 2,
+      "price_cagr_1y": 22,
+      "price_cagr_3y": 0,
+      "roe_3y_avg": 17,
+      "price_to_book": 11.13,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ATGL",
+      "name": "Adani Total Gas Ltd",
+      "sector": "Energy",
+      "screener_url": "https://www.screener.in/company/ATGL/consolidated/",
+      "price": 708,
+      "market_cap_cr": 77883,
+      "pe": 119,
+      "book_value": 44.2,
+      "div_yield": 0.04,
+      "roce": 15.3,
+      "roe": 14.4,
+      "sales_growth_3y": 10,
+      "profit_growth_3y": 6,
+      "price_cagr_1y": 10,
+      "price_cagr_3y": 2,
+      "roe_3y_avg": 17,
+      "price_to_book": 16.02,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "AUBANK",
+      "name": "AU Small Finance Bank Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/AUBANK/consolidated/",
+      "price": 1011,
+      "market_cap_cr": 75698,
+      "pe": 222,
+      "book_value": null,
+      "div_yield": 0.1,
+      "roce": 12.4,
+      "roe": 22.3,
+      "sales_growth_3y": 29,
+      "profit_growth_3y": 49,
+      "price_cagr_1y": 44,
+      "price_cagr_3y": 9,
+      "roe_3y_avg": 23,
+      "price_to_book": null,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "AUROPHARMA",
+      "name": "Aurobindo Pharma Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/AUROPHARMA/consolidated/",
+      "price": 1454,
+      "market_cap_cr": 84422,
+      "pe": 23.8,
+      "book_value": 652,
+      "div_yield": 0.28,
+      "roce": 12.8,
+      "roe": 10.1,
+      "sales_growth_3y": 11,
+      "profit_growth_3y": 23,
+      "price_cagr_1y": 24,
+      "price_cagr_3y": 30,
+      "roe_3y_avg": 11,
+      "price_to_book": 2.23,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "AWL",
+      "name": "AWL Agri Business Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "screener_url": "https://www.screener.in/company/AWL/consolidated/",
+      "price": 186,
+      "market_cap_cr": 24142,
+      "pe": 22.8,
+      "book_value": 80.3,
+      "div_yield": 0.53,
+      "roce": 18.3,
+      "roe": 10.7,
+      "sales_growth_3y": 9,
+      "profit_growth_3y": 22,
+      "price_cagr_1y": -32,
+      "price_cagr_3y": -22,
+      "roe_3y_avg": 9,
+      "price_to_book": 2.32,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "AXISBANK",
+      "name": "Axis Bank Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/AXISBANK/consolidated/",
+      "price": 1225,
+      "market_cap_cr": 381045,
+      "pe": 13.7,
+      "book_value": 712,
+      "div_yield": 0.08,
+      "roce": 6.24,
+      "roe": 13.1,
+      "sales_growth_3y": 15,
+      "profit_growth_3y": 35,
+      "price_cagr_1y": 15,
+      "price_cagr_3y": 9,
+      "roe_3y_avg": 16,
+      "price_to_book": 1.72,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "BAJAJ-AUTO",
+      "name": "Bajaj Auto Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/BAJAJ-AUTO/consolidated/",
+      "price": 10155,
+      "market_cap_cr": 283897,
+      "pe": 26.3,
+      "book_value": 1389,
+      "div_yield": 1.48,
+      "roce": 28.2,
+      "roe": 29.2,
+      "sales_growth_3y": 20,
+      "profit_growth_3y": 21,
+      "price_cagr_1y": 21,
+      "price_cagr_3y": 28,
+      "roe_3y_avg": 26,
+      "price_to_book": 7.31,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "name": "Bajaj Finserv Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/BAJAJFINSV/consolidated/",
+      "price": 1896,
+      "market_cap_cr": 303400,
+      "pe": 30.5,
+      "book_value": 487,
+      "div_yield": 0.08,
+      "roce": 10.5,
+      "roe": 13.2,
+      "sales_growth_3y": 22,
+      "profit_growth_3y": 16,
+      "price_cagr_1y": -5,
+      "price_cagr_3y": 6,
+      "roe_3y_avg": 14,
+      "price_to_book": 3.89,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "BAJAJHFL",
+      "name": "Bajaj Housing Finance Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/BAJAJHFL/",
+      "price": 83.4,
+      "market_cap_cr": 69525,
+      "pe": 27.0,
+      "book_value": 27.0,
+      "div_yield": 0.0,
+      "roce": 8.84,
+      "roe": 12.1,
+      "sales_growth_3y": 25,
+      "profit_growth_3y": 27,
+      "price_cagr_1y": -31,
+      "price_cagr_3y": null,
+      "roe_3y_avg": 13,
+      "price_to_book": 3.09,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "BAJAJHLDNG",
+      "name": "Bajaj Holdings & Investment Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/BAJAJHLDNG/consolidated/",
+      "price": 10646,
+      "market_cap_cr": 118482,
+      "pe": 14.5,
+      "book_value": 6573,
+      "div_yield": 1.37,
+      "roce": 11.0,
+      "roe": 12.0,
+      "sales_growth_3y": 27,
+      "profit_growth_3y": 19,
+      "price_cagr_1y": -25,
+      "price_cagr_3y": 15,
+      "roe_3y_avg": 12,
+      "price_to_book": 1.62,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "name": "Bajaj Finance Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/BAJFINANCE/consolidated/",
+      "price": 904,
+      "market_cap_cr": 562951,
+      "pe": 29.3,
+      "book_value": 183,
+      "div_yield": 0.6,
+      "roce": 10.8,
+      "roe": 18.2,
+      "sales_growth_3y": 26,
+      "profit_growth_3y": 19,
+      "price_cagr_1y": 0,
+      "price_cagr_3y": 10,
+      "roe_3y_avg": 20,
+      "price_to_book": 4.94,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "BALKRISIND",
+      "name": "Balkrishna Industries Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/BALKRISIND/consolidated/",
+      "price": 2150,
+      "market_cap_cr": 41564,
+      "pe": 40.3,
+      "book_value": 567,
+      "div_yield": 0.72,
+      "roce": 11.2,
+      "roe": 9.66,
+      "sales_growth_3y": 4,
+      "profit_growth_3y": 1,
+      "price_cagr_1y": -16,
+      "price_cagr_3y": -3,
+      "roe_3y_avg": 13,
+      "price_to_book": 3.79,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "BANKBARODA",
+      "name": "Bank of Baroda",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/BANKBARODA/consolidated/",
+      "price": 255,
+      "market_cap_cr": 131792,
+      "pe": 6.64,
+      "book_value": 321,
+      "div_yield": 3.34,
+      "roce": 5.63,
+      "roe": 12.7,
+      "sales_growth_3y": 13,
+      "profit_growth_3y": 10,
+      "price_cagr_1y": 5,
+      "price_cagr_3y": 9,
+      "roe_3y_avg": 15,
+      "price_to_book": 0.79,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "BANKINDIA",
+      "name": "Bank of India",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/BANKINDIA/consolidated/",
+      "price": 146,
+      "market_cap_cr": 66310,
+      "pe": 6.24,
+      "book_value": 198,
+      "div_yield": 3.2,
+      "roce": 5.93,
+      "roe": 12.4,
+      "sales_growth_3y": 16,
+      "profit_growth_3y": 42,
+      "price_cagr_1y": 24,
+      "price_cagr_3y": 25,
+      "roe_3y_avg": 12,
+      "price_to_book": 0.74,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "BDL",
+      "name": "Bharat Dynamics Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/BDL/",
+      "price": 1324,
+      "market_cap_cr": 48518,
+      "pe": 115,
+      "book_value": 116,
+      "div_yield": 0.35,
+      "roce": 13.8,
+      "roe": 10.2,
+      "sales_growth_3y": -1,
+      "profit_growth_3y": 6,
+      "price_cagr_1y": -30,
+      "price_cagr_3y": 29,
+      "roe_3y_avg": 14,
+      "price_to_book": 11.41,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "BEL",
+      "name": "Bharat Electronics Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/BEL/consolidated/",
+      "price": 426,
+      "market_cap_cr": 311105,
+      "pe": 51.3,
+      "book_value": 32.8,
+      "div_yield": 0.56,
+      "roce": 36.5,
+      "roe": 27.6,
+      "sales_growth_3y": 16,
+      "profit_growth_3y": 27,
+      "price_cagr_1y": 0,
+      "price_cagr_3y": 51,
+      "roe_3y_avg": 28,
+      "price_to_book": 12.99,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "BERGEPAINT",
+      "name": "Berger Paints India Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/BERGEPAINT/consolidated/",
+      "price": 517,
+      "market_cap_cr": 60352,
+      "pe": 51.7,
+      "book_value": 59.3,
+      "div_yield": 0.74,
+      "roce": 22.2,
+      "roe": 17.8,
+      "sales_growth_3y": 4,
+      "profit_growth_3y": 11,
+      "price_cagr_1y": -10,
+      "price_cagr_3y": -1,
+      "roe_3y_avg": 20,
+      "price_to_book": 8.72,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "BHARATFORG",
+      "name": "Bharat Forge Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/BHARATFORG/consolidated/",
+      "price": 1930,
+      "market_cap_cr": 92293,
+      "pe": 78.2,
+      "book_value": 200,
+      "div_yield": 0.44,
+      "roce": 13.1,
+      "roe": 12.5,
+      "sales_growth_3y": 9,
+      "profit_growth_3y": 35,
+      "price_cagr_1y": 53,
+      "price_cagr_3y": 34,
+      "roe_3y_avg": 12,
+      "price_to_book": 9.65,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "name": "Bharti Airtel Ltd",
+      "sector": "Telecommunication",
+      "screener_url": "https://www.screener.in/company/BHARTIARTL/consolidated/",
+      "price": 1888,
+      "market_cap_cr": 1150472,
+      "pe": 40.1,
+      "book_value": 245,
+      "div_yield": 0.85,
+      "roce": 18.5,
+      "roe": 21.9,
+      "sales_growth_3y": 15,
+      "profit_growth_3y": 49,
+      "price_cagr_1y": -7,
+      "price_cagr_3y": 29,
+      "roe_3y_avg": 20,
+      "price_to_book": 7.71,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "BHARTIHEXA",
+      "name": "Bharti Hexacom Ltd",
+      "sector": "Telecommunication",
+      "screener_url": "https://www.screener.in/company/BHARTIHEXA/",
+      "price": 1504,
+      "market_cap_cr": 75210,
+      "pe": 42.8,
+      "book_value": 143,
+      "div_yield": 0.65,
+      "roce": 21.8,
+      "roe": 26.9,
+      "sales_growth_3y": 12,
+      "profit_growth_3y": 47,
+      "price_cagr_1y": -12,
+      "price_cagr_3y": null,
+      "roe_3y_avg": 23,
+      "price_to_book": 10.52,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "BHEL",
+      "name": "Bharat Heavy Electricals Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/BHEL/consolidated/",
+      "price": 381,
+      "market_cap_cr": 132805,
+      "pe": 83.0,
+      "book_value": 75.1,
+      "div_yield": 0.13,
+      "roce": 8.51,
+      "roe": 6.29,
+      "sales_growth_3y": 13,
+      "profit_growth_3y": 37,
+      "price_cagr_1y": 52,
+      "price_cagr_3y": 67,
+      "roe_3y_avg": 3,
+      "price_to_book": 5.07,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "BIOCON",
+      "name": "Biocon Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/BIOCON/consolidated/",
+      "price": 418,
+      "market_cap_cr": 67835,
+      "pe": 174,
+      "book_value": 210,
+      "div_yield": 0.12,
+      "roce": 3.75,
+      "roe": 1.4,
+      "sales_growth_3y": 15,
+      "profit_growth_3y": -15,
+      "price_cagr_1y": 15,
+      "price_cagr_3y": 16,
+      "roe_3y_avg": 4,
+      "price_to_book": 1.99,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "BLUESTARCO",
+      "name": "Blue Star Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/BLUESTARCO/consolidated/",
+      "price": 1582,
+      "market_cap_cr": 32524,
+      "pe": 58.4,
+      "book_value": 167,
+      "div_yield": 0.54,
+      "roce": 21.2,
+      "roe": 17.1,
+      "sales_growth_3y": 16,
+      "profit_growth_3y": 27,
+      "price_cagr_1y": 0,
+      "price_cagr_3y": 29,
+      "roe_3y_avg": 19,
+      "price_to_book": 9.47,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "BOSCHLTD",
+      "name": "Bosch Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/BOSCHLTD/consolidated/",
+      "price": 42325,
+      "market_cap_cr": 124911,
+      "pe": 59.8,
+      "book_value": 5033,
+      "div_yield": 0.64,
+      "roce": 21.5,
+      "roe": 14.6,
+      "sales_growth_3y": 10,
+      "profit_growth_3y": 14,
+      "price_cagr_1y": 11,
+      "price_cagr_3y": 30,
+      "roe_3y_avg": 15,
+      "price_to_book": 8.41,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "BPCL",
+      "name": "Bharat Petroleum Corporation Ltd",
+      "sector": "Energy",
+      "screener_url": "https://www.screener.in/company/BPCL/consolidated/",
+      "price": 310,
+      "market_cap_cr": 134385,
+      "pe": 5.14,
+      "book_value": 231,
+      "div_yield": 5.65,
+      "roce": 25.7,
+      "roe": 28.8,
+      "sales_growth_3y": -1,
+      "profit_growth_3y": 98,
+      "price_cagr_1y": -10,
+      "price_cagr_3y": 17,
+      "roe_3y_avg": 29,
+      "price_to_book": 1.34,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "BRITANNIA",
+      "name": "Britannia Industries Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "screener_url": "https://www.screener.in/company/BRITANNIA/consolidated/",
+      "price": 5171,
+      "market_cap_cr": 124537,
+      "pe": 49.2,
+      "book_value": 212,
+      "div_yield": 1.75,
+      "roce": 56.0,
+      "roe": 53.6,
+      "sales_growth_3y": 6,
+      "profit_growth_3y": 8,
+      "price_cagr_1y": -9,
+      "price_cagr_3y": 2,
+      "roe_3y_avg": 54,
+      "price_to_book": 24.39,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "BSE",
+      "name": "BSE Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/BSE/consolidated/",
+      "price": 3872,
+      "market_cap_cr": 157710,
+      "pe": 63.5,
+      "book_value": 164,
+      "div_yield": 0.26,
+      "roce": 58.0,
+      "roe": 44.8,
+      "sales_growth_3y": 74,
+      "profit_growth_3y": 124,
+      "price_cagr_1y": 38,
+      "price_cagr_3y": 168,
+      "roe_3y_avg": 36,
+      "price_to_book": 23.61,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "CANBK",
+      "name": "Canara Bank",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/CANBK/consolidated/",
+      "price": 127,
+      "market_cap_cr": 115387,
+      "pe": 5.81,
+      "book_value": 136,
+      "div_yield": 3.3,
+      "roce": 6.52,
+      "roe": 16.1,
+      "sales_growth_3y": 14,
+      "profit_growth_3y": 18,
+      "price_cagr_1y": 15,
+      "price_cagr_3y": 23,
+      "roe_3y_avg": 17,
+      "price_to_book": 0.93,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "CGPOWER",
+      "name": "CG Power & Industrial Solutions Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/CGPOWER/consolidated/",
+      "price": 901,
+      "market_cap_cr": 141951,
+      "pe": 115,
+      "book_value": 50.6,
+      "div_yield": 0.14,
+      "roce": 27.0,
+      "roe": 20.8,
+      "sales_growth_3y": 21,
+      "profit_growth_3y": 10,
+      "price_cagr_1y": 31,
+      "price_cagr_3y": 34,
+      "roe_3y_avg": 30,
+      "price_to_book": 17.81,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "CHOLAFIN",
+      "name": "Cholamandalam Investment & Finance Company Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/CHOLAFIN/consolidated/",
+      "price": 1655,
+      "market_cap_cr": 141195,
+      "pe": 27.0,
+      "book_value": 357,
+      "div_yield": 0.12,
+      "roce": 9.7,
+      "roe": 19.3,
+      "sales_growth_3y": 34,
+      "profit_growth_3y": 25,
+      "price_cagr_1y": 6,
+      "price_cagr_3y": 14,
+      "roe_3y_avg": 20,
+      "price_to_book": 4.64,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "CIPLA",
+      "name": "Cipla Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/CIPLA/consolidated/",
+      "price": 1438,
+      "market_cap_cr": 116160,
+      "pe": 30.5,
+      "book_value": 426,
+      "div_yield": 0.9,
+      "roce": 15.5,
+      "roe": 11.6,
+      "sales_growth_3y": 7,
+      "profit_growth_3y": 10,
+      "price_cagr_1y": -4,
+      "price_cagr_3y": 13,
+      "roe_3y_avg": 15,
+      "price_to_book": 3.38,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "COALINDIA",
+      "name": "Coal India Ltd",
+      "sector": "Energy",
+      "screener_url": "https://www.screener.in/company/COALINDIA/consolidated/",
+      "price": 435,
+      "market_cap_cr": 267925,
+      "pe": 8.62,
+      "book_value": 193,
+      "div_yield": 6.1,
+      "roce": 35.3,
+      "roe": 28.5,
+      "sales_growth_3y": 7,
+      "profit_growth_3y": -1,
+      "price_cagr_1y": 12,
+      "price_cagr_3y": 23,
+      "roe_3y_avg": 38,
+      "price_to_book": 2.25,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "COCHINSHIP",
+      "name": "Cochin Shipyard Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/COCHINSHIP/consolidated/",
+      "price": 1404,
+      "market_cap_cr": 36929,
+      "pe": 51.5,
+      "book_value": 223,
+      "div_yield": 0.69,
+      "roce": 16.0,
+      "roe": 12.5,
+      "sales_growth_3y": 29,
+      "profit_growth_3y": 40,
+      "price_cagr_1y": -25,
+      "price_cagr_3y": 62,
+      "roe_3y_avg": 15,
+      "price_to_book": 6.3,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "COFORGE",
+      "name": "Coforge Ltd",
+      "sector": "Information Technology",
+      "screener_url": "https://www.screener.in/company/COFORGE/consolidated/",
+      "price": 1488,
+      "market_cap_cr": 63990,
+      "pe": 39.0,
+      "book_value": 284,
+      "div_yield": 1.02,
+      "roce": 23.5,
+      "roe": 20.6,
+      "sales_growth_3y": 27,
+      "profit_growth_3y": 31,
+      "price_cagr_1y": -20,
+      "price_cagr_3y": 18,
+      "roe_3y_avg": 20,
+      "price_to_book": 5.24,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "COLPAL",
+      "name": "Colgate-Palmolive (India) Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "screener_url": "https://www.screener.in/company/COLPAL/consolidated/",
+      "price": 2087,
+      "market_cap_cr": 56774,
+      "pe": 131,
+      "book_value": 12.1,
+      "div_yield": 2.44,
+      "roce": 179,
+      "roe": 158,
+      "sales_growth_3y": 15,
+      "profit_growth_3y": 33,
+      "price_cagr_1y": -17,
+      "price_cagr_3y": 9,
+      "roe_3y_avg": 139,
+      "price_to_book": 172.48,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "CONCOR",
+      "name": "Container Corporation Of India Ltd",
+      "sector": "Services",
+      "screener_url": "https://www.screener.in/company/CONCOR/consolidated/",
+      "price": 478,
+      "market_cap_cr": 36371,
+      "pe": 29.3,
+      "book_value": 170,
+      "div_yield": 1.59,
+      "roce": 12.4,
+      "roe": 9.81,
+      "sales_growth_3y": 4,
+      "profit_growth_3y": 2,
+      "price_cagr_1y": -20,
+      "price_cagr_3y": -5,
+      "roe_3y_avg": 10,
+      "price_to_book": 2.81,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "COROMANDEL",
+      "name": "Coromandel International Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/COROMANDEL/consolidated/",
+      "price": 1914,
+      "market_cap_cr": 56463,
+      "pe": 28.1,
+      "book_value": 426,
+      "div_yield": 0.57,
+      "roce": 22.8,
+      "roe": 17.0,
+      "sales_growth_3y": 2,
+      "profit_growth_3y": 0,
+      "price_cagr_1y": -24,
+      "price_cagr_3y": 26,
+      "roe_3y_avg": 17,
+      "price_to_book": 4.49,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "CRISIL",
+      "name": "CRISIL Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/CRISIL/consolidated/",
+      "price": 4347,
+      "market_cap_cr": 31791,
+      "pe": 36.0,
+      "book_value": 447,
+      "div_yield": 0.58,
+      "roce": 32.6,
+      "roe": 24.5,
+      "sales_growth_3y": 10,
+      "profit_growth_3y": 7,
+      "price_cagr_1y": -22,
+      "price_cagr_3y": 4,
+      "roe_3y_avg": 27,
+      "price_to_book": 9.72,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "CUMMINSIND",
+      "name": "Cummins India Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/CUMMINSIND/consolidated/",
+      "price": 5401,
+      "market_cap_cr": 149667,
+      "pe": 64.3,
+      "book_value": 285,
+      "div_yield": 0.95,
+      "roce": 36.3,
+      "roe": 28.2,
+      "sales_growth_3y": 19,
+      "profit_growth_3y": 35,
+      "price_cagr_1y": 95,
+      "price_cagr_3y": 49,
+      "roe_3y_avg": 26,
+      "price_to_book": 18.95,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "DABUR",
+      "name": "Dabur India Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "screener_url": "https://www.screener.in/company/DABUR/consolidated/",
+      "price": 425,
+      "market_cap_cr": 75384,
+      "pe": 39.5,
+      "book_value": 64.4,
+      "div_yield": 1.88,
+      "roce": 20.4,
+      "roe": 17.2,
+      "sales_growth_3y": 5,
+      "profit_growth_3y": 4,
+      "price_cagr_1y": -13,
+      "price_cagr_3y": -8,
+      "roe_3y_avg": 18,
+      "price_to_book": 6.6,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "DALBHARAT",
+      "name": "Dalmia Bharat Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/DALBHARAT/consolidated/",
+      "price": 1722,
+      "market_cap_cr": 32299,
+      "pe": 29.9,
+      "book_value": 959,
+      "div_yield": 0.53,
+      "roce": 7.59,
+      "roe": 6.11,
+      "sales_growth_3y": 3,
+      "profit_growth_3y": -1,
+      "price_cagr_1y": -17,
+      "price_cagr_3y": -9,
+      "roe_3y_avg": 5,
+      "price_to_book": 1.8,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "DIVISLAB",
+      "name": "Divis Laboratories Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/DIVISLAB/consolidated/",
+      "price": 6625,
+      "market_cap_cr": 175873,
+      "pe": 67.1,
+      "book_value": 631,
+      "div_yield": 0.45,
+      "roce": 22.0,
+      "roe": 16.5,
+      "sales_growth_3y": 11,
+      "profit_growth_3y": 13,
+      "price_cagr_1y": 0,
+      "price_cagr_3y": 23,
+      "roe_3y_avg": 15,
+      "price_to_book": 10.5,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "DIXON",
+      "name": "Dixon Technologies (India) Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/DIXON/consolidated/",
+      "price": 12235,
+      "market_cap_cr": 74742,
+      "pe": 52.0,
+      "book_value": 769,
+      "div_yield": 0.07,
+      "roce": 42.0,
+      "roe": 37.4,
+      "sales_growth_3y": 59,
+      "profit_growth_3y": 77,
+      "price_cagr_1y": -15,
+      "price_cagr_3y": 39,
+      "roe_3y_avg": 34,
+      "price_to_book": 15.91,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "DLF",
+      "name": "DLF Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/DLF/consolidated/",
+      "price": 567,
+      "market_cap_cr": 140300,
+      "pe": 33.1,
+      "book_value": 184,
+      "div_yield": 1.06,
+      "roce": 6.34,
+      "roe": 9.62,
+      "sales_growth_3y": 13,
+      "profit_growth_3y": 28,
+      "price_cagr_1y": -20,
+      "price_cagr_3y": 6,
+      "roe_3y_avg": 9,
+      "price_to_book": 3.08,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "DMART",
+      "name": "Avenue Supermarts Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/DMART/consolidated/",
+      "price": 4402,
+      "market_cap_cr": 287089,
+      "pe": 96.6,
+      "book_value": 375,
+      "div_yield": 0.0,
+      "roce": 17.2,
+      "roe": 13.0,
+      "sales_growth_3y": 17,
+      "profit_growth_3y": 8,
+      "price_cagr_1y": 11,
+      "price_cagr_3y": 6,
+      "roe_3y_avg": 14,
+      "price_to_book": 11.74,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "DRREDDY",
+      "name": "Dr Reddys Laboratories Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/DRREDDY/consolidated/",
+      "price": 1328,
+      "market_cap_cr": 110878,
+      "pe": 26.4,
+      "book_value": 454,
+      "div_yield": 0.6,
+      "roce": 13.6,
+      "roe": 11.8,
+      "sales_growth_3y": 11,
+      "profit_growth_3y": -3,
+      "price_cagr_1y": -1,
+      "price_cagr_3y": 10,
+      "roe_3y_avg": 17,
+      "price_to_book": 2.93,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "EICHERMOT",
+      "name": "Eicher Motors Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/EICHERMOT/consolidated/",
+      "price": 7383,
+      "market_cap_cr": 202673,
+      "pe": 36.4,
+      "book_value": 915,
+      "div_yield": 1.11,
+      "roce": 30.5,
+      "roe": 24.0,
+      "sales_growth_3y": 17,
+      "profit_growth_3y": 24,
+      "price_cagr_1y": 30,
+      "price_cagr_3y": 33,
+      "roe_3y_avg": 24,
+      "price_to_book": 8.07,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "ENRIN",
+      "name": "Siemens Energy India Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/ENRIN/",
+      "price": 3719,
+      "market_cap_cr": 132434,
+      "pe": 98.2,
+      "book_value": 135,
+      "div_yield": 0.11,
+      "roce": 67.8,
+      "roe": 50.5,
+      "sales_growth_3y": null,
+      "profit_growth_3y": null,
+      "price_cagr_1y": null,
+      "price_cagr_3y": null,
+      "roe_3y_avg": null,
+      "price_to_book": 27.55,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ETERNAL",
+      "name": "Eternal Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/ETERNAL/consolidated/",
+      "price": 241,
+      "market_cap_cr": 232959,
+      "pe": 636,
+      "book_value": 32.1,
+      "div_yield": 0.0,
+      "roce": 2.97,
+      "roe": 1.19,
+      "sales_growth_3y": 97,
+      "profit_growth_3y": 33,
+      "price_cagr_1y": 1,
+      "price_cagr_3y": 55,
+      "roe_3y_avg": 1,
+      "price_to_book": 7.51,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "EXIDEIND",
+      "name": "Exide Industries Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/EXIDEIND/consolidated/",
+      "price": 359,
+      "market_cap_cr": 30515,
+      "pe": 35.4,
+      "book_value": 164,
+      "div_yield": 0.56,
+      "roce": 8.79,
+      "roe": 6.19,
+      "sales_growth_3y": 6,
+      "profit_growth_3y": 3,
+      "price_cagr_1y": 1,
+      "price_cagr_3y": 24,
+      "roe_3y_avg": 6,
+      "price_to_book": 2.19,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "FEDERALBNK",
+      "name": "Federal Bank Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/FEDERALBNK/consolidated/",
+      "price": 358,
+      "market_cap_cr": 88481,
+      "pe": 18.9,
+      "book_value": 162,
+      "div_yield": 0.34,
+      "roce": 6.39,
+      "roe": 11.6,
+      "sales_growth_3y": 19,
+      "profit_growth_3y": 11,
+      "price_cagr_1y": 74,
+      "price_cagr_3y": 38,
+      "roe_3y_avg": 13,
+      "price_to_book": 2.21,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "FORTIS",
+      "name": "Fortis Healthcare Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/FORTIS/consolidated/",
+      "price": 943,
+      "market_cap_cr": 71193,
+      "pe": 67.4,
+      "book_value": 131,
+      "div_yield": 0.11,
+      "roce": 13.4,
+      "roe": 11.2,
+      "sales_growth_3y": 13,
+      "profit_growth_3y": 27,
+      "price_cagr_1y": 11,
+      "price_cagr_3y": 41,
+      "roe_3y_avg": 10,
+      "price_to_book": 7.2,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "GAIL",
+      "name": "GAIL (India) Ltd",
+      "sector": "Energy",
+      "screener_url": "https://www.screener.in/company/GAIL/consolidated/",
+      "price": 175,
+      "market_cap_cr": 115334,
+      "pe": 15.2,
+      "book_value": 135,
+      "div_yield": 4.28,
+      "roce": 9.68,
+      "roe": 8.71,
+      "sales_growth_3y": -1,
+      "profit_growth_3y": 10,
+      "price_cagr_1y": -8,
+      "price_cagr_3y": 18,
+      "roe_3y_avg": 12,
+      "price_to_book": 1.3,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "GLENMARK",
+      "name": "Glenmark Pharmaceuticals Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/GLENMARK/consolidated/",
+      "price": 2181,
+      "market_cap_cr": 61501,
+      "pe": 20.8,
+      "book_value": 372,
+      "div_yield": 0.11,
+      "roce": 39.8,
+      "roe": 30.5,
+      "sales_growth_3y": 14,
+      "profit_growth_3y": 76,
+      "price_cagr_1y": 30,
+      "price_cagr_3y": 51,
+      "roe_3y_avg": -1,
+      "price_to_book": 5.86,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "GMRAIRPORT",
+      "name": "GMR Airports Ltd",
+      "sector": "Services",
+      "screener_url": "https://www.screener.in/company/GMRAIRPORT/consolidated/",
+      "price": 94.8,
+      "market_cap_cr": 100057,
+      "pe": null,
+      "book_value": -2.59,
+      "div_yield": 0.0,
+      "roce": 6.92,
+      "roe": null,
+      "sales_growth_3y": 31,
+      "profit_growth_3y": -12,
+      "price_cagr_1y": 6,
+      "price_cagr_3y": 29,
+      "roe_3y_avg": null,
+      "price_to_book": null,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "GODFRYPHLP",
+      "name": "Godfrey Phillips India Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "screener_url": "https://www.screener.in/company/GODFRYPHLP/consolidated/",
+      "price": 2245,
+      "market_cap_cr": 34999,
+      "pe": 22.9,
+      "book_value": 398,
+      "div_yield": 1.41,
+      "roce": 32.8,
+      "roe": 26.6,
+      "sales_growth_3y": 22,
+      "profit_growth_3y": 37,
+      "price_cagr_1y": -19,
+      "price_cagr_3y": 57,
+      "roe_3y_avg": 22,
+      "price_to_book": 5.64,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "GODREJCP",
+      "name": "Godrej Consumer Products Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "screener_url": "https://www.screener.in/company/GODREJCP/consolidated/",
+      "price": 1067,
+      "market_cap_cr": 109190,
+      "pe": 56.2,
+      "book_value": 119,
+      "div_yield": 1.87,
+      "roce": 19.2,
+      "roe": 15.2,
+      "sales_growth_3y": 5,
+      "profit_growth_3y": 2,
+      "price_cagr_1y": -15,
+      "price_cagr_3y": 5,
+      "roe_3y_avg": 13,
+      "price_to_book": 8.97,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "GODREJPROP",
+      "name": "Godrej Properties Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/GODREJPROP/consolidated/",
+      "price": 2046,
+      "market_cap_cr": 61643,
+      "pe": 33.0,
+      "book_value": 636,
+      "div_yield": 0.49,
+      "roce": 8.28,
+      "roe": 10.2,
+      "sales_growth_3y": 32,
+      "profit_growth_3y": 57,
+      "price_cagr_1y": -11,
+      "price_cagr_3y": 9,
+      "roe_3y_avg": 9,
+      "price_to_book": 3.22,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "GRASIM",
+      "name": "Grasim Industries Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/GRASIM/consolidated/",
+      "price": 3110,
+      "market_cap_cr": 211624,
+      "pe": 41.7,
+      "book_value": 1520,
+      "div_yield": 0.32,
+      "roce": 8.07,
+      "roe": 5.05,
+      "sales_growth_3y": 14,
+      "profit_growth_3y": -9,
+      "price_cagr_1y": 14,
+      "price_cagr_3y": 21,
+      "roe_3y_avg": 5,
+      "price_to_book": 2.05,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "GROWW",
+      "name": "Billionbrains Garage Ventures Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/GROWW/consolidated/",
+      "price": 203,
+      "market_cap_cr": 127393,
+      "pe": 61.2,
+      "book_value": 15.4,
+      "div_yield": 0.0,
+      "roce": 37.3,
+      "roe": 28.8,
+      "sales_growth_3y": 60,
+      "profit_growth_3y": 66,
+      "price_cagr_1y": null,
+      "price_cagr_3y": null,
+      "roe_3y_avg": 34,
+      "price_to_book": 13.18,
+      "categories": [
+        "emerging",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "GVT&D",
+      "name": "GE Vernova T&D India Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/GVT%26D/consolidated/",
+      "price": 4117,
+      "market_cap_cr": 105455,
+      "pe": 565,
+      "book_value": 41.9,
+      "div_yield": 0.24,
+      "roce": null,
+      "roe": 18.6,
+      "sales_growth_3y": null,
+      "profit_growth_3y": null,
+      "price_cagr_1y": 67,
+      "price_cagr_3y": 157,
+      "roe_3y_avg": null,
+      "price_to_book": 98.26,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "HAL",
+      "name": "Hindustan Aeronautics Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/HAL/consolidated/",
+      "price": 4475,
+      "market_cap_cr": 299277,
+      "pe": 32.8,
+      "book_value": 614,
+      "div_yield": 1.0,
+      "roce": 32.0,
+      "roe": 24.0,
+      "sales_growth_3y": 7,
+      "profit_growth_3y": 16,
+      "price_cagr_1y": -5,
+      "price_cagr_3y": 33,
+      "roe_3y_avg": 26,
+      "price_to_book": 7.29,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "HAVELLS",
+      "name": "Havells India Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/HAVELLS/consolidated/",
+      "price": 1140,
+      "market_cap_cr": 71526,
+      "pe": 42.3,
+      "book_value": 151,
+      "div_yield": 0.88,
+      "roce": 24.9,
+      "roe": 19.0,
+      "sales_growth_3y": 10,
+      "profit_growth_3y": 16,
+      "price_cagr_1y": -26,
+      "price_cagr_3y": -5,
+      "roe_3y_avg": 19,
+      "price_to_book": 7.55,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "HCLTECH",
+      "name": "HCL Technologies Ltd",
+      "sector": "Information Technology",
+      "screener_url": "https://www.screener.in/company/HCLTECH/consolidated/",
+      "price": 1204,
+      "market_cap_cr": 326698,
+      "pe": 18.0,
+      "book_value": 277,
+      "div_yield": 4.49,
+      "roce": 30.6,
+      "roe": 24.0,
+      "sales_growth_3y": 9,
+      "profit_growth_3y": 6,
+      "price_cagr_1y": -22,
+      "price_cagr_3y": 3,
+      "roe_3y_avg": 24,
+      "price_to_book": 4.35,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "HDFCAMC",
+      "name": "HDFC Asset Management Company Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/HDFCAMC/consolidated/",
+      "price": 2657,
+      "market_cap_cr": 113891,
+      "pe": 39.8,
+      "book_value": 215,
+      "div_yield": 2.05,
+      "roce": 42.9,
+      "roe": 32.9,
+      "sales_growth_3y": 23,
+      "profit_growth_3y": 26,
+      "price_cagr_1y": 6,
+      "price_cagr_3y": 40,
+      "roe_3y_avg": 32,
+      "price_to_book": 12.36,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "HDFCBANK",
+      "name": "HDFC Bank Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/HDFCBANK/consolidated/",
+      "price": 740,
+      "market_cap_cr": 1139594,
+      "pe": 14.4,
+      "book_value": 390,
+      "div_yield": 1.76,
+      "roce": 7.02,
+      "roe": 13.6,
+      "sales_growth_3y": 27,
+      "profit_growth_3y": 18,
+      "price_cagr_1y": -26,
+      "price_cagr_3y": -3,
+      "roe_3y_avg": 15,
+      "price_to_book": 1.9,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "HDFCLIFE",
+      "name": "HDFC Life Insurance Company Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/HDFCLIFE/consolidated/",
+      "price": 605,
+      "market_cap_cr": 130645,
+      "pe": 68.3,
+      "book_value": 82.3,
+      "div_yield": 0.35,
+      "roce": 10.3,
+      "roe": 11.3,
+      "sales_growth_3y": 12,
+      "profit_growth_3y": 12,
+      "price_cagr_1y": -19,
+      "price_cagr_3y": 3,
+      "roe_3y_avg": 11,
+      "price_to_book": 7.35,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "HEROMOTOCO",
+      "name": "Hero MotoCorp Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/HEROMOTOCO/consolidated/",
+      "price": 4968,
+      "market_cap_cr": 99406,
+      "pe": 17.1,
+      "book_value": 1080,
+      "div_yield": 3.7,
+      "roce": 35.8,
+      "roe": 28.5,
+      "sales_growth_3y": 12,
+      "profit_growth_3y": 29,
+      "price_cagr_1y": 15,
+      "price_cagr_3y": 21,
+      "roe_3y_avg": 25,
+      "price_to_book": 4.6,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "HINDALCO",
+      "name": "Hindalco Industries Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/HINDALCO/consolidated/",
+      "price": 1039,
+      "market_cap_cr": 233554,
+      "pe": 13.3,
+      "book_value": 608,
+      "div_yield": 0.48,
+      "roce": 13.7,
+      "roe": 13.5,
+      "sales_growth_3y": 7,
+      "profit_growth_3y": 20,
+      "price_cagr_1y": 59,
+      "price_cagr_3y": 36,
+      "roe_3y_avg": 13,
+      "price_to_book": 1.71,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "HINDPETRO",
+      "name": "Hindustan Petroleum Corporation Ltd",
+      "sector": "Energy",
+      "screener_url": "https://www.screener.in/company/HINDPETRO/consolidated/",
+      "price": 367,
+      "market_cap_cr": 78166,
+      "pe": 4.33,
+      "book_value": 308,
+      "div_yield": 2.82,
+      "roce": 22.2,
+      "roe": 30.9,
+      "sales_growth_3y": 0,
+      "profit_growth_3y": 66,
+      "price_cagr_1y": -10,
+      "price_cagr_3y": 27,
+      "roe_3y_avg": 28,
+      "price_to_book": 1.19,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "name": "Hindustan Unilever Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "screener_url": "https://www.screener.in/company/HINDUNILVR/consolidated/",
+      "price": 2170,
+      "market_cap_cr": 509961,
+      "pe": 33.5,
+      "book_value": 207,
+      "div_yield": 1.89,
+      "roce": 28.4,
+      "roe": 31.0,
+      "sales_growth_3y": 2,
+      "profit_growth_3y": 14,
+      "price_cagr_1y": -5,
+      "price_cagr_3y": -5,
+      "roe_3y_avg": 24,
+      "price_to_book": 10.48,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "HINDZINC",
+      "name": "Hindustan Zinc Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/HINDZINC/consolidated/",
+      "price": 624,
+      "market_cap_cr": 263639,
+      "pe": 19.1,
+      "book_value": 53.6,
+      "div_yield": 1.73,
+      "roce": 69.6,
+      "roe": 76.8,
+      "sales_growth_3y": 6,
+      "profit_growth_3y": 10,
+      "price_cagr_1y": 44,
+      "price_cagr_3y": 27,
+      "roe_3y_avg": 69,
+      "price_to_book": 11.64,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "HUDCO",
+      "name": "Housing & Urban Development Corporation Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/HUDCO/consolidated/",
+      "price": 214,
+      "market_cap_cr": 42841,
+      "pe": 10.6,
+      "book_value": 110,
+      "div_yield": 2.12,
+      "roce": 8.41,
+      "roe": 20.2,
+      "sales_growth_3y": 23,
+      "profit_growth_3y": 33,
+      "price_cagr_1y": -7,
+      "price_cagr_3y": 55,
+      "roe_3y_avg": 17,
+      "price_to_book": 1.95,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "HYUNDAI",
+      "name": "Hyundai Motor India Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/HYUNDAI/consolidated/",
+      "price": 1915,
+      "market_cap_cr": 155610,
+      "pe": 28.7,
+      "book_value": 246,
+      "div_yield": 1.07,
+      "roce": 38.4,
+      "roe": 29.9,
+      "sales_growth_3y": 5,
+      "profit_growth_3y": 5,
+      "price_cagr_1y": -10,
+      "price_cagr_3y": null,
+      "roe_3y_avg": 36,
+      "price_to_book": 7.78,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ICICIAMC",
+      "name": "ICICI Prudential Asset Management Co Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/ICICIAMC/consolidated/",
+      "price": 3224,
+      "market_cap_cr": 159329,
+      "pe": 54.2,
+      "book_value": null,
+      "div_yield": 0.46,
+      "roce": null,
+      "roe": null,
+      "sales_growth_3y": null,
+      "profit_growth_3y": null,
+      "price_cagr_1y": null,
+      "price_cagr_3y": null,
+      "roe_3y_avg": null,
+      "price_to_book": null,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ICICIBANK",
+      "name": "ICICI Bank Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/ICICIBANK/consolidated/",
+      "price": 1280,
+      "market_cap_cr": 917081,
+      "pe": 16.9,
+      "book_value": 503,
+      "div_yield": 0.86,
+      "roce": 7.2,
+      "roe": 16.1,
+      "sales_growth_3y": 17,
+      "profit_growth_3y": 17,
+      "price_cagr_1y": -11,
+      "price_cagr_3y": 11,
+      "roe_3y_avg": 17,
+      "price_to_book": 2.54,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ICICIGI",
+      "name": "ICICI Lombard General Insurance Company Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/ICICIGI/",
+      "price": 1768,
+      "market_cap_cr": 88229,
+      "pe": 34.2,
+      "book_value": 334,
+      "div_yield": 0.78,
+      "roce": 21.9,
+      "roe": 16.6,
+      "sales_growth_3y": 15,
+      "profit_growth_3y": 14,
+      "price_cagr_1y": -11,
+      "price_cagr_3y": 11,
+      "roe_3y_avg": 17,
+      "price_to_book": 5.29,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "IDEA",
+      "name": "Vodafone Idea Ltd",
+      "sector": "Telecommunication",
+      "screener_url": "https://www.screener.in/company/IDEA/consolidated/",
+      "price": 13.2,
+      "market_cap_cr": 143013,
+      "pe": null,
+      "book_value": -3.3,
+      "div_yield": 0.0,
+      "roce": -1.6,
+      "roe": null,
+      "sales_growth_3y": 2,
+      "profit_growth_3y": 6,
+      "price_cagr_1y": 79,
+      "price_cagr_3y": 19,
+      "roe_3y_avg": null,
+      "price_to_book": null,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "IDFCFIRSTB",
+      "name": "IDFC First Bank Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/IDFCFIRSTB/consolidated/",
+      "price": 85.8,
+      "market_cap_cr": 73950,
+      "pe": 32.1,
+      "book_value": 56.2,
+      "div_yield": 0.29,
+      "roce": 5.98,
+      "roe": 3.78,
+      "sales_growth_3y": 21,
+      "profit_growth_3y": -13,
+      "price_cagr_1y": 22,
+      "price_cagr_3y": 1,
+      "roe_3y_avg": 6,
+      "price_to_book": 1.53,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "INDHOTEL",
+      "name": "Indian Hotels Co Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/INDHOTEL/consolidated/",
+      "price": 668,
+      "market_cap_cr": 95043,
+      "pe": 50.2,
+      "book_value": 91.7,
+      "div_yield": 0.49,
+      "roce": 17.3,
+      "roe": 15.6,
+      "sales_growth_3y": 19,
+      "profit_growth_3y": 25,
+      "price_cagr_1y": -12,
+      "price_cagr_3y": 20,
+      "roe_3y_avg": 15,
+      "price_to_book": 7.28,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "INDIANB",
+      "name": "Indian Bank",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/INDIANB/consolidated/",
+      "price": 852,
+      "market_cap_cr": 114741,
+      "pe": 9.36,
+      "book_value": 594,
+      "div_yield": 1.91,
+      "roce": 6.32,
+      "roe": 16.2,
+      "sales_growth_3y": 14,
+      "profit_growth_3y": 30,
+      "price_cagr_1y": 53,
+      "price_cagr_3y": 37,
+      "roe_3y_avg": 16,
+      "price_to_book": 1.43,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "INDIGO",
+      "name": "Interglobe Aviation Ltd",
+      "sector": "Services",
+      "screener_url": "https://www.screener.in/company/INDIGO/consolidated/",
+      "price": 5124,
+      "market_cap_cr": 198070,
+      "pe": null,
+      "book_value": 180,
+      "div_yield": 0.2,
+      "roce": 7.12,
+      "roe": -12.2,
+      "sales_growth_3y": 16,
+      "profit_growth_3y": -11,
+      "price_cagr_1y": -12,
+      "price_cagr_3y": 25,
+      "roe_3y_avg": null,
+      "price_to_book": 28.47,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "INDUSINDBK",
+      "name": "IndusInd Bank Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/INDUSINDBK/consolidated/",
+      "price": 1010,
+      "market_cap_cr": 78580,
+      "pe": 88.4,
+      "book_value": 842,
+      "div_yield": 0.15,
+      "roce": 5.68,
+      "roe": 1.36,
+      "sales_growth_3y": 8,
+      "profit_growth_3y": -51,
+      "price_cagr_1y": 14,
+      "price_cagr_3y": -10,
+      "roe_3y_avg": 7,
+      "price_to_book": 1.2,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "INDUSTOWER",
+      "name": "Indus Towers Ltd",
+      "sector": "Telecommunication",
+      "screener_url": "https://www.screener.in/company/INDUSTOWER/consolidated/",
+      "price": 429,
+      "market_cap_cr": 113296,
+      "pe": 15.9,
+      "book_value": 150,
+      "div_yield": 0.0,
+      "roce": 19.5,
+      "roe": 19.8,
+      "sales_growth_3y": 5,
+      "profit_growth_3y": 50,
+      "price_cagr_1y": 7,
+      "price_cagr_3y": 44,
+      "roe_3y_avg": 25,
+      "price_to_book": 2.86,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "INFY",
+      "name": "Infosys Ltd",
+      "sector": "Information Technology",
+      "screener_url": "https://www.screener.in/company/INFY/consolidated/",
+      "price": 1070,
+      "market_cap_cr": 433958,
+      "pe": 14.5,
+      "book_value": 229,
+      "div_yield": 4.51,
+      "roce": 40.0,
+      "roe": 31.9,
+      "sales_growth_3y": 7,
+      "profit_growth_3y": 8,
+      "price_cagr_1y": -35,
+      "price_cagr_3y": -8,
+      "roe_3y_avg": 31,
+      "price_to_book": 4.67,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "IOC",
+      "name": "Indian Oil Corporation Ltd",
+      "sector": "Energy",
+      "screener_url": "https://www.screener.in/company/IOC/consolidated/",
+      "price": 142,
+      "market_cap_cr": 201101,
+      "pe": 4.78,
+      "book_value": 155,
+      "div_yield": 4.92,
+      "roce": 18.8,
+      "roe": 20.7,
+      "sales_growth_3y": -2,
+      "profit_growth_3y": 63,
+      "price_cagr_1y": -6,
+      "price_cagr_3y": 13,
+      "roe_3y_avg": 17,
+      "price_to_book": 0.92,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "IRCTC",
+      "name": "Indian Railway Catering & Tourism Corporation Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/IRCTC/consolidated/",
+      "price": 511,
+      "market_cap_cr": 40864,
+      "pe": 29.6,
+      "book_value": 53.9,
+      "div_yield": 1.66,
+      "roce": 46.1,
+      "roe": 34.6,
+      "sales_growth_3y": 14,
+      "profit_growth_3y": 12,
+      "price_cagr_1y": -34,
+      "price_cagr_3y": -8,
+      "roe_3y_avg": 37,
+      "price_to_book": 9.48,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "IREDA",
+      "name": "Indian Renewable Energy Development Agency Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/IREDA/consolidated/",
+      "price": 136,
+      "market_cap_cr": 38177,
+      "pe": 20.3,
+      "book_value": 46.0,
+      "div_yield": 0.44,
+      "roce": 9.37,
+      "roe": 18.0,
+      "sales_growth_3y": null,
+      "profit_growth_3y": null,
+      "price_cagr_1y": -16,
+      "price_cagr_3y": null,
+      "roe_3y_avg": null,
+      "price_to_book": 2.96,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "IRFC",
+      "name": "Indian Railway Finance Corporation Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/IRFC/",
+      "price": 88.8,
+      "market_cap_cr": 116101,
+      "pe": 16.6,
+      "book_value": 43.4,
+      "div_yield": 2.35,
+      "roce": 5.64,
+      "roe": 12.8,
+      "sales_growth_3y": 5,
+      "profit_growth_3y": 3,
+      "price_cagr_1y": -33,
+      "price_cagr_3y": 40,
+      "roe_3y_avg": 13,
+      "price_to_book": 2.05,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ITC",
+      "name": "ITC Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "screener_url": "https://www.screener.in/company/ITC/consolidated/",
+      "price": 289,
+      "market_cap_cr": 361850,
+      "pe": 17.3,
+      "book_value": 57.9,
+      "div_yield": 5.01,
+      "roce": 38.9,
+      "roe": 29.3,
+      "sales_growth_3y": 4,
+      "profit_growth_3y": 3,
+      "price_cagr_1y": -30,
+      "price_cagr_3y": -13,
+      "roe_3y_avg": 35,
+      "price_to_book": 4.99,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "JINDALSTEL",
+      "name": "Jindal Steel Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/JINDALSTEL/consolidated/",
+      "price": 1132,
+      "market_cap_cr": 115474,
+      "pe": 28.6,
+      "book_value": 499,
+      "div_yield": 0.18,
+      "roce": 9.7,
+      "roe": 8.22,
+      "sales_growth_3y": 0,
+      "profit_growth_3y": 1,
+      "price_cagr_1y": 27,
+      "price_cagr_3y": 26,
+      "roe_3y_avg": 10,
+      "price_to_book": 2.27,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "JIOFIN",
+      "name": "Jio Financial Services Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/JIOFIN/consolidated/",
+      "price": 234,
+      "market_cap_cr": 154599,
+      "pe": 101,
+      "book_value": 211,
+      "div_yield": 0.21,
+      "roce": 1.86,
+      "roe": 1.19,
+      "sales_growth_3y": 328,
+      "profit_growth_3y": 294,
+      "price_cagr_1y": -14,
+      "price_cagr_3y": null,
+      "roe_3y_avg": 1,
+      "price_to_book": 1.11,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "JSWENERGY",
+      "name": "JSW Energy Ltd",
+      "sector": "Utilities",
+      "screener_url": "https://www.screener.in/company/JSWENERGY/consolidated/",
+      "price": 560,
+      "market_cap_cr": 102583,
+      "pe": 51.2,
+      "book_value": 175,
+      "div_yield": 0.36,
+      "roce": 8.16,
+      "roe": 7.51,
+      "sales_growth_3y": 22,
+      "profit_growth_3y": 19,
+      "price_cagr_1y": 5,
+      "price_cagr_3y": 25,
+      "roe_3y_avg": 8,
+      "price_to_book": 3.2,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "JSWSTEEL",
+      "name": "JSW Steel Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/JSWSTEEL/consolidated/",
+      "price": 1289,
+      "market_cap_cr": 315329,
+      "pe": 34.6,
+      "book_value": 409,
+      "div_yield": 0.55,
+      "roce": 10.9,
+      "roe": 10.1,
+      "sales_growth_3y": 4,
+      "profit_growth_3y": 34,
+      "price_cagr_1y": 31,
+      "price_cagr_3y": 19,
+      "roe_3y_avg": 9,
+      "price_to_book": 3.15,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "JUBLFOOD",
+      "name": "Jubilant Foodworks Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/JUBLFOOD/consolidated/",
+      "price": 438,
+      "market_cap_cr": 28905,
+      "pe": 69.5,
+      "book_value": 34.7,
+      "div_yield": 0.27,
+      "roce": 14.6,
+      "roe": 18.9,
+      "sales_growth_3y": 23,
+      "profit_growth_3y": 5,
+      "price_cagr_1y": -35,
+      "price_cagr_3y": -2,
+      "roe_3y_avg": 14,
+      "price_to_book": 12.62,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "KALYANKJIL",
+      "name": "Kalyan Jewellers India Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/KALYANKJIL/consolidated/",
+      "price": 339,
+      "market_cap_cr": 34979,
+      "pe": 25.4,
+      "book_value": 61.1,
+      "div_yield": 0.44,
+      "roce": 20.5,
+      "roe": 24.8,
+      "sales_growth_3y": 36,
+      "profit_growth_3y": 44,
+      "price_cagr_1y": -37,
+      "price_cagr_3y": 46,
+      "roe_3y_avg": 19,
+      "price_to_book": 5.55,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "KEI",
+      "name": "KEI Industries Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/KEI/consolidated/",
+      "price": 5460,
+      "market_cap_cr": 52195,
+      "pe": 56.9,
+      "book_value": 697,
+      "div_yield": 0.08,
+      "roce": 20.1,
+      "roe": 14.8,
+      "sales_growth_3y": 19,
+      "profit_growth_3y": 24,
+      "price_cagr_1y": 45,
+      "price_cagr_3y": 34,
+      "roe_3y_avg": 16,
+      "price_to_book": 7.83,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "name": "Kotak Mahindra Bank Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/KOTAKBANK/consolidated/",
+      "price": 377,
+      "market_cap_cr": 375431,
+      "pe": 19.7,
+      "book_value": 182,
+      "div_yield": 0.13,
+      "roce": 6.93,
+      "roe": 11.2,
+      "sales_growth_3y": 18,
+      "profit_growth_3y": 8,
+      "price_cagr_1y": -9,
+      "price_cagr_3y": -1,
+      "roe_3y_avg": 14,
+      "price_to_book": 2.07,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "KPITTECH",
+      "name": "KPIT Technologies Ltd",
+      "sector": "Information Technology",
+      "screener_url": "https://www.screener.in/company/KPITTECH/consolidated/",
+      "price": 562,
+      "market_cap_cr": 15400,
+      "pe": 22.8,
+      "book_value": 129,
+      "div_yield": 1.51,
+      "roce": 26.3,
+      "roe": 21.0,
+      "sales_growth_3y": 24,
+      "profit_growth_3y": 21,
+      "price_cagr_1y": -56,
+      "price_cagr_3y": -19,
+      "roe_3y_avg": 27,
+      "price_to_book": 4.36,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "LAURUSLABS",
+      "name": "Laurus Labs Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/LAURUSLABS/consolidated/",
+      "price": 1351,
+      "market_cap_cr": 72935,
+      "pe": 82.1,
+      "book_value": 98.2,
+      "div_yield": 0.15,
+      "roce": 17.7,
+      "roe": 18.2,
+      "sales_growth_3y": 4,
+      "profit_growth_3y": 4,
+      "price_cagr_1y": 129,
+      "price_cagr_3y": 63,
+      "roe_3y_avg": 10,
+      "price_to_book": 13.76,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "LENSKART",
+      "name": "Lenskart Solutions Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/LENSKART/consolidated/",
+      "price": 513,
+      "market_cap_cr": 89078,
+      "pe": 177,
+      "book_value": 50.3,
+      "div_yield": 0.0,
+      "roce": 8.44,
+      "roe": 6.86,
+      "sales_growth_3y": 33,
+      "profit_growth_3y": 115,
+      "price_cagr_1y": null,
+      "price_cagr_3y": null,
+      "roe_3y_avg": 4,
+      "price_to_book": 10.2,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "LGEINDIA",
+      "name": "LG Electronics India Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/LGEINDIA/",
+      "price": 1524,
+      "market_cap_cr": 103448,
+      "pe": 61.4,
+      "book_value": 113,
+      "div_yield": 0.0,
+      "roce": 32.2,
+      "roe": 24.7,
+      "sales_growth_3y": 7,
+      "profit_growth_3y": 8,
+      "price_cagr_1y": null,
+      "price_cagr_3y": null,
+      "roe_3y_avg": 34,
+      "price_to_book": 13.49,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "LICHSGFIN",
+      "name": "LIC Housing Finance Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/LICHSGFIN/consolidated/",
+      "price": 548,
+      "market_cap_cr": 30132,
+      "pe": 5.35,
+      "book_value": 753,
+      "div_yield": 1.82,
+      "roce": 8.59,
+      "roe": 14.4,
+      "sales_growth_3y": 8,
+      "profit_growth_3y": 25,
+      "price_cagr_1y": -8,
+      "price_cagr_3y": 13,
+      "roe_3y_avg": 15,
+      "price_to_book": 0.73,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "LODHA",
+      "name": "Lodha Developers Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/LODHA/consolidated/",
+      "price": 955,
+      "market_cap_cr": 95438,
+      "pe": 27.8,
+      "book_value": 233,
+      "div_yield": 0.44,
+      "roce": 16.6,
+      "roe": 15.8,
+      "sales_growth_3y": 21,
+      "profit_growth_3y": 57,
+      "price_cagr_1y": -31,
+      "price_cagr_3y": 12,
+      "roe_3y_avg": 14,
+      "price_to_book": 4.1,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "LT",
+      "name": "Larsen & Toubro Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/LT/consolidated/",
+      "price": 3894,
+      "market_cap_cr": 535675,
+      "pe": 32.6,
+      "book_value": 794,
+      "div_yield": 0.97,
+      "roce": 14.6,
+      "roe": 15.9,
+      "sales_growth_3y": 16,
+      "profit_growth_3y": 17,
+      "price_cagr_1y": 5,
+      "price_cagr_3y": 18,
+      "roe_3y_avg": 16,
+      "price_to_book": 4.9,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "LTF",
+      "name": "L&T Finance Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/LTF/consolidated/",
+      "price": 310,
+      "market_cap_cr": 77688,
+      "pe": 24.3,
+      "book_value": 112,
+      "div_yield": 0.89,
+      "roce": 8.4,
+      "roe": 11.2,
+      "sales_growth_3y": 12,
+      "profit_growth_3y": 256,
+      "price_cagr_1y": 53,
+      "price_cagr_3y": 33,
+      "roe_3y_avg": 11,
+      "price_to_book": 2.77,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "LTM",
+      "name": "LTM Ltd",
+      "sector": "Information Technology",
+      "screener_url": "https://www.screener.in/company/LTM/consolidated/",
+      "price": 4046,
+      "market_cap_cr": 120020,
+      "pe": 22.2,
+      "book_value": 810,
+      "div_yield": 1.83,
+      "roce": 29.6,
+      "roe": 23.1,
+      "sales_growth_3y": 8,
+      "profit_growth_3y": 7,
+      "price_cagr_1y": -14,
+      "price_cagr_3y": -5,
+      "roe_3y_avg": 23,
+      "price_to_book": 5.0,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "LUPIN",
+      "name": "Lupin Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/LUPIN/consolidated/",
+      "price": 2278,
+      "market_cap_cr": 104130,
+      "pe": 18.1,
+      "book_value": 491,
+      "div_yield": 0.53,
+      "roce": 30.3,
+      "roe": 29.1,
+      "sales_growth_3y": 19,
+      "profit_growth_3y": 141,
+      "price_cagr_1y": 13,
+      "price_cagr_3y": 40,
+      "roe_3y_avg": 22,
+      "price_to_book": 4.64,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "M&M",
+      "name": "Mahindra & Mahindra Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/M%26M/consolidated/",
+      "price": 3214,
+      "market_cap_cr": 399515,
+      "pe": 23.1,
+      "book_value": 749,
+      "div_yield": 1.0,
+      "roce": 15.1,
+      "roe": 20.3,
+      "sales_growth_3y": 18,
+      "profit_growth_3y": 23,
+      "price_cagr_1y": 2,
+      "price_cagr_3y": 31,
+      "roe_3y_avg": 19,
+      "price_to_book": 4.29,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "M&MFIN",
+      "name": "Mahindra & Mahindra Financial Services Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/M%26MFIN/consolidated/",
+      "price": 387,
+      "market_cap_cr": 53751,
+      "pe": 16.0,
+      "book_value": 192,
+      "div_yield": 1.96,
+      "roce": 8.72,
+      "roe": 12.3,
+      "sales_growth_3y": 18,
+      "profit_growth_3y": 12,
+      "price_cagr_1y": 48,
+      "price_cagr_3y": 9,
+      "roe_3y_avg": 11,
+      "price_to_book": 2.02,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "MAHABANK",
+      "name": "Bank of Maharashtra",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/MAHABANK/consolidated/",
+      "price": 82.6,
+      "market_cap_cr": 63501,
+      "pe": 8.43,
+      "book_value": 46.4,
+      "div_yield": 2.66,
+      "roce": 6.03,
+      "roe": 22.6,
+      "sales_growth_3y": 23,
+      "profit_growth_3y": 39,
+      "price_cagr_1y": 47,
+      "price_cagr_3y": 38,
+      "roe_3y_avg": 23,
+      "price_to_book": 1.78,
+      "categories": [
+        "emerging"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "MANKIND",
+      "name": "Mankind Pharma Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/MANKIND/consolidated/",
+      "price": 2393,
+      "market_cap_cr": 98813,
+      "pe": 49.2,
+      "book_value": 395,
+      "div_yield": 0.04,
+      "roce": 13.5,
+      "roe": 13.1,
+      "sales_growth_3y": 18,
+      "profit_growth_3y": 17,
+      "price_cagr_1y": 0,
+      "price_cagr_3y": 12,
+      "roe_3y_avg": 16,
+      "price_to_book": 6.06,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "MARICO",
+      "name": "Marico Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "screener_url": "https://www.screener.in/company/MARICO/consolidated/",
+      "price": 817,
+      "market_cap_cr": 106084,
+      "pe": 60.2,
+      "book_value": 32,
+      "div_yield": 0.49,
+      "roce": 47.2,
+      "roe": 43.0,
+      "sales_growth_3y": 12,
+      "profit_growth_3y": 11,
+      "price_cagr_1y": 18,
+      "price_cagr_3y": 15,
+      "roe_3y_avg": 41,
+      "price_to_book": 25.53,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "MARUTI",
+      "name": "Maruti Suzuki India Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/MARUTI/consolidated/",
+      "price": 13073,
+      "market_cap_cr": 411109,
+      "pe": 28.0,
+      "book_value": 3408,
+      "div_yield": 1.03,
+      "roce": 19.0,
+      "roe": 14.4,
+      "sales_growth_3y": 11,
+      "profit_growth_3y": 12,
+      "price_cagr_1y": 4,
+      "price_cagr_3y": 11,
+      "roe_3y_avg": 16,
+      "price_to_book": 3.84,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "MAXHEALTH",
+      "name": "Max Healthcare Institute Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/MAXHEALTH/consolidated/",
+      "price": 1013,
+      "market_cap_cr": 98614,
+      "pe": 67.6,
+      "book_value": 103,
+      "div_yield": 0.15,
+      "roce": 14.9,
+      "roe": 12.7,
+      "sales_growth_3y": 21,
+      "profit_growth_3y": 23,
+      "price_cagr_1y": -12,
+      "price_cagr_3y": 29,
+      "roe_3y_avg": 14,
+      "price_to_book": 9.83,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "MAZDOCK",
+      "name": "Mazagon Dock Shipbuilders Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/MAZDOCK/consolidated/",
+      "price": 2354,
+      "market_cap_cr": 94960,
+      "pe": 36.8,
+      "book_value": 242,
+      "div_yield": 0.74,
+      "roce": 36.0,
+      "roe": 29.2,
+      "sales_growth_3y": 18,
+      "profit_growth_3y": 32,
+      "price_cagr_1y": -23,
+      "price_cagr_3y": 40,
+      "roe_3y_avg": 32,
+      "price_to_book": 9.73,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "MCX",
+      "name": "Multi Commodity Exchange of India Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/MCX/consolidated/",
+      "price": 2771,
+      "market_cap_cr": 70651,
+      "pe": 53.1,
+      "book_value": 112,
+      "div_yield": 0.22,
+      "roce": 71.4,
+      "roe": 56.3,
+      "sales_growth_3y": 65,
+      "profit_growth_3y": 108,
+      "price_cagr_1y": 72,
+      "price_cagr_3y": 105,
+      "roe_3y_avg": 36,
+      "price_to_book": 24.74,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "MFSL",
+      "name": "Max Financial Services Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/MFSL/consolidated/",
+      "price": 1741,
+      "market_cap_cr": 60095,
+      "pe": 723,
+      "book_value": 153,
+      "div_yield": 0.0,
+      "roce": 2.95,
+      "roe": 1.57,
+      "sales_growth_3y": 15,
+      "profit_growth_3y": -40,
+      "price_cagr_1y": 17,
+      "price_cagr_3y": 36,
+      "roe_3y_avg": 6,
+      "price_to_book": 11.38,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "MOTHERSON",
+      "name": "Samvardhana Motherson International Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/MOTHERSON/consolidated/",
+      "price": 148,
+      "market_cap_cr": 155995,
+      "pe": 37.7,
+      "book_value": 38.8,
+      "div_yield": 0.41,
+      "roce": 13.1,
+      "roe": 10.9,
+      "sales_growth_3y": 17,
+      "profit_growth_3y": 39,
+      "price_cagr_1y": 45,
+      "price_cagr_3y": 39,
+      "roe_3y_avg": 12,
+      "price_to_book": 3.81,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "MOTILALOFS",
+      "name": "Motilal Oswal Financial Services Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/MOTILALOFS/consolidated/",
+      "price": 979,
+      "market_cap_cr": 58971,
+      "pe": 31.7,
+      "book_value": 214,
+      "div_yield": 0.61,
+      "roce": 12.7,
+      "roe": 15.5,
+      "sales_growth_3y": 31,
+      "profit_growth_3y": 26,
+      "price_cagr_1y": 5,
+      "price_cagr_3y": 74,
+      "roe_3y_avg": 23,
+      "price_to_book": 4.57,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "MPHASIS",
+      "name": "Mphasis Ltd",
+      "sector": "Information Technology",
+      "screener_url": "https://www.screener.in/company/MPHASIS/consolidated/",
+      "price": 2245,
+      "market_cap_cr": 42875,
+      "pe": 22.7,
+      "book_value": 563,
+      "div_yield": 2.76,
+      "roce": 22.8,
+      "roe": 18.5,
+      "sales_growth_3y": 5,
+      "profit_growth_3y": 5,
+      "price_cagr_1y": -22,
+      "price_cagr_3y": 6,
+      "roe_3y_avg": 18,
+      "price_to_book": 3.99,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "MRF",
+      "name": "MRF Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/MRF/consolidated/",
+      "price": 124715,
+      "market_cap_cr": 52900,
+      "pe": 21.4,
+      "book_value": 49455,
+      "div_yield": 0.19,
+      "roce": 15.7,
+      "roe": 12.5,
+      "sales_growth_3y": 11,
+      "profit_growth_3y": 52,
+      "price_cagr_1y": -8,
+      "price_cagr_3y": 9,
+      "roe_3y_avg": 12,
+      "price_to_book": 2.52,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "MUTHOOTFIN",
+      "name": "Muthoot Finance Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/MUTHOOTFIN/consolidated/",
+      "price": 3129,
+      "market_cap_cr": 125636,
+      "pe": 11.9,
+      "book_value": 975,
+      "div_yield": 0.96,
+      "roce": 15.8,
+      "roe": 30.9,
+      "sales_growth_3y": 38,
+      "profit_growth_3y": 43,
+      "price_cagr_1y": 19,
+      "price_cagr_3y": 34,
+      "roe_3y_avg": 24,
+      "price_to_book": 3.21,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "NATIONALUM",
+      "name": "National Aluminium Company Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/NATIONALUM/consolidated/",
+      "price": 332,
+      "market_cap_cr": 61004,
+      "pe": 10.5,
+      "book_value": 118,
+      "div_yield": 3.16,
+      "roce": 39.6,
+      "roe": 29.4,
+      "sales_growth_3y": 8,
+      "profit_growth_3y": 59,
+      "price_cagr_1y": 74,
+      "price_cagr_3y": 59,
+      "roe_3y_avg": 26,
+      "price_to_book": 2.81,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "NAUKRI",
+      "name": "Info Edge (India) Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/NAUKRI/consolidated/",
+      "price": 1187,
+      "market_cap_cr": 76984,
+      "pe": 54.1,
+      "book_value": 585,
+      "div_yield": 0.71,
+      "roce": 5.43,
+      "roe": 3.91,
+      "sales_growth_3y": 12,
+      "profit_growth_3y": 91,
+      "price_cagr_1y": -13,
+      "price_cagr_3y": 8,
+      "roe_3y_avg": 3,
+      "price_to_book": 2.03,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "NESTLEIND",
+      "name": "Nestle India Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "screener_url": "https://www.screener.in/company/NESTLEIND/consolidated/",
+      "price": 1423,
+      "market_cap_cr": 274418,
+      "pe": 80.6,
+      "book_value": 26.7,
+      "div_yield": 0.84,
+      "roce": 85.4,
+      "roe": 74.3,
+      "sales_growth_3y": null,
+      "profit_growth_3y": null,
+      "price_cagr_1y": 18,
+      "price_cagr_3y": 10,
+      "roe_3y_avg": 90,
+      "price_to_book": 53.3,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "NHPC",
+      "name": "NHPC Ltd",
+      "sector": "Utilities",
+      "screener_url": "https://www.screener.in/company/NHPC/consolidated/",
+      "price": 79.5,
+      "market_cap_cr": 79818,
+      "pe": 21.2,
+      "book_value": 41.2,
+      "div_yield": 2.4,
+      "roce": 5.73,
+      "roe": 9.29,
+      "sales_growth_3y": 3,
+      "profit_growth_3y": -1,
+      "price_cagr_1y": -11,
+      "price_cagr_3y": 20,
+      "roe_3y_avg": 9,
+      "price_to_book": 1.93,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "NMDC",
+      "name": "NMDC Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/NMDC/consolidated/",
+      "price": 88.8,
+      "market_cap_cr": 78045,
+      "pe": 11.3,
+      "book_value": 36.9,
+      "div_yield": 3.68,
+      "roce": 29.6,
+      "roe": 23.6,
+      "sales_growth_3y": -3,
+      "profit_growth_3y": -11,
+      "price_cagr_1y": 38,
+      "price_cagr_3y": 35,
+      "roe_3y_avg": 24,
+      "price_to_book": 2.41,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "NTPC",
+      "name": "NTPC Ltd",
+      "sector": "Utilities",
+      "screener_url": "https://www.screener.in/company/NTPC/consolidated/",
+      "price": 353,
+      "market_cap_cr": 342632,
+      "pe": 12.7,
+      "book_value": 210,
+      "div_yield": 2.35,
+      "roce": 8.33,
+      "roe": 14.0,
+      "sales_growth_3y": 2,
+      "profit_growth_3y": 17,
+      "price_cagr_1y": 3,
+      "price_cagr_3y": 23,
+      "roe_3y_avg": 14,
+      "price_to_book": 1.68,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "NYKAA",
+      "name": "FSN E-Commerce Ventures Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/NYKAA/consolidated/",
+      "price": 262,
+      "market_cap_cr": 75110,
+      "pe": 359,
+      "book_value": 5.02,
+      "div_yield": 0.0,
+      "roce": 17.2,
+      "roe": 15.3,
+      "sales_growth_3y": 25,
+      "profit_growth_3y": 122,
+      "price_cagr_1y": 33,
+      "price_cagr_3y": 24,
+      "roe_3y_avg": 8,
+      "price_to_book": 52.19,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "OBEROIRLTY",
+      "name": "Oberoi Realty Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/OBEROIRLTY/consolidated/",
+      "price": 1634,
+      "market_cap_cr": 59424,
+      "pe": 23.5,
+      "book_value": 493,
+      "div_yield": 0.49,
+      "roce": 17.8,
+      "roe": 15.0,
+      "sales_growth_3y": 13,
+      "profit_growth_3y": 10,
+      "price_cagr_1y": -9,
+      "price_cagr_3y": 18,
+      "roe_3y_avg": 14,
+      "price_to_book": 3.31,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "OFSS",
+      "name": "Oracle Financial Services Software Ltd",
+      "sector": "Information Technology",
+      "screener_url": "https://www.screener.in/company/OFSS/consolidated/",
+      "price": 11100,
+      "market_cap_cr": 96650,
+      "pe": 36.6,
+      "book_value": 899,
+      "div_yield": 3.61,
+      "roce": 45.3,
+      "roe": 32.6,
+      "sales_growth_3y": 10,
+      "profit_growth_3y": 13,
+      "price_cagr_1y": 23,
+      "price_cagr_3y": 44,
+      "roe_3y_avg": 30,
+      "price_to_book": 12.35,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "OIL",
+      "name": "Oil India Ltd",
+      "sector": "Energy",
+      "screener_url": "https://www.screener.in/company/OIL/consolidated/",
+      "price": 488,
+      "market_cap_cr": 79386,
+      "pe": 12.0,
+      "book_value": 357,
+      "div_yield": 2.36,
+      "roce": 11.6,
+      "roe": 12.3,
+      "sales_growth_3y": -2,
+      "profit_growth_3y": -9,
+      "price_cagr_1y": 15,
+      "price_cagr_3y": 42,
+      "roe_3y_avg": 14,
+      "price_to_book": 1.37,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ONGC",
+      "name": "Oil & Natural Gas Corpn Ltd",
+      "sector": "Energy",
+      "screener_url": "https://www.screener.in/company/ONGC/consolidated/",
+      "price": 248,
+      "market_cap_cr": 312117,
+      "pe": 7.47,
+      "book_value": 296,
+      "div_yield": 4.92,
+      "roce": 14.2,
+      "roe": 11.7,
+      "sales_growth_3y": 2,
+      "profit_growth_3y": 1,
+      "price_cagr_1y": 2,
+      "price_cagr_3y": 14,
+      "roe_3y_avg": 13,
+      "price_to_book": 0.84,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "PAGEIND",
+      "name": "Page Industries Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/PAGEIND/",
+      "price": 37955,
+      "market_cap_cr": 42335,
+      "pe": 53.6,
+      "book_value": 1347,
+      "div_yield": 2.37,
+      "roce": 64.4,
+      "roe": 54.3,
+      "sales_growth_3y": 4,
+      "profit_growth_3y": 11,
+      "price_cagr_1y": -19,
+      "price_cagr_3y": 0,
+      "roe_3y_avg": 47,
+      "price_to_book": 28.18,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "PATANJALI",
+      "name": "Patanjali Foods Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "screener_url": "https://www.screener.in/company/PATANJALI/consolidated/",
+      "price": 341,
+      "market_cap_cr": 37099,
+      "pe": 18.4,
+      "book_value": 120,
+      "div_yield": 1.03,
+      "roce": 12.0,
+      "roe": 16.5,
+      "sales_growth_3y": null,
+      "profit_growth_3y": null,
+      "price_cagr_1y": -46,
+      "price_cagr_3y": -8,
+      "roe_3y_avg": null,
+      "price_to_book": 2.84,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "PAYTM",
+      "name": "One 97 Communications Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/PAYTM/consolidated/",
+      "price": 1277,
+      "market_cap_cr": 81831,
+      "pe": 101,
+      "book_value": 250,
+      "div_yield": 0.0,
+      "roce": 5.01,
+      "roe": 4.7,
+      "sales_growth_3y": 2,
+      "profit_growth_3y": 34,
+      "price_cagr_1y": 24,
+      "price_cagr_3y": 15,
+      "roe_3y_avg": -4,
+      "price_to_book": 5.11,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "PERSISTENT",
+      "name": "Persistent Systems Ltd",
+      "sector": "Information Technology",
+      "screener_url": "https://www.screener.in/company/PERSISTENT/consolidated/",
+      "price": 5016,
+      "market_cap_cr": 79136,
+      "pe": 41.0,
+      "book_value": 497,
+      "div_yield": 0.7,
+      "roce": 34.4,
+      "roe": 27.3,
+      "sales_growth_3y": 21,
+      "profit_growth_3y": 28,
+      "price_cagr_1y": -17,
+      "price_cagr_3y": 26,
+      "roe_3y_avg": 25,
+      "price_to_book": 10.09,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "PFC",
+      "name": "Power Finance Corporation Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/PFC/consolidated/",
+      "price": 437,
+      "market_cap_cr": 144247,
+      "pe": 5.57,
+      "book_value": 403,
+      "div_yield": 3.61,
+      "roce": 9.71,
+      "roe": 20.7,
+      "sales_growth_3y": 14,
+      "profit_growth_3y": 18,
+      "price_cagr_1y": 6,
+      "price_cagr_3y": 40,
+      "roe_3y_avg": 21,
+      "price_to_book": 1.08,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "PHOENIXLTD",
+      "name": "Phoenix Mills Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/PHOENIXLTD/consolidated/",
+      "price": 2048,
+      "market_cap_cr": 73230,
+      "pe": 59.0,
+      "book_value": 307,
+      "div_yield": 0.12,
+      "roce": 12.8,
+      "roe": 11.6,
+      "sales_growth_3y": 19,
+      "profit_growth_3y": 14,
+      "price_cagr_1y": 33,
+      "price_cagr_3y": 38,
+      "roe_3y_avg": 11,
+      "price_to_book": 6.67,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "PIDILITIND",
+      "name": "Pidilite Industries Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/PIDILITIND/consolidated/",
+      "price": 1598,
+      "market_cap_cr": 162691,
+      "pe": 66.1,
+      "book_value": 106,
+      "div_yield": 0.72,
+      "roce": 31.0,
+      "roe": 23.9,
+      "sales_growth_3y": 7,
+      "profit_growth_3y": 25,
+      "price_cagr_1y": 7,
+      "price_cagr_3y": 7,
+      "roe_3y_avg": 23,
+      "price_to_book": 15.08,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "PIIND",
+      "name": "P I Industries Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/PIIND/consolidated/",
+      "price": 2849,
+      "market_cap_cr": 43218,
+      "pe": 34.8,
+      "book_value": 740,
+      "div_yield": 0.57,
+      "roce": 14.7,
+      "roe": 11.6,
+      "sales_growth_3y": 1,
+      "profit_growth_3y": 0,
+      "price_cagr_1y": -31,
+      "price_cagr_3y": -10,
+      "roe_3y_avg": 16,
+      "price_to_book": 3.85,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "PNB",
+      "name": "Punjab National Bank",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/PNB/consolidated/",
+      "price": 105,
+      "market_cap_cr": 121147,
+      "pe": 6.59,
+      "book_value": 130,
+      "div_yield": 2.85,
+      "roce": 6.13,
+      "roe": 13.0,
+      "sales_growth_3y": 15,
+      "profit_growth_3y": 76,
+      "price_cagr_1y": -4,
+      "price_cagr_3y": 21,
+      "roe_3y_avg": 12,
+      "price_to_book": 0.81,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "POLICYBZR",
+      "name": "PB Fintech Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/POLICYBZR/consolidated/",
+      "price": 1580,
+      "market_cap_cr": 73124,
+      "pe": 109,
+      "book_value": 158,
+      "div_yield": 0.0,
+      "roce": 10.3,
+      "roe": 9.75,
+      "sales_growth_3y": 38,
+      "profit_growth_3y": 50,
+      "price_cagr_1y": -12,
+      "price_cagr_3y": 29,
+      "roe_3y_avg": 6,
+      "price_to_book": 10.0,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "POLYCAB",
+      "name": "Polycab India Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/POLYCAB/consolidated/",
+      "price": 9839,
+      "market_cap_cr": 148207,
+      "pe": 58.9,
+      "book_value": 798,
+      "div_yield": 0.47,
+      "roce": 33.2,
+      "roe": 23.0,
+      "sales_growth_3y": 27,
+      "profit_growth_3y": 27,
+      "price_cagr_1y": 56,
+      "price_cagr_3y": 43,
+      "roe_3y_avg": 22,
+      "price_to_book": 12.33,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "POWERGRID",
+      "name": "Power Grid Corporation of India Ltd",
+      "sector": "Utilities",
+      "screener_url": "https://www.screener.in/company/POWERGRID/consolidated/",
+      "price": 283,
+      "market_cap_cr": 263300,
+      "pe": 16.5,
+      "book_value": 108,
+      "div_yield": 3.18,
+      "roce": 9.74,
+      "roe": 16.5,
+      "sales_growth_3y": 1,
+      "profit_growth_3y": 1,
+      "price_cagr_1y": -5,
+      "price_cagr_3y": 16,
+      "roe_3y_avg": 17,
+      "price_to_book": 2.62,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "POWERINDIA",
+      "name": "Hitachi Energy India Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/POWERINDIA/",
+      "price": 35555,
+      "market_cap_cr": 158477,
+      "pe": 180,
+      "book_value": 1028,
+      "div_yield": 0.02,
+      "roce": 19.4,
+      "roe": 13.8,
+      "sales_growth_3y": 9,
+      "profit_growth_3y": 29,
+      "price_cagr_1y": 107,
+      "price_cagr_3y": 111,
+      "roe_3y_avg": 12,
+      "price_to_book": 34.58,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "PREMIERENE",
+      "name": "Premier Energies Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/PREMIERENE/consolidated/",
+      "price": 1017,
+      "market_cap_cr": 46158,
+      "pe": 30.6,
+      "book_value": 95.1,
+      "div_yield": 0.1,
+      "roce": 33.3,
+      "roe": 42.4,
+      "sales_growth_3y": 76,
+      "profit_growth_3y": 370,
+      "price_cagr_1y": -2,
+      "price_cagr_3y": null,
+      "roe_3y_avg": 46,
+      "price_to_book": 10.69,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "PRESTIGE",
+      "name": "Prestige Estates Projects Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/PRESTIGE/consolidated/",
+      "price": 1357,
+      "market_cap_cr": 58528,
+      "pe": 49.0,
+      "book_value": 378,
+      "div_yield": 0.13,
+      "roce": 10.4,
+      "roe": 7.54,
+      "sales_growth_3y": 15,
+      "profit_growth_3y": 18,
+      "price_cagr_1y": -14,
+      "price_cagr_3y": 38,
+      "roe_3y_avg": 6,
+      "price_to_book": 3.59,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "RADICO",
+      "name": "Radico Khaitan Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "screener_url": "https://www.screener.in/company/RADICO/consolidated/",
+      "price": 3579,
+      "market_cap_cr": 47957,
+      "pe": 77.7,
+      "book_value": 248,
+      "div_yield": 0.25,
+      "roce": 24.2,
+      "roe": 20.3,
+      "sales_growth_3y": 25,
+      "profit_growth_3y": 41,
+      "price_cagr_1y": 37,
+      "price_cagr_3y": 44,
+      "roe_3y_avg": 15,
+      "price_to_book": 14.43,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "RECLTD",
+      "name": "REC Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/RECLTD/consolidated/",
+      "price": 360,
+      "market_cap_cr": 94730,
+      "pe": 5.8,
+      "book_value": 323,
+      "div_yield": 5.0,
+      "roce": 9.71,
+      "roe": 20.0,
+      "sales_growth_3y": 15,
+      "profit_growth_3y": 13,
+      "price_cagr_1y": -8,
+      "price_cagr_3y": 40,
+      "roe_3y_avg": 21,
+      "price_to_book": 1.11,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "RELIANCE",
+      "name": "Reliance Industries Ltd",
+      "sector": "Energy",
+      "screener_url": "https://www.screener.in/company/RELIANCE/consolidated/",
+      "price": 1278,
+      "market_cap_cr": 1729458,
+      "pe": 23.1,
+      "book_value": 668,
+      "div_yield": 0.47,
+      "roce": 10.3,
+      "roe": 8.91,
+      "sales_growth_3y": 6,
+      "profit_growth_3y": 5,
+      "price_cagr_1y": -8,
+      "price_cagr_3y": 1,
+      "roe_3y_avg": 9,
+      "price_to_book": 1.91,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "RVNL",
+      "name": "Rail Vikas Nigam Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/RVNL/consolidated/",
+      "price": 228,
+      "market_cap_cr": 47559,
+      "pe": 54.4,
+      "book_value": 47.1,
+      "div_yield": 0.75,
+      "roce": 10.8,
+      "roe": 9.02,
+      "sales_growth_3y": 0,
+      "profit_growth_3y": -13,
+      "price_cagr_1y": -39,
+      "price_cagr_3y": 25,
+      "roe_3y_avg": 14,
+      "price_to_book": 4.84,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "SAIL",
+      "name": "Steel Authority of India Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/SAIL/consolidated/",
+      "price": 199,
+      "market_cap_cr": 82156,
+      "pe": 21.4,
+      "book_value": 146,
+      "div_yield": 0.8,
+      "roce": 7.79,
+      "roe": 6.43,
+      "sales_growth_3y": 2,
+      "profit_growth_3y": 25,
+      "price_cagr_1y": 56,
+      "price_cagr_3y": 34,
+      "roe_3y_avg": 6,
+      "price_to_book": 1.36,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "SBICARD",
+      "name": "SBI Cards & Payment Services Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/SBICARD/",
+      "price": 624,
+      "market_cap_cr": 59361,
+      "pe": 27.4,
+      "book_value": 165,
+      "div_yield": 0.4,
+      "roce": 10.1,
+      "roe": 14.7,
+      "sales_growth_3y": 13,
+      "profit_growth_3y": -1,
+      "price_cagr_1y": -31,
+      "price_cagr_3y": -11,
+      "roe_3y_avg": 17,
+      "price_to_book": 3.78,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "SBILIFE",
+      "name": "SBI Life Insurance Company Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/SBILIFE/",
+      "price": 1777,
+      "market_cap_cr": 178266,
+      "pe": 72.2,
+      "book_value": 190,
+      "div_yield": 0.15,
+      "roce": 15.0,
+      "roe": 13.7,
+      "sales_growth_3y": 12,
+      "profit_growth_3y": 13,
+      "price_cagr_1y": -4,
+      "price_cagr_3y": 11,
+      "roe_3y_avg": 14,
+      "price_to_book": 9.35,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "SBIN",
+      "name": "State Bank of India",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/SBIN/consolidated/",
+      "price": 1044,
+      "market_cap_cr": 963953,
+      "pe": 11.6,
+      "book_value": 646,
+      "div_yield": 1.66,
+      "roce": 6.13,
+      "roe": 15.4,
+      "sales_growth_3y": 14,
+      "profit_growth_3y": 14,
+      "price_cagr_1y": 27,
+      "price_cagr_3y": 20,
+      "roe_3y_avg": 17,
+      "price_to_book": 1.62,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "SHREECEM",
+      "name": "Shree Cement Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/SHREECEM/consolidated/",
+      "price": 24085,
+      "market_cap_cr": 86900,
+      "pe": 49.8,
+      "book_value": 6449,
+      "div_yield": 0.46,
+      "roce": 10.5,
+      "roe": 7.78,
+      "sales_growth_3y": 5,
+      "profit_growth_3y": 11,
+      "price_cagr_1y": -19,
+      "price_cagr_3y": -2,
+      "roe_3y_avg": 8,
+      "price_to_book": 3.73,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "SHRIRAMFIN",
+      "name": "Shriram Finance Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/SHRIRAMFIN/consolidated/",
+      "price": 1045,
+      "market_cap_cr": 245786,
+      "pe": 24.5,
+      "book_value": 350,
+      "div_yield": 1.04,
+      "roce": 11.5,
+      "roe": 16.4,
+      "sales_growth_3y": 16,
+      "profit_growth_3y": 19,
+      "price_cagr_1y": 47,
+      "price_cagr_3y": 44,
+      "roe_3y_avg": 16,
+      "price_to_book": 2.99,
+      "categories": [
+        "bluechip",
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "SIEMENS",
+      "name": "Siemens Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/SIEMENS/consolidated/",
+      "price": 3760,
+      "market_cap_cr": 133887,
+      "pe": 56.4,
+      "book_value": 389,
+      "div_yield": 0.0,
+      "roce": 21.2,
+      "roe": 16.3,
+      "sales_growth_3y": 15,
+      "profit_growth_3y": 16,
+      "price_cagr_1y": 17,
+      "price_cagr_3y": 21,
+      "roe_3y_avg": 17,
+      "price_to_book": 9.67,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "SOLARINDS",
+      "name": "Solar Industries India Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/SOLARINDS/consolidated/",
+      "price": 18577,
+      "market_cap_cr": 168074,
+      "pe": 100,
+      "book_value": 694,
+      "div_yield": 0.05,
+      "roce": 36.8,
+      "roe": 31.5,
+      "sales_growth_3y": 12,
+      "profit_growth_3y": 29,
+      "price_cagr_1y": 12,
+      "price_cagr_3y": 70,
+      "roe_3y_avg": 32,
+      "price_to_book": 26.77,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "SRF",
+      "name": "SRF Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/SRF/consolidated/",
+      "price": 2875,
+      "market_cap_cr": 85209,
+      "pe": 44.8,
+      "book_value": 474,
+      "div_yield": 0.31,
+      "roce": 14.6,
+      "roe": 14.3,
+      "sales_growth_3y": 2,
+      "profit_growth_3y": -4,
+      "price_cagr_1y": -10,
+      "price_cagr_3y": 9,
+      "roe_3y_avg": 12,
+      "price_to_book": 6.07,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "name": "Sun Pharmaceutical Industries Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/SUNPHARMA/consolidated/",
+      "price": 1874,
+      "market_cap_cr": 449780,
+      "pe": 36.0,
+      "book_value": 348,
+      "div_yield": 0.85,
+      "roce": 20.5,
+      "roe": 16.0,
+      "sales_growth_3y": 10,
+      "profit_growth_3y": 13,
+      "price_cagr_1y": 13,
+      "price_cagr_3y": 24,
+      "roe_3y_avg": 16,
+      "price_to_book": 5.39,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "SUPREMEIND",
+      "name": "Supreme Industries Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/SUPREMEIND/consolidated/",
+      "price": 3459,
+      "market_cap_cr": 43937,
+      "pe": 47.1,
+      "book_value": 486,
+      "div_yield": 1.04,
+      "roce": 20.7,
+      "roe": 15.8,
+      "sales_growth_3y": 7,
+      "profit_growth_3y": 3,
+      "price_cagr_1y": -20,
+      "price_cagr_3y": -2,
+      "roe_3y_avg": 18,
+      "price_to_book": 7.12,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "SUZLON",
+      "name": "Suzlon Energy Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/SUZLON/consolidated/",
+      "price": 51.5,
+      "market_cap_cr": 70240,
+      "pe": 22.2,
+      "book_value": 6.96,
+      "div_yield": 0.0,
+      "roce": 35.1,
+      "roe": 40.6,
+      "sales_growth_3y": 41,
+      "profit_growth_3y": 165,
+      "price_cagr_1y": -22,
+      "price_cagr_3y": 43,
+      "roe_3y_avg": 39,
+      "price_to_book": 7.4,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "SWIGGY",
+      "name": "Swiggy Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/SWIGGY/consolidated/",
+      "price": 270,
+      "market_cap_cr": 74544,
+      "pe": null,
+      "book_value": 35.5,
+      "div_yield": 0.0,
+      "roce": -29.2,
+      "roe": -255,
+      "sales_growth_3y": 39,
+      "profit_growth_3y": 4,
+      "price_cagr_1y": -15,
+      "price_cagr_3y": null,
+      "roe_3y_avg": null,
+      "price_to_book": 7.61,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "TATACAP",
+      "name": "Tata Capital Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/TATACAP/consolidated/",
+      "price": 334,
+      "market_cap_cr": 141948,
+      "pe": 29.1,
+      "book_value": 108,
+      "div_yield": 0.0,
+      "roce": 8.58,
+      "roe": 12.3,
+      "sales_growth_3y": 32,
+      "profit_growth_3y": 17,
+      "price_cagr_1y": null,
+      "price_cagr_3y": null,
+      "roe_3y_avg": 13,
+      "price_to_book": 3.09,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "TATACOMM",
+      "name": "Tata Communications Ltd",
+      "sector": "Telecommunication",
+      "screener_url": "https://www.screener.in/company/TATACOMM/consolidated/",
+      "price": 1973,
+      "market_cap_cr": 56280,
+      "pe": 51.2,
+      "book_value": 121,
+      "div_yield": 0.89,
+      "roce": 14.7,
+      "roe": 34.0,
+      "sales_growth_3y": 12,
+      "profit_growth_3y": -14,
+      "price_cagr_1y": 15,
+      "price_cagr_3y": 12,
+      "roe_3y_avg": 48,
+      "price_to_book": 16.31,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "TATACONSUM",
+      "name": "Tata Consumer Products Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "screener_url": "https://www.screener.in/company/TATACONSUM/consolidated/",
+      "price": 1108,
+      "market_cap_cr": 109733,
+      "pe": 71.4,
+      "book_value": 220,
+      "div_yield": 0.9,
+      "roce": 9.24,
+      "roe": 7.35,
+      "sales_growth_3y": 14,
+      "profit_growth_3y": 13,
+      "price_cagr_1y": -1,
+      "price_cagr_3y": 12,
+      "roe_3y_avg": 8,
+      "price_to_book": 5.04,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "TATAELXSI",
+      "name": "Tata Elxsi Ltd",
+      "sector": "Information Technology",
+      "screener_url": "https://www.screener.in/company/TATAELXSI/consolidated/",
+      "price": 4040,
+      "market_cap_cr": 25168,
+      "pe": 247,
+      "book_value": 45.5,
+      "div_yield": 1.84,
+      "roce": 60.0,
+      "roe": 39.3,
+      "sales_growth_3y": 16,
+      "profit_growth_3y": 43,
+      "price_cagr_1y": -35,
+      "price_cagr_3y": -18,
+      "roe_3y_avg": 31,
+      "price_to_book": 88.79,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "TATAINVEST",
+      "name": "Tata Investment Corporation Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/TATAINVEST/consolidated/",
+      "price": 667,
+      "market_cap_cr": 33762,
+      "pe": 77.8,
+      "book_value": 578,
+      "div_yield": 0.51,
+      "roce": 1.57,
+      "roe": 1.44,
+      "sales_growth_3y": 13,
+      "profit_growth_3y": 20,
+      "price_cagr_1y": -1,
+      "price_cagr_3y": 42,
+      "roe_3y_avg": 1,
+      "price_to_book": 1.15,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "TATAPOWER",
+      "name": "Tata Power Company Ltd",
+      "sector": "Utilities",
+      "screener_url": "https://www.screener.in/company/TATAPOWER/consolidated/",
+      "price": 377,
+      "market_cap_cr": 120496,
+      "pe": 31.3,
+      "book_value": 124,
+      "div_yield": 0.66,
+      "roce": 10.5,
+      "roe": 10.2,
+      "sales_growth_3y": 4,
+      "profit_growth_3y": 6,
+      "price_cagr_1y": -9,
+      "price_cagr_3y": 19,
+      "roe_3y_avg": 11,
+      "price_to_book": 3.04,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "TATASTEEL",
+      "name": "Tata Steel Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/TATASTEEL/consolidated/",
+      "price": 190,
+      "market_cap_cr": 236937,
+      "pe": 20.9,
+      "book_value": 81.8,
+      "div_yield": 2.11,
+      "roce": 12.5,
+      "roe": 11.7,
+      "sales_growth_3y": -2,
+      "profit_growth_3y": 10,
+      "price_cagr_1y": 16,
+      "price_cagr_3y": 19,
+      "roe_3y_avg": 7,
+      "price_to_book": 2.32,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "TCS",
+      "name": "Tata Consultancy Services Ltd",
+      "sector": "Information Technology",
+      "screener_url": "https://www.screener.in/company/TCS/consolidated/",
+      "price": 1983,
+      "market_cap_cr": 716423,
+      "pe": 13.7,
+      "book_value": 296,
+      "div_yield": 3.23,
+      "roce": 63.0,
+      "roe": 51.8,
+      "sales_growth_3y": 6,
+      "profit_growth_3y": 8,
+      "price_cagr_1y": -42,
+      "price_cagr_3y": -16,
+      "roe_3y_avg": 52,
+      "price_to_book": 6.7,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "TECHM",
+      "name": "Tech Mahindra Ltd",
+      "sector": "Information Technology",
+      "screener_url": "https://www.screener.in/company/TECHM/consolidated/",
+      "price": 1403,
+      "market_cap_cr": 137502,
+      "pe": 27.6,
+      "book_value": 302,
+      "div_yield": 3.63,
+      "roce": 23.1,
+      "roe": 17.5,
+      "sales_growth_3y": 2,
+      "profit_growth_3y": 1,
+      "price_cagr_1y": -19,
+      "price_cagr_3y": 7,
+      "roe_3y_avg": 13,
+      "price_to_book": 4.64,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "TIINDIA",
+      "name": "Tube Investments of India Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/TIINDIA/consolidated/",
+      "price": 3226,
+      "market_cap_cr": 62445,
+      "pe": 94.8,
+      "book_value": 400,
+      "div_yield": 0.11,
+      "roce": 17.0,
+      "roe": 9.91,
+      "sales_growth_3y": 15,
+      "profit_growth_3y": -11,
+      "price_cagr_1y": 8,
+      "price_cagr_3y": 3,
+      "roe_3y_avg": 15,
+      "price_to_book": 8.07,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "TITAN",
+      "name": "Titan Company Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/TITAN/consolidated/",
+      "price": 4579,
+      "market_cap_cr": 406553,
+      "pe": 79.0,
+      "book_value": 177,
+      "div_yield": 0.33,
+      "roce": 20.5,
+      "roe": 37.7,
+      "sales_growth_3y": 29,
+      "profit_growth_3y": 17,
+      "price_cagr_1y": 34,
+      "price_cagr_3y": 15,
+      "roe_3y_avg": 34,
+      "price_to_book": 25.87,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "TMCV",
+      "name": "Tata Motors Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/TMCV/consolidated/",
+      "price": 411,
+      "market_cap_cr": 151377,
+      "pe": 38.2,
+      "book_value": 34.6,
+      "div_yield": 0.97,
+      "roce": 35.9,
+      "roe": 34.0,
+      "sales_growth_3y": null,
+      "profit_growth_3y": null,
+      "price_cagr_1y": null,
+      "price_cagr_3y": null,
+      "roe_3y_avg": null,
+      "price_to_book": 11.88,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "TMPV",
+      "name": "Tata Motors Passenger Vehicles Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/TMPV/consolidated/",
+      "price": 389,
+      "market_cap_cr": 143247,
+      "pe": 22.5,
+      "book_value": 304,
+      "div_yield": 0.77,
+      "roce": 2.73,
+      "roe": 5.58,
+      "sales_growth_3y": -1,
+      "profit_growth_3y": 39,
+      "price_cagr_1y": -10,
+      "price_cagr_3y": 5,
+      "roe_3y_avg": 24,
+      "price_to_book": 1.28,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "TORNTPHARM",
+      "name": "Torrent Pharmaceuticals Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/TORNTPHARM/consolidated/",
+      "price": 4604,
+      "market_cap_cr": 155819,
+      "pe": 71.0,
+      "book_value": 248,
+      "div_yield": 0.81,
+      "roce": 15.2,
+      "roe": 27.4,
+      "sales_growth_3y": 13,
+      "profit_growth_3y": 22,
+      "price_cagr_1y": 35,
+      "price_cagr_3y": 34,
+      "roe_3y_avg": 26,
+      "price_to_book": 18.56,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "TRENT",
+      "name": "Trent Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/TRENT/consolidated/",
+      "price": 2901,
+      "market_cap_cr": 154727,
+      "pe": 89.6,
+      "book_value": 131,
+      "div_yield": 0.14,
+      "roce": 28.3,
+      "roe": 27.7,
+      "sales_growth_3y": 35,
+      "profit_growth_3y": 71,
+      "price_cagr_1y": -22,
+      "price_cagr_3y": 36,
+      "roe_3y_avg": 29,
+      "price_to_book": 22.15,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "TVSMOTOR",
+      "name": "TVS Motor Company Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/TVSMOTOR/consolidated/",
+      "price": 3318,
+      "market_cap_cr": 157643,
+      "pe": 51.7,
+      "book_value": 201,
+      "div_yield": 0.37,
+      "roce": 17.4,
+      "roe": 33.8,
+      "sales_growth_3y": 21,
+      "profit_growth_3y": 33,
+      "price_cagr_1y": 23,
+      "price_cagr_3y": 37,
+      "roe_3y_avg": 30,
+      "price_to_book": 16.51,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "name": "UltraTech Cement Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/ULTRACEMCO/consolidated/",
+      "price": 11731,
+      "market_cap_cr": 345691,
+      "pe": 40.1,
+      "book_value": 2600,
+      "div_yield": 2.05,
+      "roce": 12.8,
+      "roe": 11.2,
+      "sales_growth_3y": 12,
+      "profit_growth_3y": 18,
+      "price_cagr_1y": -3,
+      "price_cagr_3y": 12,
+      "roe_3y_avg": 11,
+      "price_to_book": 4.51,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "UNIONBANK",
+      "name": "Union Bank of India",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/UNIONBANK/consolidated/",
+      "price": 170,
+      "market_cap_cr": 130153,
+      "pe": 6.3,
+      "book_value": 183,
+      "div_yield": 2.93,
+      "roce": 6.3,
+      "roe": 15.7,
+      "sales_growth_3y": 10,
+      "profit_growth_3y": 32,
+      "price_cagr_1y": 25,
+      "price_cagr_3y": 23,
+      "roe_3y_avg": 16,
+      "price_to_book": 0.93,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "UNITDSPR",
+      "name": "United Spirits Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "screener_url": "https://www.screener.in/company/UNITDSPR/consolidated/",
+      "price": 1419,
+      "market_cap_cr": 103186,
+      "pe": 55.8,
+      "book_value": 123,
+      "div_yield": 1.19,
+      "roce": 26.4,
+      "roe": 21.4,
+      "sales_growth_3y": 6,
+      "profit_growth_3y": 23,
+      "price_cagr_1y": 5,
+      "price_cagr_3y": 13,
+      "roe_3y_avg": 21,
+      "price_to_book": 11.54,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "UPL",
+      "name": "UPL Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/UPL/consolidated/",
+      "price": 627,
+      "market_cap_cr": 52934,
+      "pe": 28.0,
+      "book_value": 411,
+      "div_yield": 0.97,
+      "roce": 10.2,
+      "roe": 5.91,
+      "sales_growth_3y": -1,
+      "profit_growth_3y": -20,
+      "price_cagr_1y": -1,
+      "price_cagr_3y": -1,
+      "roe_3y_avg": 2,
+      "price_to_book": 1.53,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "VBL",
+      "name": "Varun Beverages Ltd",
+      "sector": "Fast Moving Consumer Goods",
+      "screener_url": "https://www.screener.in/company/VBL/consolidated/",
+      "price": 541,
+      "market_cap_cr": 182729,
+      "pe": 57.4,
+      "book_value": 57.9,
+      "div_yield": 0.28,
+      "roce": 19.7,
+      "roe": 16.2,
+      "sales_growth_3y": 18,
+      "profit_growth_3y": 24,
+      "price_cagr_1y": 14,
+      "price_cagr_3y": 18,
+      "roe_3y_avg": 21,
+      "price_to_book": 9.34,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "VEDL",
+      "name": "Vedanta Ltd",
+      "sector": "Commodities",
+      "screener_url": "https://www.screener.in/company/VEDL/consolidated/",
+      "price": 283,
+      "market_cap_cr": 110410,
+      "pe": 6.37,
+      "book_value": 127,
+      "div_yield": 15.4,
+      "roce": 16.1,
+      "roe": 38.2,
+      "sales_growth_3y": -19,
+      "profit_growth_3y": 17,
+      "price_cagr_1y": 75,
+      "price_cagr_3y": 41,
+      "roe_3y_avg": 31,
+      "price_to_book": 2.23,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "VMM",
+      "name": "Vishal Mega Mart Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/VMM/consolidated/",
+      "price": 114,
+      "market_cap_cr": 53186,
+      "pe": 63.4,
+      "book_value": 15.9,
+      "div_yield": 0.0,
+      "roce": 14.8,
+      "roe": 12.2,
+      "sales_growth_3y": 19,
+      "profit_growth_3y": 39,
+      "price_cagr_1y": -20,
+      "price_cagr_3y": null,
+      "roe_3y_avg": 10,
+      "price_to_book": 7.17,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "VOLTAS",
+      "name": "Voltas Ltd",
+      "sector": "Consumer Discretionary",
+      "screener_url": "https://www.screener.in/company/VOLTAS/consolidated/",
+      "price": 1288,
+      "market_cap_cr": 42615,
+      "pe": 109,
+      "book_value": 193,
+      "div_yield": 0.31,
+      "roce": 9.04,
+      "roe": 6.1,
+      "sales_growth_3y": 14,
+      "profit_growth_3y": 17,
+      "price_cagr_1y": -6,
+      "price_cagr_3y": 19,
+      "roe_3y_avg": 8,
+      "price_to_book": 6.67,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "WAAREEENER",
+      "name": "Waaree Energies Ltd",
+      "sector": "Industrials",
+      "screener_url": "https://www.screener.in/company/WAAREEENER/consolidated/",
+      "price": 2702,
+      "market_cap_cr": 77728,
+      "pe": 19.8,
+      "book_value": 502,
+      "div_yield": 0.07,
+      "roce": 38.8,
+      "roe": 32.8,
+      "sales_growth_3y": 58,
+      "profit_growth_3y": 100,
+      "price_cagr_1y": -17,
+      "price_cagr_3y": null,
+      "roe_3y_avg": 31,
+      "price_to_book": 5.38,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": false
+      },
+      "smart_pick_qualified": true
+    },
+    {
+      "symbol": "WIPRO",
+      "name": "Wipro Ltd",
+      "sector": "Information Technology",
+      "screener_url": "https://www.screener.in/company/WIPRO/consolidated/",
+      "price": 188,
+      "market_cap_cr": 197189,
+      "pe": 14.9,
+      "book_value": 83.9,
+      "div_yield": 5.84,
+      "roce": 17.9,
+      "roe": 15.5,
+      "sales_growth_3y": 1,
+      "profit_growth_3y": 5,
+      "price_cagr_1y": -26,
+      "price_cagr_3y": -1,
+      "roe_3y_avg": 16,
+      "price_to_book": 2.24,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": false
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "YESBANK",
+      "name": "Yes Bank Ltd",
+      "sector": "Financial Services",
+      "screener_url": "https://www.screener.in/company/YESBANK/consolidated/",
+      "price": 22.8,
+      "market_cap_cr": 71658,
+      "pe": 19.0,
+      "book_value": 16.7,
+      "div_yield": 0.0,
+      "roce": 5.98,
+      "roe": 7.1,
+      "sales_growth_3y": 10,
+      "profit_growth_3y": 69,
+      "price_cagr_1y": 18,
+      "price_cagr_3y": 10,
+      "roe_3y_avg": 5,
+      "price_to_book": 1.37,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": false,
+        "growth": false,
+        "technical": true
+      },
+      "smart_pick_qualified": false
+    },
+    {
+      "symbol": "ZYDUSLIFE",
+      "name": "Zydus Lifesciences Ltd",
+      "sector": "Healthcare",
+      "screener_url": "https://www.screener.in/company/ZYDUSLIFE/consolidated/",
+      "price": 1104,
+      "market_cap_cr": 111048,
+      "pe": 20.5,
+      "book_value": 269,
+      "div_yield": 0.09,
+      "roce": 21.2,
+      "roe": 21.2,
+      "sales_growth_3y": 16,
+      "profit_growth_3y": 32,
+      "price_cagr_1y": 12,
+      "price_cagr_3y": 29,
+      "roe_3y_avg": 21,
+      "price_to_book": 4.1,
+      "categories": [
+        "smartpick"
+      ],
+      "strategies": {
+        "value": true,
+        "growth": true,
+        "technical": true
+      },
+      "smart_pick_qualified": true
+    }
+  ]
 }
