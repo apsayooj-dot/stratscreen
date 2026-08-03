@@ -70,15 +70,18 @@ function filteredStocks() {
   if (search) {
     list = list.filter(
       (s) =>
-        s.symbol.toLowerCase().includes(search) ||
-        s.name.toLowerCase().includes(search) ||
-        s.sector.toLowerCase().includes(search)
+        (s.symbol || "").toLowerCase().includes(search) ||
+        (s.name || "").toLowerCase().includes(search) ||
+        (s.sector || "").toLowerCase().includes(search)
     );
   }
   list.sort((a, b) => {
     const dir = currentSort.dir === "asc" ? 1 : -1;
     const av = a[currentSort.key];
     const bv = b[currentSort.key];
+    if (av == null && bv == null) return 0;
+    if (av == null) return 1; // nulls sort last regardless of direction
+    if (bv == null) return -1;
     if (av < bv) return -1 * dir;
     if (av > bv) return 1 * dir;
     return 0;
@@ -88,6 +91,19 @@ function filteredStocks() {
 
 function pctClass(v) {
   return v > 0 ? "positive" : v < 0 ? "negative" : "";
+}
+
+// Yahoo Finance doesn't always have every field for every stock (unlike the
+// old screener.in scrape) - format defensively so one missing field can't
+// crash the whole table render.
+function fmtCurrency(v) {
+  return v === null || v === undefined ? "&ndash;" : `&#8377;${v.toLocaleString("en-IN")}`;
+}
+function fmtPct(v) {
+  return v === null || v === undefined ? "&ndash;" : `${v}%`;
+}
+function fmtPlain(v) {
+  return v === null || v === undefined ? "&ndash;" : v;
 }
 
 function pill(active, labelYes = "Pick", labelNo = "-") {
@@ -115,14 +131,14 @@ function renderTable() {
       (s) => `
     <tr>
       <td><strong>${s.symbol}</strong></td>
-      <td>${s.name}<br><small style="color:#94a3b8;">${s.sector}</small></td>
+      <td>${s.name}<br><small style="color:#94a3b8;">${s.sector || "&ndash;"}</small></td>
       <td>${categoryBadges(s)}</td>
-      <td>&#8377;${s.price.toLocaleString("en-IN")}</td>
-      <td>&#8377;${s.market_cap_cr.toLocaleString("en-IN")} Cr</td>
-      <td>${s.pe}</td>
-      <td>${s.roe}%</td>
-      <td>${s.profit_growth_3y}%</td>
-      <td class="${pctClass(s.price_cagr_3y)}">${s.price_cagr_3y}%</td>
+      <td>${fmtCurrency(s.price)}</td>
+      <td>${s.market_cap_cr == null ? "&ndash;" : fmtCurrency(s.market_cap_cr) + " Cr"}</td>
+      <td>${fmtPlain(s.pe)}</td>
+      <td>${fmtPct(s.roe)}</td>
+      <td>${fmtPct(s.profit_growth_3y)}</td>
+      <td class="${pctClass(s.price_cagr_3y)}">${fmtPct(s.price_cagr_3y)}</td>
       <td>${pill(s.strategies.value)}</td>
       <td>${pill(s.strategies.growth)}</td>
       <td>${pill(s.strategies.technical)}</td>
