@@ -20,8 +20,8 @@
 </div>
 
 <div class="disclaimer-banner">
-  <strong>Educational tool only.</strong> Not registered investment advice. Data sourced from public
-  screener.in company pages and NSE archives. Always do your own research before investing.
+  <strong>Educational tool only.</strong> Not registered investment advice. Prices, charts and
+  fundamentals are fetched automatically from Yahoo Finance. Always do your own research before investing.
 </div>
 
 <div class="container">
@@ -32,18 +32,45 @@
         <div class="index-name">Nifty 50</div>
         <div class="index-value" id="nifty50-value">&ndash;</div>
         <div class="index-change" id="nifty50-change">&ndash;</div>
+        <div class="range-tabs" data-index="nifty50">
+          <button data-range="1d" class="active">1D</button>
+          <button data-range="1w">1W</button>
+          <button data-range="1m">1M</button>
+          <button data-range="6m">6M</button>
+          <button data-range="1y">1Y</button>
+          <button data-range="5y">5Y</button>
+          <button data-range="max">Max</button>
+        </div>
         <canvas id="nifty50-chart"></canvas>
       </div>
       <div class="index-card">
         <div class="index-name">Sensex</div>
         <div class="index-value" id="sensex-value">&ndash;</div>
         <div class="index-change" id="sensex-change">&ndash;</div>
+        <div class="range-tabs" data-index="sensex">
+          <button data-range="1d" class="active">1D</button>
+          <button data-range="1w">1W</button>
+          <button data-range="1m">1M</button>
+          <button data-range="6m">6M</button>
+          <button data-range="1y">1Y</button>
+          <button data-range="5y">5Y</button>
+          <button data-range="max">Max</button>
+        </div>
         <canvas id="sensex-chart"></canvas>
       </div>
       <div class="index-card">
         <div class="index-name">Bank Nifty</div>
         <div class="index-value" id="banknifty-value">&ndash;</div>
         <div class="index-change" id="banknifty-change">&ndash;</div>
+        <div class="range-tabs" data-index="banknifty">
+          <button data-range="1d" class="active">1D</button>
+          <button data-range="1w">1W</button>
+          <button data-range="1m">1M</button>
+          <button data-range="6m">6M</button>
+          <button data-range="1y">1Y</button>
+          <button data-range="5y">5Y</button>
+          <button data-range="max">Max</button>
+        </div>
         <canvas id="banknifty-chart"></canvas>
       </div>
       <div style="font-size:0.75rem;color:var(--text-muted);" id="indices-updated"></div>
@@ -67,8 +94,9 @@
 </div>
 
 <footer class="site-footer">
-  Data referenced from <a href="https://www.screener.in" target="_blank" rel="noopener">screener.in</a> and NSE archives.
-  Not affiliated with or endorsed by Screener / Mittal Analytics / NSE. Not SEBI-registered investment advice.
+  Data automatically fetched from Yahoo Finance. Company reference pages link to
+  <a href="https://www.screener.in" target="_blank" rel="noopener">screener.in</a>.
+  Not affiliated with or endorsed by Yahoo, Screener / Mittal Analytics, NSE or BSE. Not SEBI-registered investment advice.
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
