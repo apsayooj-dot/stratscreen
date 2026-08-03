@@ -40,6 +40,18 @@
       "market_cap_cr": 313655.45
     },
     {
+      "symbol": "AIAENG",
+      "name": "AIA Engineering Limited",
+      "sector": "Industrials",
+      "buy_price": 4684.6,
+      "target_price": 5998.18,
+      "potential_profit_pct": 28.04,
+      "pe": 34.47,
+      "fair_pe_used": 44.14,
+      "roe": 16.95,
+      "market_cap_cr": 43716.86
+    },
+    {
       "symbol": "MPHASIS",
       "name": "Mphasis Limited",
       "sector": "Technology",
