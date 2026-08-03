@@ -1,0 +1,37 @@
+name: Fetch stock fundamentals & rebuild screens (Yahoo Finance)
+
+# Runs once a day after market close. Rebuilds public/data/stocks.json
+# (fundamentals, financials, per-stock price charts, strategy accuracy) and
+# public/data/radar.json entirely from Yahoo Finance - no screener.in
+# scraping. Fundamentals don't change intraday, so this runs once a day;
+# live prices are refreshed separately and more often by fetch-indices.yml.
+# Committing under public/** auto-triggers the existing deploy-hosting.yml.
+on:
+  schedule:
+    - cron: "45 12 * * 1-5" # 12:45 UTC = 18:15 IST, weekdays after close
+  workflow_dispatch:
+
+jobs:
+  fetch-fundamentals:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch fundamentals + rebuild strategies + radar (Yahoo Finance)
+        run: node scripts/fetchFundamentals.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/stocks.json public/data/radar.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Daily fundamentals refresh ($(date -u +%Y-%m-%d))"
+            git push
+          fi

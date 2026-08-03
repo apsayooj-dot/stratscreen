@@ -1,29 +1,41 @@
-name: Fetch daily index closes (Nifty 50 / Bank Nifty / Sensex)
+name: Fetch live index & stock prices (Yahoo Finance)
 
+# Runs every 15 minutes during approx. NSE/BSE market hours on weekdays
+# (03:00-10:59 UTC = 08:30-16:29 IST, a buffer around the 09:15-15:30 IST
+# trading session). Updates index charts (7 timeframes, 1D through Max) and
+# live stock prices for all tracked symbols. Committing under public/**
+# auto-triggers the existing deploy-hosting.yml, so no separate deploy step
+# is needed here.
 on:
   schedule:
-    # 12:35 UTC = 18:05 IST, after NSE/BSE market close on weekdays
-    - cron: '35 12 * * 1-5'
+    - cron: "*/15 3-10 * * 1-5"
   workflow_dispatch:
 
 jobs:
-  fetch-indices:
+  fetch-live-data:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Fetch and append today's index closes
+
+      - name: Fetch index charts (Yahoo Finance)
         run: node scripts/fetchIndices.js
+
+      - name: Fetch live stock prices (Yahoo Finance)
+        run: node scripts/fetchLivePrices.js
+        continue-on-error: true # don't block index charts if stocks.json isn't seeded yet
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/indices.json
+          git add public/data/indices.json public/data/stocks.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update daily index data ($(date -u +%Y-%m-%d))"
+            git commit -m "Update live prices ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
             git push
           fi
