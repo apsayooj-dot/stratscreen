@@ -11,6 +11,9 @@ on:
     - cron: "45 12 * * 1-5" # 12:45 UTC = 18:15 IST, weekdays after close
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   fetch-fundamentals:
     runs-on: ubuntu-latest
