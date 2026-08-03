@@ -63,7 +63,13 @@ async function main() {
   for (const [key, meta] of Object.entries(INDICES)) {
     console.log(`Fetching ${meta.label} (${meta.yahoo}) ...`);
     const ranges = await fetchAllRangesFor(meta.yahoo);
-    series[key] = series[key] || {};
+    // Force a plain object here - older versions of this file stored a bare
+    // array of {date,close} points per index, and JSON.stringify silently
+    // drops non-index properties (like our range sub-keys) added to an
+    // array, which would otherwise make this migration a silent no-op.
+    if (!series[key] || Array.isArray(series[key]) || typeof series[key] !== "object") {
+      series[key] = {};
+    }
     for (const [rangeKey, points] of Object.entries(ranges)) {
       if (points && points.length) {
         series[key][rangeKey] = points;
@@ -88,7 +94,7 @@ async function main() {
 
   fs.mkdirSync(path.dirname(DATA_PATH), { recursive: true });
   fs.writeFileSync(DATA_PATH, JSON.stringify(output) + "\n");
-  console.log("web/data/indices.json updated at", output.updated);
+  console.log("public/data/indices.json updated at", output.updated);
 }
 
 main().catch((err) => {
