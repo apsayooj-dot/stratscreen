@@ -88,15 +88,61 @@ async function getQuoteBatch(symbols) {
   return out;
 }
 
+// quoteSummary (v10) and the batched quote endpoint (v7) both now require a
+// session cookie + "crumb" token - calling them without one returns HTTP 401.
+// This fetches a cookie from Yahoo, then exchanges it for a crumb, and
+// caches both for the life of the process (one crumb fetch per script run,
+// not per symbol).
+let crumbPromise = null;
+
+function parseCookie(setCookieValues) {
+  return setCookieValues.map((c) => c.split(";")[0]).join("; ");
+}
+
+async function fetchCrumb() {
+  const cookieRes = await fetch("https://fc.yahoo.com", {
+    headers: { "User-Agent": UA },
+  });
+  const setCookie =
+    typeof cookieRes.headers.getSetCookie === "function"
+      ? cookieRes.headers.getSetCookie()
+      : [cookieRes.headers.get("set-cookie")].filter(Boolean);
+  if (!setCookie.length) throw new Error("no Set-Cookie from fc.yahoo.com");
+  const cookie = parseCookie(setCookie);
+
+  const crumbRes = await fetch("https://query2.finance.yahoo.com/v1/test/getcrumb", {
+    headers: { "User-Agent": UA, Cookie: cookie },
+  });
+  if (!crumbRes.ok) throw new Error(`HTTP ${crumbRes.status} fetching crumb`);
+  const crumb = (await crumbRes.text()).trim();
+  if (!crumb) throw new Error("empty crumb response");
+  return { cookie, crumb };
+}
+
+async function getCrumb() {
+  if (!crumbPromise) crumbPromise = fetchCrumb();
+  try {
+    return await crumbPromise;
+  } catch (err) {
+    crumbPromise = null; // allow a retry on the next call instead of caching a failure forever
+    throw err;
+  }
+}
+
 // quoteSummary - fundamentals. modules is an array of Yahoo module names.
 async function getQuoteSummary(symbol, modules) {
+  const { cookie, crumb } = await getCrumb();
   const url = `https://query2.finance.yahoo.com/v10/finance/quoteSummary/${encodeURIComponent(
     symbol
-  )}?modules=${modules.join(",")}`;
-  const json = await fetchJson(url, { retries: 1 });
+  )}?modules=${modules.join(",")}&crumb=${encodeURIComponent(crumb)}`;
+  const res = await fetch(url, {
+    headers: { "User-Agent": UA, Cookie: cookie, Accept: "application/json" },
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status} for quoteSummary ${symbol}`);
+  const json = await res.json();
   const result = json?.quoteSummary?.result?.[0];
   if (!result) throw new Error("empty quoteSummary result");
   return result;
 }
 
-module.exports = { sleep, chunk, fetchJson, getChart, getQuoteBatch, getQuoteSummary, UA };
+module.exports = { sleep, chunk, fetchJson, getChart, getQuoteBatch, getQuoteSummary, getCrumb, UA };
