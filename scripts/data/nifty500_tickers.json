@@ -1,0 +1,3782 @@
+[
+  {
+    "symbol": "360ONE",
+    "name": "360 ONE WAM Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "3MINDIA",
+    "name": "3M India Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "AADHARHFC",
+    "name": "Aadhar Housing Finance Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "AARTIIND",
+    "name": "Aarti Industries Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "AAVAS",
+    "name": "AAVAS Financiers Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ABB",
+    "name": "ABB India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ABBOTINDIA",
+    "name": "Abbott India Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ABCAPITAL",
+    "name": "Aditya Birla Capital Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ABDL",
+    "name": "Allied Blenders & Distillers Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ABFRL",
+    "name": "Aditya Birla Fashion & Retail Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ABLBL",
+    "name": "Aditya Birla Lifestyle Brands Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ABREL",
+    "name": "Aditya Birla Real Estate Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ABSLAMC",
+    "name": "Aditya Birla Sun Life AMC Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ACC",
+    "name": "ACC Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ACE",
+    "name": "Action Construction Equipment Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ACMESOLAR",
+    "name": "ACME Solar Holdings Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ACUTAAS",
+    "name": "Acutaas Chemicals Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ADANIENSOL",
+    "name": "Adani Energy Solutions Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ADANIENT",
+    "name": "Adani Enterprises Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ADANIGREEN",
+    "name": "Adani Green Energy Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ADANIPORTS",
+    "name": "Adani Ports & Special Economic Zone Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ADANIPOWER",
+    "name": "Adani Power Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "AEGISLOG",
+    "name": "Aegis Logistics Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "AEGISVOPAK",
+    "name": "Aegis Vopak Terminals Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "AFCONS",
+    "name": "Afcons Infrastructure Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "AFFLE",
+    "name": "Affle 3i Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "AIAENG",
+    "name": "AIA Engineering Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "AIIL",
+    "name": "Authum Investment & Infrastructure Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "AJANTPHARM",
+    "name": "Ajanta Pharma Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ALKEM",
+    "name": "Alkem Laboratories Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "AMBER",
+    "name": "Amber Enterprises India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "AMBUJACEM",
+    "name": "Ambuja Cements Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ANANDRATHI",
+    "name": "Anand Rathi Wealth Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ANANTRAJ",
+    "name": "Anant Raj Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ANGELONE",
+    "name": "Angel One Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ANTHEM",
+    "name": "Anthem Biosciences Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ANURAS",
+    "name": "Anupam Rasayan India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "APARINDS",
+    "name": "Apar Industries Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "APLAPOLLO",
+    "name": "APL Apollo Tubes Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "APOLLOHOSP",
+    "name": "Apollo Hospitals Enterprise Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "APOLLOTYRE",
+    "name": "Apollo Tyres Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "APTUS",
+    "name": "Aptus Value Housing Finance India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ARE&M",
+    "name": "Amara Raja Energy & Mobility Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ASAHIINDIA",
+    "name": "Asahi India Glass Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ASHOKLEY",
+    "name": "Ashok Leyland Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ASIANPAINT",
+    "name": "Asian Paints Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ASTERDM",
+    "name": "Aster DM Healthcare Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ASTRAL",
+    "name": "Astral Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ATGL",
+    "name": "Adani Total Gas Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ATHERENERG",
+    "name": "Ather Energy Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ATUL",
+    "name": "Atul Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "AUBANK",
+    "name": "AU Small Finance Bank Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "AUROPHARMA",
+    "name": "Aurobindo Pharma Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "AWL",
+    "name": "AWL Agri Business Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "AXISBANK",
+    "name": "Axis Bank Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BAJAJ-AUTO",
+    "name": "Bajaj Auto Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BAJAJFINSV",
+    "name": "Bajaj Finserv Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BAJAJHFL",
+    "name": "Bajaj Housing Finance Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BAJAJHLDNG",
+    "name": "Bajaj Holdings & Investment Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BAJFINANCE",
+    "name": "Bajaj Finance Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BALKRISIND",
+    "name": "Balkrishna Industries Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BALRAMCHIN",
+    "name": "Balrampur Chini Mills Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BANDHANBNK",
+    "name": "Bandhan Bank Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BANKBARODA",
+    "name": "Bank of Baroda",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BANKINDIA",
+    "name": "Bank of India",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BATAINDIA",
+    "name": "Bata India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BAYERCROP",
+    "name": "Bayer CropScience Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BBTC",
+    "name": "The Bombay Burmah Trading Corporation Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BDL",
+    "name": "Bharat Dynamics Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BEL",
+    "name": "Bharat Electronics Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BELRISE",
+    "name": "Belrise Industries Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BEML",
+    "name": "BEML Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BERGEPAINT",
+    "name": "Berger Paints India Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BHARATFORG",
+    "name": "Bharat Forge Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BHARTIARTL",
+    "name": "Bharti Airtel Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BHARTIHEXA",
+    "name": "Bharti Hexacom Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BHEL",
+    "name": "Bharat Heavy Electricals Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BIKAJI",
+    "name": "Bikaji Foods International Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BIOCON",
+    "name": "Biocon Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BLS",
+    "name": "BLS International Services Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BLUEDART",
+    "name": "Blue Dart Express Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BLUEJET",
+    "name": "Blue Jet Healthcare Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BLUESTARCO",
+    "name": "Blue Star Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BOSCHLTD",
+    "name": "Bosch Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BPCL",
+    "name": "Bharat Petroleum Corporation Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BRIGADE",
+    "name": "Brigade Enterprises Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "BRITANNIA",
+    "name": "Britannia Industries Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BSE",
+    "name": "BSE Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "BSOFT",
+    "name": "Birlasoft Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CAMS",
+    "name": "Computer Age Management Services Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CANBK",
+    "name": "Canara Bank",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "CANFINHOME",
+    "name": "Can Fin Homes Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CANHLIFE",
+    "name": "Canara HSBC Life Insurance Company Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CAPLIPOINT",
+    "name": "Caplin Point Laboratories Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CARBORUNIV",
+    "name": "Carborundum Universal Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CARTRADE",
+    "name": "Cartrade Tech Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CASTROLIND",
+    "name": "Castrol India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CCL",
+    "name": "CCL Products (India) Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CDSL",
+    "name": "Central Depository Services (India) Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CEATLTD",
+    "name": "CEAT Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CEMPRO",
+    "name": "Cemindia Projects Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CENTRALBK",
+    "name": "Central Bank of India",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CESC",
+    "name": "CESC Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CGCL",
+    "name": "Capri Global Capital Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CGPOWER",
+    "name": "CG Power & Industrial Solutions Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "CHALET",
+    "name": "Chalet Hotels Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CHAMBLFERT",
+    "name": "Chambal Fertilisers & Chemicals Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CHENNPETRO",
+    "name": "Chennai Petroleum Corporation Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CHOICEIN",
+    "name": "Choice International Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CHOLAFIN",
+    "name": "Cholamandalam Investment & Finance Company Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "CHOLAHLDNG",
+    "name": "Cholamandalam Financial Holdings Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CIPLA",
+    "name": "Cipla Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "CLEAN",
+    "name": "Clean Science & Technology Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "COALINDIA",
+    "name": "Coal India Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "COCHINSHIP",
+    "name": "Cochin Shipyard Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "COFORGE",
+    "name": "Coforge Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "COHANCE",
+    "name": "Cohance Lifesciences Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "COLPAL",
+    "name": "Colgate-Palmolive (India) Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "CONCOR",
+    "name": "Container Corporation Of India Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "CONCORDBIO",
+    "name": "Concord Biotech Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "COROMANDEL",
+    "name": "Coromandel International Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "CPPLUS",
+    "name": "Aditya Infotech Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CRAFTSMAN",
+    "name": "Craftsman Automation Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CREDITACC",
+    "name": "CreditAccess Grameen Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CRISIL",
+    "name": "CRISIL Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CROMPTON",
+    "name": "Crompton Greaves Consumer Electricals Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CUB",
+    "name": "City Union Bank Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "CUMMINSIND",
+    "name": "Cummins India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "CYIENT",
+    "name": "Cyient Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "DABUR",
+    "name": "Dabur India Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "DALBHARAT",
+    "name": "Dalmia Bharat Ltd",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "DATAPATTNS",
+    "name": "Data Patterns (India) Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "DCMSHRIRAM",
+    "name": "DCM Shriram Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "DEEPAKFERT",
+    "name": "Deepak Fertilisers & Petrochemicals Corp Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "DEEPAKNTR",
+    "name": "Deepak Nitrite Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "DELHIVERY",
+    "name": "Delhivery Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "DEVYANI",
+    "name": "Devyani International Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "DIVISLAB",
+    "name": "Divis Laboratories Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "DIXON",
+    "name": "Dixon Technologies (India) Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "DLF",
+    "name": "DLF Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "DMART",
+    "name": "Avenue Supermarts Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "DOMS",
+    "name": "DOMS Industries Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "DRREDDY",
+    "name": "Dr Reddys Laboratories Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ECLERX",
+    "name": "eClerx Services Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "EICHERMOT",
+    "name": "Eicher Motors Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "EIDPARRY",
+    "name": "EID Parry (India) Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "EIHOTEL",
+    "name": "EIH Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ELECON",
+    "name": "Elecon Engineering Company Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ELGIEQUIP",
+    "name": "Elgi Equipments Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "EMAMILTD",
+    "name": "Emami Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "EMCURE",
+    "name": "Emcure Pharmaceuticals Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "EMMVEE",
+    "name": "Emmvee Photovoltaic Power Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ENDURANCE",
+    "name": "Endurance Technologies Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ENGINERSIN",
+    "name": "Engineers India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ENRIN",
+    "name": "Siemens Energy India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ERIS",
+    "name": "ERIS Lifesciences Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ESCORTS",
+    "name": "Escorts Kubota Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ETERNAL",
+    "name": "Eternal Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "EXIDEIND",
+    "name": "Exide Industries Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "FACT",
+    "name": "Fertilizers & Chemicals Travancore Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "FEDERALBNK",
+    "name": "Federal Bank Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "FINCABLES",
+    "name": "Finolex Cables Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "FIRSTCRY",
+    "name": "Brainbees Solutions Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "FIVESTAR",
+    "name": "Five-Star Business Finance Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "FLUOROCHEM",
+    "name": "Gujarat Fluorochemicals Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "FORCEMOT",
+    "name": "Force Motors Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "FORTIS",
+    "name": "Fortis Healthcare Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "FSL",
+    "name": "Firstsource Solutions Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GABRIEL",
+    "name": "Gabriel India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GAIL",
+    "name": "GAIL (India) Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "GALLANTT",
+    "name": "Gallantt Ispat Ltd.",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GESHIP",
+    "name": "Great Eastern Shipping Company Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GICRE",
+    "name": "General Insurance Corporation of India",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GILLETTE",
+    "name": "Gillette India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GLAND",
+    "name": "Gland Pharma Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GLAXO",
+    "name": "Glaxosmithkline Pharmaceuticals Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GLENMARK",
+    "name": "Glenmark Pharmaceuticals Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "GMDCLTD",
+    "name": "Gujarat Mineral Development Corporation Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GMRAIRPORT",
+    "name": "GMR Airports Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "GODFRYPHLP",
+    "name": "Godfrey Phillips India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "GODIGIT",
+    "name": "Go Digit General Insurance Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GODREJCP",
+    "name": "Godrej Consumer Products Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "GODREJIND",
+    "name": "Godrej Industries Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GODREJPROP",
+    "name": "Godrej Properties Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "GPIL",
+    "name": "Godawari Power & Ispat Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GRANULES",
+    "name": "Granules India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GRAPHITE",
+    "name": "Graphite India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GRASIM",
+    "name": "Grasim Industries Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "GRAVITA",
+    "name": "Gravita India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GROWW",
+    "name": "Billionbrains Garage Ventures Ltd",
+    "categories": [
+      "emerging",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "GRSE",
+    "name": "Garden Reach Shipbuilders & Engineers Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GSPL",
+    "name": "Gujarat State Petronet Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "GVT&D",
+    "name": "GE Vernova T&D India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "HAL",
+    "name": "Hindustan Aeronautics Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "HAVELLS",
+    "name": "Havells India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "HBLENGINE",
+    "name": "HBL Engineering Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "HCLTECH",
+    "name": "HCL Technologies Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "HDBFS",
+    "name": "HDB Financial Services Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "HDFCAMC",
+    "name": "HDFC Asset Management Company Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "HDFCBANK",
+    "name": "HDFC Bank Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "HDFCLIFE",
+    "name": "HDFC Life Insurance Company Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "HEG",
+    "name": "HEG Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "HEROMOTOCO",
+    "name": "Hero MotoCorp Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "HEXT",
+    "name": "Hexaware Technologies Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "HFCL",
+    "name": "HFCL Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "HINDALCO",
+    "name": "Hindalco Industries Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "HINDCOPPER",
+    "name": "Hindustan Copper Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "HINDPETRO",
+    "name": "Hindustan Petroleum Corporation Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "HINDUNILVR",
+    "name": "Hindustan Unilever Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "HINDZINC",
+    "name": "Hindustan Zinc Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "HOMEFIRST",
+    "name": "Home First Finance Company India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "HONASA",
+    "name": "Honasa Consumer Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "HONAUT",
+    "name": "Honeywell Automation India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "HSCL",
+    "name": "Himadri Speciality Chemical Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "HUDCO",
+    "name": "Housing & Urban Development Corporation Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "HYUNDAI",
+    "name": "Hyundai Motor India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ICICIAMC",
+    "name": "ICICI Prudential Asset Management Co Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ICICIBANK",
+    "name": "ICICI Bank Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ICICIGI",
+    "name": "ICICI Lombard General Insurance Company Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ICICIPRULI",
+    "name": "ICICI Prudential Life Insurance Company Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "IDBI",
+    "name": "IDBI Bank Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "IDEA",
+    "name": "Vodafone Idea Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "IDFCFIRSTB",
+    "name": "IDFC First Bank Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "IEX",
+    "name": "Indian Energy Exchange Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "IFCI",
+    "name": "IFCI Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "IGIL",
+    "name": "International Gemmological Institute (India) Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "IGL",
+    "name": "Indraprastha Gas Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "IIFL",
+    "name": "IIFL Finance Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "IKS",
+    "name": "Inventurus Knowledge Solutions Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "INDGN",
+    "name": "Indegene Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "INDHOTEL",
+    "name": "Indian Hotels Co Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "INDIACEM",
+    "name": "India Cements Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "INDIAMART",
+    "name": "Indiamart Intermesh Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "INDIANB",
+    "name": "Indian Bank",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "INDIGO",
+    "name": "Interglobe Aviation Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "INDUSINDBK",
+    "name": "IndusInd Bank Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "INDUSTOWER",
+    "name": "Indus Towers Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "INFY",
+    "name": "Infosys Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "INOXWIND",
+    "name": "Inox Wind Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "INTELLECT",
+    "name": "Intellect Design Arena Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "IOB",
+    "name": "Indian Overseas Bank",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "IOC",
+    "name": "Indian Oil Corporation Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "IPCALAB",
+    "name": "Ipca Laboratories Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "IRB",
+    "name": "IRB Infrastructure Developers Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "IRCON",
+    "name": "Ircon International Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "IRCTC",
+    "name": "Indian Railway Catering & Tourism Corporation Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "IREDA",
+    "name": "Indian Renewable Energy Development Agency Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "IRFC",
+    "name": "Indian Railway Finance Corporation Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ITC",
+    "name": "ITC Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ITCHOTELS",
+    "name": "ITC Hotels Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ITI",
+    "name": "ITI Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "J&KBANK",
+    "name": "Jammu and Kashmir Bank Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JAINREC",
+    "name": "Jain Resource Recycling Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JBCHEPHARM",
+    "name": "J B Chemicals & Pharmaceuticals Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JBMA",
+    "name": "JBM Auto Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JINDALSAW",
+    "name": "Jindal Saw Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JINDALSTEL",
+    "name": "Jindal Steel Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "JIOFIN",
+    "name": "Jio Financial Services Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "JKCEMENT",
+    "name": "J K Cements Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JKTYRE",
+    "name": "JK Tyre & Industries Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JMFINANCIL",
+    "name": "JM Financial Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JPPOWER",
+    "name": "Jaiprakash Power Ventures Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JSL",
+    "name": "Jindal Stainless Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JSWCEMENT",
+    "name": "JSW Cement Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JSWDULUX",
+    "name": "JSW Dulux Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JSWENERGY",
+    "name": "JSW Energy Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "JSWINFRA",
+    "name": "JSW Infrastructure Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JSWSTEEL",
+    "name": "JSW Steel Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "JUBLFOOD",
+    "name": "Jubilant Foodworks Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "JUBLINGREA",
+    "name": "Jubilant Ingrevia Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JUBLPHARMA",
+    "name": "Jubilant Pharmova Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JWL",
+    "name": "Jupiter Wagons Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "JYOTICNC",
+    "name": "Jyoti CNC Automation Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "KAJARIACER",
+    "name": "Kajaria Ceramics Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "KALYANKJIL",
+    "name": "Kalyan Jewellers India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "KARURVYSYA",
+    "name": "Karur Vysya Bank Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "KAYNES",
+    "name": "Kaynes Technology India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "KEC",
+    "name": "KEC International Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "KEI",
+    "name": "KEI Industries Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "KFINTECH",
+    "name": "KFin Technologies Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "KIMS",
+    "name": "Krishna Institute of Medical Sciences Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "KIRLOSENG",
+    "name": "Kirloskar Oil Engines Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "KOTAKBANK",
+    "name": "Kotak Mahindra Bank Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "KPIL",
+    "name": "Kalpataru Projects International Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "KPITTECH",
+    "name": "KPIT Technologies Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "KPRMILL",
+    "name": "K P R Mill Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "LALPATHLAB",
+    "name": "Dr Lal Pathlabs Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "LATENTVIEW",
+    "name": "Latent View Analytics Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "LAURUSLABS",
+    "name": "Laurus Labs Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "LEMONTREE",
+    "name": "Lemon Tree Hotels Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "LENSKART",
+    "name": "Lenskart Solutions Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "LGEINDIA",
+    "name": "LG Electronics India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "LICHSGFIN",
+    "name": "LIC Housing Finance Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "LICI",
+    "name": "Life Insurance Corporation of India",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "LINDEINDIA",
+    "name": "Linde India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "LLOYDSME",
+    "name": "Lloyds Metals & Energy Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "LODHA",
+    "name": "Lodha Developers Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "LT",
+    "name": "Larsen & Toubro Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "LTF",
+    "name": "L&T Finance Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "LTFOODS",
+    "name": "L T Foods Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "LTM",
+    "name": "LTM Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "LTTS",
+    "name": "L&T Technology Services Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "LUPIN",
+    "name": "Lupin Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "M&M",
+    "name": "Mahindra & Mahindra Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "M&MFIN",
+    "name": "Mahindra & Mahindra Financial Services Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "MAHABANK",
+    "name": "Bank of Maharashtra",
+    "categories": [
+      "emerging",
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "MANAPPURAM",
+    "name": "Manappuram Finance Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "MANKIND",
+    "name": "Mankind Pharma Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "MAPMYINDIA",
+    "name": "C.E. Info Systems Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "MARICO",
+    "name": "Marico Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "MARUTI",
+    "name": "Maruti Suzuki India Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "MAXHEALTH",
+    "name": "Max Healthcare Institute Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "MAZDOCK",
+    "name": "Mazagon Dock Shipbuilders Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "MCX",
+    "name": "Multi Commodity Exchange of India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "MEDANTA",
+    "name": "Global Health Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "MEESHO",
+    "name": "Meesho Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "MFSL",
+    "name": "Max Financial Services Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "MGL",
+    "name": "Mahanagar Gas Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "MINDACORP",
+    "name": "Minda Corporation Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "MMTC",
+    "name": "MMTC Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "MOTHERSON",
+    "name": "Samvardhana Motherson International Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "MOTILALOFS",
+    "name": "Motilal Oswal Financial Services Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "MPHASIS",
+    "name": "Mphasis Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "MRF",
+    "name": "MRF Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "MRPL",
+    "name": "Mangalore Refinery And Petrochemicals Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "MSUMI",
+    "name": "Motherson Sumi Wiring India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "MUTHOOTFIN",
+    "name": "Muthoot Finance Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "NAM-INDIA",
+    "name": "Nippon Life India Asset Management Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NATCOPHARM",
+    "name": "Natco Pharma Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NATIONALUM",
+    "name": "National Aluminium Company Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "NAUKRI",
+    "name": "Info Edge (India) Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "NAVA",
+    "name": "Nava Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NAVINFLUOR",
+    "name": "Navin Fluorine International Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NBCC",
+    "name": "NBCC (India) Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NCC",
+    "name": "NCC Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NESTLEIND",
+    "name": "Nestle India Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "NETWEB",
+    "name": "Netweb Technologies India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NEULANDLAB",
+    "name": "Neuland Laboratories Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NEWGEN",
+    "name": "Newgen Software Technologies Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NH",
+    "name": "Narayana Hrudayalaya Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NHPC",
+    "name": "NHPC Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "NIACL",
+    "name": "New India Assurance Company Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NIVABUPA",
+    "name": "Niva Bupa Health Insurance Company Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NLCINDIA",
+    "name": "NLC India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NMDC",
+    "name": "NMDC Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "NSLNISP",
+    "name": "NMDC Steel Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NTPC",
+    "name": "NTPC Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "NTPCGREEN",
+    "name": "NTPC Green Energy Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NUVAMA",
+    "name": "Nuvama Wealth Management Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NUVOCO",
+    "name": "Nuvoco Vistas Corporation Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "NYKAA",
+    "name": "FSN E-Commerce Ventures Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "OBEROIRLTY",
+    "name": "Oberoi Realty Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "OFSS",
+    "name": "Oracle Financial Services Software Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "OIL",
+    "name": "Oil India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "OLAELEC",
+    "name": "Ola Electric Mobility Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "OLECTRA",
+    "name": "Olectra Greentech Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ONESOURCE",
+    "name": "OneSource Specialty Pharma Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ONGC",
+    "name": "Oil & Natural Gas Corpn Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "PAGEIND",
+    "name": "Page Industries Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "PARADEEP",
+    "name": "Paradeep Phosphates Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "PATANJALI",
+    "name": "Patanjali Foods Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "PAYTM",
+    "name": "One 97 Communications Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "PCBL",
+    "name": "PCBL Chemical Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "PERSISTENT",
+    "name": "Persistent Systems Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "PETRONET",
+    "name": "Petronet LNG Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "PFC",
+    "name": "Power Finance Corporation Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "PFIZER",
+    "name": "Pfizer Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "PGEL",
+    "name": "PG Electroplast Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "PHOENIXLTD",
+    "name": "Phoenix Mills Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "PIDILITIND",
+    "name": "Pidilite Industries Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "PIIND",
+    "name": "P I Industries Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "PINELABS",
+    "name": "Pine Labs Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "PIRAMALFIN",
+    "name": "Piramal Finance Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "PNB",
+    "name": "Punjab National Bank",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "PNBHOUSING",
+    "name": "PNB Housing Finance Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "POLICYBZR",
+    "name": "PB Fintech Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "POLYCAB",
+    "name": "Polycab India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "POLYMED",
+    "name": "Poly Medicure Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "POONAWALLA",
+    "name": "Poonawalla Fincorp Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "POWERGRID",
+    "name": "Power Grid Corporation of India Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "POWERINDIA",
+    "name": "Hitachi Energy India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "PPLPHARMA",
+    "name": "Piramal Pharma Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "PREMIERENE",
+    "name": "Premier Energies Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "PRESTIGE",
+    "name": "Prestige Estates Projects Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "PTCIL",
+    "name": "PTC Industries Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "PVRINOX",
+    "name": "PVR Inox Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "PWL",
+    "name": "Physicswallah Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "RADICO",
+    "name": "Radico Khaitan Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "RAILTEL",
+    "name": "Railtel Corporation of India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "RAINBOW",
+    "name": "Rainbow Childrens Medicare Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "RAMCOCEM",
+    "name": "The Ramco Cements Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "RBLBANK",
+    "name": "RBL Bank Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "RECLTD",
+    "name": "REC Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "REDINGTON",
+    "name": "Redington Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "RELIANCE",
+    "name": "Reliance Industries Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "RHIM",
+    "name": "RHI Magnesita India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "RITES",
+    "name": "Rites Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "RKFORGE",
+    "name": "Ramkrishna Forgings Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "RPOWER",
+    "name": "Reliance Power Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "RRKABEL",
+    "name": "R R Kabel Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "RVNL",
+    "name": "Rail Vikas Nigam Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "SAGILITY",
+    "name": "Sagility Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SAIL",
+    "name": "Steel Authority of India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "SAILIFE",
+    "name": "Sai Life Sciences Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SAMMAANCAP",
+    "name": "Sammaan Capital Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SAPPHIRE",
+    "name": "Sapphire Foods India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SARDAEN",
+    "name": "Sarda Energy & Minerals Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SAREGAMA",
+    "name": "Saregama India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SBFC",
+    "name": "SBFC Finance Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SBICARD",
+    "name": "SBI Cards & Payment Services Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "SBILIFE",
+    "name": "SBI Life Insurance Company Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "SBIN",
+    "name": "State Bank of India",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "SCHAEFFLER",
+    "name": "Schaeffler India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SCHNEIDER",
+    "name": "Schneider Electric Infrastructure Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SCI",
+    "name": "Shipping Corporation of India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SHREECEM",
+    "name": "Shree Cement Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "SHRIRAMFIN",
+    "name": "Shriram Finance Ltd",
+    "categories": [
+      "bluechip",
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "SHYAMMETL",
+    "name": "Shyam Metalics & Energy Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SIEMENS",
+    "name": "Siemens Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "SIGNATURE",
+    "name": "SignatureGlobal India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SJVN",
+    "name": "SJVN Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SOBHA",
+    "name": "Sobha Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SOLARINDS",
+    "name": "Solar Industries India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "SONACOMS",
+    "name": "Sona BLW Precision Forgings Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SONATSOFTW",
+    "name": "Sonata Software Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SPLPETRO",
+    "name": "Supreme Petrochem Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SRF",
+    "name": "SRF Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "STARHEALTH",
+    "name": "Star Health & Allied Insurance Company Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SUMICHEM",
+    "name": "Sumitomo Chemical India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SUNDARMFIN",
+    "name": "Sundaram Finance Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SUNPHARMA",
+    "name": "Sun Pharmaceutical Industries Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "SUNTV",
+    "name": "Sun TV Network Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SUPREMEIND",
+    "name": "Supreme Industries Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "SUZLON",
+    "name": "Suzlon Energy Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "SWANCORP",
+    "name": "Swan Corp Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SWIGGY",
+    "name": "Swiggy Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "SYNGENE",
+    "name": "Syngene International Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "SYRMA",
+    "name": "Syrma SGS Technology Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TARIL",
+    "name": "Transformers & Rectifiers India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TATACAP",
+    "name": "Tata Capital Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "TATACHEM",
+    "name": "Tata Chemicals Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TATACOMM",
+    "name": "Tata Communications Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "TATACONSUM",
+    "name": "Tata Consumer Products Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "TATAELXSI",
+    "name": "Tata Elxsi Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "TATAINVEST",
+    "name": "Tata Investment Corporation Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "TATAPOWER",
+    "name": "Tata Power Company Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "TATASTEEL",
+    "name": "Tata Steel Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "TATATECH",
+    "name": "Tata Technologies Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TBOTEK",
+    "name": "TBO Tek Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TCS",
+    "name": "Tata Consultancy Services Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "TECHM",
+    "name": "Tech Mahindra Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "TECHNOE",
+    "name": "Techno Electric & Engineering Company Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TEGA",
+    "name": "Tega Industries Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TEJASNET",
+    "name": "Tejas Networks Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TENNIND",
+    "name": "Tenneco Clean Air India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "THELEELA",
+    "name": "Leela Palaces Hotels & Resorts Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "THERMAX",
+    "name": "Thermax Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TIINDIA",
+    "name": "Tube Investments of India Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "TIMKEN",
+    "name": "Timken India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TITAGARH",
+    "name": "Titagarh Rail Systems Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TITAN",
+    "name": "Titan Company Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "TMCV",
+    "name": "Tata Motors Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "TMPV",
+    "name": "Tata Motors Passenger Vehicles Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "TORNTPHARM",
+    "name": "Torrent Pharmaceuticals Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "TORNTPOWER",
+    "name": "Torrent Power Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TRAVELFOOD",
+    "name": "Travel Food Services Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TRENT",
+    "name": "Trent Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "TRIDENT",
+    "name": "Trident Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TRITURBINE",
+    "name": "Triveni Turbine Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TTML",
+    "name": "Tata Teleservices (Maharashtra) Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "TVSMOTOR",
+    "name": "TVS Motor Company Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "UBL",
+    "name": "United Breweries Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "UCOBANK",
+    "name": "UCO Bank",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ULTRACEMCO",
+    "name": "UltraTech Cement Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "UNIONBANK",
+    "name": "Union Bank of India",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "UNITDSPR",
+    "name": "United Spirits Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "UNOMINDA",
+    "name": "Uno Minda Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "UPL",
+    "name": "UPL Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "URBANCO",
+    "name": "Urban Company Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "USHAMART",
+    "name": "Usha Martin Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "UTIAMC",
+    "name": "UTI Asset Management Company Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "VBL",
+    "name": "Varun Beverages Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "VEDL",
+    "name": "Vedanta Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "VIJAYA",
+    "name": "Vijaya Diagnostic Centre Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "VMM",
+    "name": "Vishal Mega Mart Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "VOLTAS",
+    "name": "Voltas Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "VTL",
+    "name": "Vardhman Textiles Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "WAAREEENER",
+    "name": "Waaree Energies Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "WELCORP",
+    "name": "Welspun Corp Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "WELSPUNLIV",
+    "name": "Welspun Living Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "WHIRLPOOL",
+    "name": "Whirlpool of India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "WIPRO",
+    "name": "Wipro Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "WOCKPHARMA",
+    "name": "Wockhardt Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "YESBANK",
+    "name": "Yes Bank Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ZEEL",
+    "name": "Zee Entertainment Enterprises Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ZENSARTECH",
+    "name": "Zensar Technologies Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ZENTEC",
+    "name": "Zen Technologies Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ZFCVINDIA",
+    "name": "ZF Commercial Vehicle Control System India Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  },
+  {
+    "symbol": "ZYDUSLIFE",
+    "name": "Zydus Lifesciences Ltd",
+    "categories": [
+      "nifty500",
+      "smartpick"
+    ]
+  },
+  {
+    "symbol": "ZYDUSWELL",
+    "name": "Zydus Wellness Ltd",
+    "categories": [
+      "nifty500"
+    ]
+  }
+]
