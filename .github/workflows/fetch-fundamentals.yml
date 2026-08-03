@@ -5,7 +5,11 @@ name: Fetch stock fundamentals & rebuild screens (Yahoo Finance)
 # public/data/radar.json entirely from Yahoo Finance - no screener.in
 # scraping. Fundamentals don't change intraday, so this runs once a day;
 # live prices are refreshed separately and more often by fetch-indices.yml.
-# Committing under public/** auto-triggers the existing deploy-hosting.yml.
+#
+# NOTE: pushes made with the built-in GITHUB_TOKEN do NOT cascade-trigger
+# other workflows (incl. deploy-hosting.yml) - that's a deliberate GitHub
+# anti-recursion rule, not a bug - so this workflow deploys itself instead
+# of relying on that push to do it.
 on:
   schedule:
     - cron: "45 12 * * 1-5" # 12:45 UTC = 18:15 IST, weekdays after close
@@ -28,13 +32,30 @@ jobs:
         run: node scripts/fetchFundamentals.js
 
       - name: Commit and push if changed
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/stocks.json public/data/radar.json
           if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No changes to commit."
           else
             git commit -m "Daily fundamentals refresh ($(date -u +%Y-%m-%d))"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Install Firebase CLI
+        if: steps.commit.outputs.changed == 'true'
+        run: npm install -g firebase-tools
+
+      - name: Write service account credentials
+        if: steps.commit.outputs.changed == 'true'
+        run: echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > "${{ runner.temp }}/firebase-sa.json"
+
+      - name: Deploy to Firebase Hosting
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-sa.json
+        run: firebase deploy --only hosting --project stratscreen --non-interactive
