@@ -1,6 +1,15 @@
-// home.js - renders the 3 index mini-charts and the stock search + detail panel.
+// home.js - renders the 3 index charts (with 1D/1W/1M/6M/1Y/5Y/Max timeframe
+// tabs) and the stock search + detail panel (with its own price chart).
 
 let STOCK_DATA = null;
+let INDEX_DATA = null;
+const INDEX_CHARTS = {}; // key -> Chart.js instance
+const INDEX_RANGE = { nifty50: "1d", sensex: "1d", banknifty: "1d" };
+let STOCK_CHART = null;
+let STOCK_CHART_RANGE = "1y";
+
+const RANGE_LABELS = { "1d": "1D", "1w": "1W", "1m": "1M", "6m": "6M", "1y": "1Y", "5y": "5Y", max: "Max" };
+const INTRADAY_RANGES = new Set(["1d", "1w"]);
 
 async function loadJson(url) {
   const res = await fetch(url, { cache: "no-store" });
@@ -8,39 +17,57 @@ async function loadJson(url) {
   return res.json();
 }
 
-function pctChange(series) {
-  if (!series || series.length < 2) return null;
-  const last = series[series.length - 1].close;
-  const prev = series[series.length - 2].close;
-  return ((last - prev) / prev) * 100;
+function fmtLabel(point, rangeKey) {
+  const d = new Date(point.t * 1000);
+  if (INTRADAY_RANGES.has(rangeKey)) {
+    return d.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" });
+  }
+  if (rangeKey === "max") {
+    return d.toLocaleDateString("en-IN", { month: "short", year: "2-digit" });
+  }
+  return d.toLocaleDateString("en-IN", { day: "2-digit", month: "short" });
 }
 
-function renderIndexCard(key, label, series, color) {
+function pctChangeFromPoints(points) {
+  if (!points || points.length < 2) return null;
+  const last = points[points.length - 1].c;
+  const first = points[0].c;
+  return ((last - first) / first) * 100;
+}
+
+function renderIndexCard(key, series, color) {
   const valueEl = document.getElementById(`${key}-value`);
   const changeEl = document.getElementById(`${key}-change`);
   const canvas = document.getElementById(`${key}-chart`);
-  if (!series || !series.length) {
+  const rangeKey = INDEX_RANGE[key];
+  const points = series && series[rangeKey];
+
+  if (!points || !points.length) {
     valueEl.textContent = "No data yet";
     changeEl.textContent = "";
     return;
   }
-  const last = series[series.length - 1];
-  const change = pctChange(series);
-  valueEl.textContent = last.close.toLocaleString("en-IN", { maximumFractionDigits: 2 });
+
+  const last = points[points.length - 1];
+  const change = pctChangeFromPoints(points);
+  valueEl.textContent = last.c.toLocaleString("en-IN", { maximumFractionDigits: 2 });
   if (change !== null) {
-    changeEl.textContent = `${change >= 0 ? "+" : ""}${change.toFixed(2)}% vs prev.`;
+    changeEl.textContent = `${change >= 0 ? "+" : ""}${change.toFixed(2)}% (${RANGE_LABELS[rangeKey]})`;
     changeEl.className = "index-change " + (change >= 0 ? "positive" : "negative");
   } else {
     changeEl.textContent = "";
   }
 
-  new Chart(canvas, {
+  if (INDEX_CHARTS[key]) {
+    INDEX_CHARTS[key].destroy();
+  }
+  INDEX_CHARTS[key] = new Chart(canvas, {
     type: "line",
     data: {
-      labels: series.map((p) => p.date),
+      labels: points.map((p) => fmtLabel(p, rangeKey)),
       datasets: [
         {
-          data: series.map((p) => p.close),
+          data: points.map((p) => p.c),
           borderColor: color,
           backgroundColor: color + "22",
           borderWidth: 2,
@@ -54,21 +81,36 @@ function renderIndexCard(key, label, series, color) {
       responsive: true,
       maintainAspectRatio: false,
       plugins: { legend: { display: false }, tooltip: { enabled: true } },
-      scales: {
-        x: { display: false },
-        y: { display: false },
-      },
+      scales: { x: { display: false }, y: { display: false } },
     },
   });
 }
 
+function wireRangeTabs() {
+  document.querySelectorAll(".range-tabs[data-index]").forEach((wrap) => {
+    const key = wrap.getAttribute("data-index");
+    wrap.querySelectorAll("button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        INDEX_RANGE[key] = btn.getAttribute("data-range");
+        wrap.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b === btn));
+        renderIndexCard(key, INDEX_DATA.series[key], colorFor(key));
+      });
+    });
+  });
+}
+
+function colorFor(key) {
+  return { nifty50: "#1d4ed8", sensex: "#059669", banknifty: "#d97706" }[key] || "#1d4ed8";
+}
+
 async function initIndices() {
   try {
-    const data = await loadJson("data/indices.json");
-    document.getElementById("indices-updated").textContent = "Updated " + data.updated;
-    renderIndexCard("nifty50", "Nifty 50", data.series.nifty50, "#1d4ed8");
-    renderIndexCard("sensex", "Sensex", data.series.sensex, "#059669");
-    renderIndexCard("banknifty", "Bank Nifty", data.series.banknifty, "#d97706");
+    INDEX_DATA = await loadJson("data/indices.json");
+    document.getElementById("indices-updated").textContent = "Updated " + INDEX_DATA.updated;
+    renderIndexCard("nifty50", INDEX_DATA.series.nifty50, colorFor("nifty50"));
+    renderIndexCard("sensex", INDEX_DATA.series.sensex, colorFor("sensex"));
+    renderIndexCard("banknifty", INDEX_DATA.series.banknifty, colorFor("banknifty"));
+    wireRangeTabs();
   } catch (err) {
     document.getElementById("indices-updated").textContent = "Index data unavailable right now.";
   }
@@ -134,6 +176,52 @@ function financialsTable(rows, cols) {
   return `<div class="financials-scroll"><table class="financials"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>`;
 }
 
+function renderStockChart(stock) {
+  const canvas = document.getElementById("stock-chart");
+  if (!canvas) return;
+  const points = stock.charts && stock.charts[STOCK_CHART_RANGE];
+  if (STOCK_CHART) {
+    STOCK_CHART.destroy();
+    STOCK_CHART = null;
+  }
+  if (!points || !points.length) return;
+  STOCK_CHART = new Chart(canvas, {
+    type: "line",
+    data: {
+      labels: points.map((p) => fmtLabel(p, STOCK_CHART_RANGE === "5y" || STOCK_CHART_RANGE === "max" ? "max" : "6m")),
+      datasets: [
+        {
+          data: points.map((p) => p.c),
+          borderColor: "#1d4ed8",
+          backgroundColor: "#1d4ed822",
+          borderWidth: 2,
+          pointRadius: 0,
+          fill: true,
+          tension: 0.2,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { x: { display: false }, y: { display: true, ticks: { font: { size: 10 } } } },
+    },
+  });
+}
+
+function wireStockRangeTabs(stock) {
+  document.querySelectorAll(".range-tabs[data-stock-chart] button").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      STOCK_CHART_RANGE = btn.getAttribute("data-range");
+      document
+        .querySelectorAll(".range-tabs[data-stock-chart] button")
+        .forEach((b) => b.classList.toggle("active", b === btn));
+      renderStockChart(stock);
+    });
+  });
+}
+
 function showStockDetail(symbol) {
   const s = STOCK_DATA.stocks.find((x) => x.symbol === symbol);
   const wrap = document.getElementById("stock-detail");
@@ -156,6 +244,15 @@ function showStockDetail(symbol) {
 
   const quarterly = (s.quarterly || []).slice(-8);
   const yearly = (s.yearly || []).slice(-5);
+  const hasCharts = s.charts && Object.keys(s.charts).some((k) => (s.charts[k] || []).length);
+  STOCK_CHART_RANGE = "1y";
+
+  const dayChange =
+    s.day_change_pct !== undefined && s.day_change_pct !== null
+      ? `<span class="${s.day_change_pct >= 0 ? "positive" : "negative"}" style="font-size:0.9rem;font-weight:600;margin-left:8px;">${
+          s.day_change_pct >= 0 ? "+" : ""
+        }${s.day_change_pct.toFixed(2)}% today</span>`
+      : "";
 
   wrap.innerHTML = `
     <div class="stock-detail-card">
@@ -163,7 +260,7 @@ function showStockDetail(symbol) {
       <div class="sub">${s.sector} &middot; <a href="${s.screener_url}" target="_blank" rel="noopener">screener.in &#8594;</a></div>
 
       <div class="ratio-grid">
-        <div class="ratio-item"><div class="label">Price</div><div class="value">&#8377;${fmtNum(s.price)}</div></div>
+        <div class="ratio-item"><div class="label">Price</div><div class="value">&#8377;${fmtNum(s.price)}${dayChange}</div></div>
         <div class="ratio-item"><div class="label">Market Cap</div><div class="value">&#8377;${fmtNum(s.market_cap_cr)} Cr</div></div>
         <div class="ratio-item"><div class="label">P/E</div><div class="value">${fmtNum(s.pe)}</div></div>
         <div class="ratio-item"><div class="label">ROE</div><div class="value">${fmtNum(s.roe)}%</div></div>
@@ -172,6 +269,22 @@ function showStockDetail(symbol) {
         <div class="ratio-item"><div class="label">3Y Sales Growth</div><div class="value">${fmtNum(s.sales_growth_3y)}%</div></div>
         <div class="ratio-item"><div class="label">3Y Price CAGR</div><div class="value">${fmtNum(s.price_cagr_3y)}%</div></div>
       </div>
+
+      ${
+        hasCharts
+          ? `
+      <div class="section-label">Price chart</div>
+      <div class="range-tabs" data-stock-chart>
+        <button data-range="1m">1M</button>
+        <button data-range="6m">6M</button>
+        <button data-range="1y" class="active">1Y</button>
+        <button data-range="5y">5Y</button>
+        <button data-range="max">Max</button>
+      </div>
+      <div class="stock-chart-wrap"><canvas id="stock-chart"></canvas></div>
+      `
+          : ""
+      }
 
       <div class="section-label">Quarterly performance (last ${quarterly.length || 0} quarters)</div>
       ${financialsTable(quarterly, quarterlyCols)}
@@ -187,6 +300,11 @@ function showStockDetail(symbol) {
       &nbsp; <a href="dashboard.html">See in Screens &#8594;</a>
     </div>
   `;
+
+  if (hasCharts) {
+    wireStockRangeTabs(s);
+    renderStockChart(s);
+  }
 }
 
 async function initSearch() {
