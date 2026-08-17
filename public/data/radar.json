@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-08-14",
+  "generated_date": "2026-08-17",
   "methodology": "Fundamental valuation re-rating: Target Price = current EPS x fair sector-median P/E (bounded within 0.75x-1.5x of the stock's own P/E, capped at 12-40% potential upside, to avoid extreme/unreliable projections). Buy Price = current market price. Only profitable (positive EPS/PE), reasonably liquid (Market Cap > Rs 1,000 Cr) and quality (ROE >= 10%) companies are considered.",
   "disclaimer": "Educational/informational only. This is an automated, rules-based screen, NOT personalized investment advice and NOT a guarantee of returns. Past accuracy of a strategy does not predict future performance. Please do your own research and consult a SEBI-registered financial advisor before investing.",
   "stocks": [
@@ -7,97 +7,73 @@
       "symbol": "HCLTECH",
       "name": "HCL Technologies Limited",
       "sector": "Technology",
-      "buy_price": 1360,
-      "target_price": 1849.76,
-      "potential_profit_pct": 36.01,
-      "pe": 21.17,
-      "fair_pe_used": 28.79,
+      "buy_price": 1325,
+      "target_price": 1834.55,
+      "potential_profit_pct": 38.46,
+      "pe": 20.64,
+      "fair_pe_used": 28.58,
       "roe": 24.07,
-      "market_cap_cr": 367984.27
+      "market_cap_cr": 358514.09
     },
     {
       "symbol": "HDFCBANK",
       "name": "HDFC Bank Limited",
       "sector": "Financial Services",
-      "buy_price": 727,
-      "target_price": 981.11,
-      "potential_profit_pct": 34.95,
-      "pe": 15.89,
+      "buy_price": 729,
+      "target_price": 980.68,
+      "potential_profit_pct": 34.52,
+      "pe": 15.94,
       "fair_pe_used": 21.45,
       "roe": 13.84,
-      "market_cap_cr": 1120254.03
-    },
-    {
-      "symbol": "IPCALAB",
-      "name": "Ipca Laboratories Limited",
-      "sector": "Healthcare",
-      "buy_price": 1734.2,
-      "target_price": 2319.75,
-      "potential_profit_pct": 33.76,
-      "pe": 33.64,
-      "fair_pe_used": 45,
-      "roe": 13.22,
-      "market_cap_cr": 43997.38
+      "market_cap_cr": 1123461.94
     },
     {
       "symbol": "GODREJIND",
       "name": "Godrej Industries Limited",
       "sector": "Industrials",
-      "buy_price": 1252.5,
-      "target_price": 1655.55,
-      "potential_profit_pct": 32.18,
-      "pe": 34.04,
+      "buy_price": 1223,
+      "target_price": 1572.3,
+      "potential_profit_pct": 28.56,
+      "pe": 35,
       "fair_pe_used": 45,
       "roe": 10.83,
-      "market_cap_cr": 42190.59
+      "market_cap_cr": 41196.88
     },
     {
-      "symbol": "BRIGADE",
-      "name": "Brigade Enterprises Limited",
-      "sector": "Real Estate",
-      "buy_price": 591.55,
-      "target_price": 734.9,
-      "potential_profit_pct": 24.23,
-      "pe": 29.95,
-      "fair_pe_used": 37.21,
-      "roe": 10.79,
-      "market_cap_cr": 19294.13
-    },
-    {
-      "symbol": "ABBOTINDIA",
-      "name": "Abbott India Limited",
+      "symbol": "IPCALAB",
+      "name": "Ipca Laboratories Limited",
       "sector": "Healthcare",
-      "buy_price": 27060,
-      "target_price": 32923.8,
-      "potential_profit_pct": 21.67,
-      "pe": 36.99,
+      "buy_price": 1884.6,
+      "target_price": 2325.6,
+      "potential_profit_pct": 23.4,
+      "pe": 36.47,
       "fair_pe_used": 45,
-      "roe": 34.46,
-      "market_cap_cr": 57500.61
+      "roe": 13.22,
+      "market_cap_cr": 47813.1
     },
     {
       "symbol": "ICICIBANK",
       "name": "ICICI Bank Limited",
       "sector": "Financial Services",
-      "buy_price": 1417,
+      "buy_price": 1415.3,
       "target_price": 1659.2,
-      "potential_profit_pct": 17.09,
-      "pe": 18.31,
+      "potential_profit_pct": 17.23,
+      "pe": 18.29,
       "fair_pe_used": 21.45,
       "roe": 16.07,
-      "market_cap_cr": 1016453.4
+      "market_cap_cr": 1015220.59
     },
     {
       "symbol": "MPHASIS",
       "name": "Mphasis Limited",
       "sector": "Technology",
-      "buy_price": 2545,
-      "target_price": 2882.45,
-      "potential_profit_pct": 13.26,
-      "pe": 25.42,
-      "fair_pe_used": 28.79,
+      "buy_price": 2510,
+      "target_price": 2858.57,
+      "potential_profit_pct": 13.89,
+      "pe": 25.09,
+      "fair_pe_used": 28.58,
       "roe": 17.74,
-      "market_cap_cr": 48562.94
+      "market_cap_cr": 47895.08
     }
   ]
 }
