@@ -1,67 +1,55 @@
 {
-  "generated_date": "2026-08-19",
+  "generated_date": "2026-08-20",
   "methodology": "Fundamental valuation re-rating: Target Price = current EPS x fair sector-median P/E (bounded within 0.75x-1.5x of the stock's own P/E, capped at 12-40% potential upside, to avoid extreme/unreliable projections). Buy Price = current market price. Only profitable (positive EPS/PE), reasonably liquid (Market Cap > Rs 1,000 Cr) and quality (ROE >= 10%) companies are considered.",
   "disclaimer": "Educational/informational only. This is an automated, rules-based screen, NOT personalized investment advice and NOT a guarantee of returns. Past accuracy of a strategy does not predict future performance. Please do your own research and consult a SEBI-registered financial advisor before investing.",
   "stocks": [
     {
-      "symbol": "HCLTECH",
-      "name": "HCL Technologies Limited",
-      "sector": "Technology",
-      "buy_price": 1324.8,
-      "target_price": 1842.69,
-      "potential_profit_pct": 39.09,
-      "pe": 20.62,
-      "fair_pe_used": 28.68,
-      "roe": 24.07,
-      "market_cap_cr": 358459.98
-    },
-    {
       "symbol": "HDFCBANK",
       "name": "HDFC Bank Limited",
       "sector": "Financial Services",
-      "buy_price": 720,
-      "target_price": 976.96,
-      "potential_profit_pct": 35.69,
-      "pe": 15.73,
-      "fair_pe_used": 21.35,
+      "buy_price": 725.05,
+      "target_price": 983.67,
+      "potential_profit_pct": 35.67,
+      "pe": 15.86,
+      "fair_pe_used": 21.52,
       "roe": 13.84,
-      "market_cap_cr": 1109592.01
-    },
-    {
-      "symbol": "MPHASIS",
-      "name": "Mphasis Limited",
-      "sector": "Technology",
-      "buy_price": 2424.5,
-      "target_price": 2866.85,
-      "potential_profit_pct": 18.25,
-      "pe": 24.25,
-      "fair_pe_used": 28.68,
-      "roe": 17.74,
-      "market_cap_cr": 46263.6
+      "market_cap_cr": 1117374.54
     },
     {
       "symbol": "ICICIBANK",
       "name": "ICICI Bank Limited",
       "sector": "Financial Services",
-      "buy_price": 1402,
-      "target_price": 1651.68,
-      "potential_profit_pct": 17.81,
-      "pe": 18.12,
-      "fair_pe_used": 21.35,
+      "buy_price": 1411.9,
+      "target_price": 1665.05,
+      "potential_profit_pct": 17.93,
+      "pe": 18.24,
+      "fair_pe_used": 21.52,
       "roe": 16.07,
-      "market_cap_cr": 1005693.44
+      "market_cap_cr": 1012795.02
+    },
+    {
+      "symbol": "MPHASIS",
+      "name": "Mphasis Limited",
+      "sector": "Technology",
+      "buy_price": 2430,
+      "target_price": 2853.86,
+      "potential_profit_pct": 17.44,
+      "pe": 24.33,
+      "fair_pe_used": 28.57,
+      "roe": 17.74,
+      "market_cap_cr": 46368.55
     },
     {
       "symbol": "HEXT",
       "name": "Hexaware Technologies Limited",
       "sector": "Technology",
-      "buy_price": 553.3,
-      "target_price": 624.65,
-      "potential_profit_pct": 12.9,
-      "pe": 25.4,
-      "fair_pe_used": 28.68,
+      "buy_price": 544.2,
+      "target_price": 622.83,
+      "potential_profit_pct": 14.45,
+      "pe": 24.96,
+      "fair_pe_used": 28.57,
       "roe": 21.47,
-      "market_cap_cr": 33739.79
+      "market_cap_cr": 33184.88
     }
   ]
 }
