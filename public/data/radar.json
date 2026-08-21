@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-08-20",
+  "generated_date": "2026-08-21",
   "methodology": "Fundamental valuation re-rating: Target Price = current EPS x fair sector-median P/E (bounded within 0.75x-1.5x of the stock's own P/E, capped at 12-40% potential upside, to avoid extreme/unreliable projections). Buy Price = current market price. Only profitable (positive EPS/PE), reasonably liquid (Market Cap > Rs 1,000 Cr) and quality (ROE >= 10%) companies are considered.",
   "disclaimer": "Educational/informational only. This is an automated, rules-based screen, NOT personalized investment advice and NOT a guarantee of returns. Past accuracy of a strategy does not predict future performance. Please do your own research and consult a SEBI-registered financial advisor before investing.",
   "stocks": [
@@ -7,35 +7,23 @@
       "symbol": "HDFCBANK",
       "name": "HDFC Bank Limited",
       "sector": "Financial Services",
-      "buy_price": 725.05,
-      "target_price": 983.67,
-      "potential_profit_pct": 35.67,
-      "pe": 15.86,
-      "fair_pe_used": 21.52,
+      "buy_price": 726.95,
+      "target_price": 989.8,
+      "potential_profit_pct": 36.16,
+      "pe": 15.89,
+      "fair_pe_used": 21.64,
       "roe": 13.84,
-      "market_cap_cr": 1117374.54
-    },
-    {
-      "symbol": "ICICIBANK",
-      "name": "ICICI Bank Limited",
-      "sector": "Financial Services",
-      "buy_price": 1411.9,
-      "target_price": 1665.05,
-      "potential_profit_pct": 17.93,
-      "pe": 18.24,
-      "fair_pe_used": 21.52,
-      "roe": 16.07,
-      "market_cap_cr": 1012795.02
+      "market_cap_cr": 1120302.69
     },
     {
       "symbol": "MPHASIS",
       "name": "Mphasis Limited",
       "sector": "Technology",
       "buy_price": 2430,
-      "target_price": 2853.86,
-      "potential_profit_pct": 17.44,
-      "pe": 24.33,
-      "fair_pe_used": 28.57,
+      "target_price": 2900.48,
+      "potential_profit_pct": 19.36,
+      "pe": 24.27,
+      "fair_pe_used": 28.97,
       "roe": 17.74,
       "market_cap_cr": 46368.55
     },
@@ -43,13 +31,37 @@
       "symbol": "HEXT",
       "name": "Hexaware Technologies Limited",
       "sector": "Technology",
-      "buy_price": 544.2,
-      "target_price": 622.83,
-      "potential_profit_pct": 14.45,
-      "pe": 24.96,
-      "fair_pe_used": 28.57,
+      "buy_price": 532.45,
+      "target_price": 632.13,
+      "potential_profit_pct": 18.72,
+      "pe": 24.4,
+      "fair_pe_used": 28.97,
       "roe": 21.47,
-      "market_cap_cr": 33184.88
+      "market_cap_cr": 32468.38
+    },
+    {
+      "symbol": "ICICIBANK",
+      "name": "ICICI Bank Limited",
+      "sector": "Financial Services",
+      "buy_price": 1420,
+      "target_price": 1673.9,
+      "potential_profit_pct": 17.88,
+      "pe": 18.35,
+      "fair_pe_used": 21.64,
+      "roe": 16.07,
+      "market_cap_cr": 1018591.86
+    },
+    {
+      "symbol": "LTM",
+      "name": "LTM Limited",
+      "sector": "Technology",
+      "buy_price": 4487.8,
+      "target_price": 5104.51,
+      "potential_profit_pct": 13.74,
+      "pe": 25.47,
+      "fair_pe_used": 28.97,
+      "roe": 21.97,
+      "market_cap_cr": 133045.85
     }
   ]
 }
