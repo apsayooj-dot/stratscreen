@@ -1,5 +1,5 @@
 {
-  "generated_date": "2026-08-31",
+  "generated_date": "2026-09-01",
   "methodology": "Fundamental valuation re-rating: Target Price = current EPS x fair sector-median P/E (bounded within 0.75x-1.5x of the stock's own P/E, capped at 12-40% potential upside, to avoid extreme/unreliable projections). Buy Price = current market price. Only profitable (positive EPS/PE), reasonably liquid (Market Cap > Rs 1,000 Cr) and quality (ROE >= 10%) companies are considered.",
   "disclaimer": "Educational/informational only. This is an automated, rules-based screen, NOT personalized investment advice and NOT a guarantee of returns. Past accuracy of a strategy does not predict future performance. Please do your own research and consult a SEBI-registered financial advisor before investing.",
   "stocks": [
@@ -7,73 +7,85 @@
       "symbol": "HDFCBANK",
       "name": "HDFC Bank Limited",
       "sector": "Financial Services",
-      "buy_price": 709,
-      "target_price": 982.95,
-      "potential_profit_pct": 38.64,
-      "pe": 15.5,
-      "fair_pe_used": 21.49,
+      "buy_price": 711.9,
+      "target_price": 977.02,
+      "potential_profit_pct": 37.24,
+      "pe": 15.57,
+      "fair_pe_used": 21.37,
       "roe": 13.84,
-      "market_cap_cr": 1092639.89
+      "market_cap_cr": 1097326.92
     },
     {
       "symbol": "HCLTECH",
       "name": "HCL Technologies Limited",
       "sector": "Technology",
-      "buy_price": 1312.2,
-      "target_price": 1810.64,
-      "potential_profit_pct": 37.99,
-      "pe": 20.43,
-      "fair_pe_used": 28.19,
+      "buy_price": 1351.4,
+      "target_price": 1822.26,
+      "potential_profit_pct": 34.84,
+      "pe": 21.02,
+      "fair_pe_used": 28.34,
       "roe": 24.07,
-      "market_cap_cr": 355050.69
+      "market_cap_cr": 365657.33
     },
     {
       "symbol": "CREDITACC",
       "name": "CreditAccess Grameen Limited",
       "sector": "Financial Services",
-      "buy_price": 1363.5,
-      "target_price": 1617.98,
-      "potential_profit_pct": 18.66,
-      "pe": 18.11,
-      "fair_pe_used": 21.49,
+      "buy_price": 1393.3,
+      "target_price": 1608.57,
+      "potential_profit_pct": 15.45,
+      "pe": 18.51,
+      "fair_pe_used": 21.37,
       "roe": 16.36,
-      "market_cap_cr": 21851.39
-    },
-    {
-      "symbol": "MPHASIS",
-      "name": "Mphasis Limited",
-      "sector": "Technology",
-      "buy_price": 2427.4,
-      "target_price": 2816.74,
-      "potential_profit_pct": 16.04,
-      "pe": 24.29,
-      "fair_pe_used": 28.19,
-      "roe": 17.74,
-      "market_cap_cr": 46318.93
+      "market_cap_cr": 22328.96
     },
     {
       "symbol": "ICICIBANK",
       "name": "ICICI Bank Limited",
       "sector": "Financial Services",
-      "buy_price": 1454,
-      "target_price": 1663.33,
-      "potential_profit_pct": 14.4,
-      "pe": 18.79,
-      "fair_pe_used": 21.49,
+      "buy_price": 1438,
+      "target_price": 1652.58,
+      "potential_profit_pct": 14.92,
+      "pe": 18.59,
+      "fair_pe_used": 21.37,
       "roe": 16.07,
-      "market_cap_cr": 1043481.39
+      "market_cap_cr": 1031998.75
     },
     {
-      "symbol": "VBL",
-      "name": "Varun Beverages Limited",
-      "sector": "Consumer Defensive",
-      "buy_price": 400.45,
-      "target_price": 450.9,
-      "potential_profit_pct": 12.6,
-      "pe": 39.97,
-      "fair_pe_used": 45,
-      "roe": 16.85,
-      "market_cap_cr": 135450.8
+      "symbol": "SHRIRAMFIN",
+      "name": "Shriram Finance Limited",
+      "sector": "Financial Services",
+      "buy_price": 1059.1,
+      "target_price": 1209.26,
+      "potential_profit_pct": 14.18,
+      "pe": 18.71,
+      "fair_pe_used": 21.37,
+      "roe": 18.5,
+      "market_cap_cr": 249204.49
+    },
+    {
+      "symbol": "MPHASIS",
+      "name": "Mphasis Limited",
+      "sector": "Technology",
+      "buy_price": 2505.5,
+      "target_price": 2834.28,
+      "potential_profit_pct": 13.12,
+      "pe": 25.05,
+      "fair_pe_used": 28.34,
+      "roe": 17.74,
+      "market_cap_cr": 47809.21
+    },
+    {
+      "symbol": "HEXT",
+      "name": "Hexaware Technologies Limited",
+      "sector": "Technology",
+      "buy_price": 551.1,
+      "target_price": 617.81,
+      "potential_profit_pct": 12.11,
+      "pe": 25.28,
+      "fair_pe_used": 28.34,
+      "roe": 21.47,
+      "market_cap_cr": 33605.64
     }
   ]
 }
