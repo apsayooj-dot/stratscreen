@@ -1,91 +1,103 @@
 {
-  "generated_date": "2026-09-18",
+  "generated_date": "2026-09-21",
   "methodology": "Fundamental valuation re-rating: Target Price = current EPS x fair sector-median P/E (bounded within 0.75x-1.5x of the stock's own P/E, capped at 12-40% potential upside, to avoid extreme/unreliable projections). Buy Price = current market price. Only profitable (positive EPS/PE), reasonably liquid (Market Cap > Rs 1,000 Cr) and quality (ROE >= 10%) companies are considered.",
   "disclaimer": "Educational/informational only. This is an automated, rules-based screen, NOT personalized investment advice and NOT a guarantee of returns. Past accuracy of a strategy does not predict future performance. Please do your own research and consult a SEBI-registered financial advisor before investing.",
   "stocks": [
     {
+      "symbol": "HCLTECH",
+      "name": "HCL Technologies Limited",
+      "sector": "Technology",
+      "buy_price": 1281,
+      "target_price": 1761.92,
+      "potential_profit_pct": 37.54,
+      "pe": 19.95,
+      "fair_pe_used": 27.44,
+      "roe": 24.07,
+      "market_cap_cr": 346608.71
+    },
+    {
       "symbol": "HDFCBANK",
       "name": "HDFC Bank Limited",
       "sector": "Financial Services",
-      "buy_price": 731,
-      "target_price": 998.7,
-      "potential_profit_pct": 36.62,
-      "pe": 15.97,
-      "fair_pe_used": 21.82,
+      "buy_price": 739.5,
+      "target_price": 1008.55,
+      "potential_profit_pct": 36.38,
+      "pe": 16.16,
+      "fair_pe_used": 22.04,
       "roe": 13.84,
-      "market_cap_cr": 1126952.02
+      "market_cap_cr": 1140056.08
     },
     {
       "symbol": "ICICIBANK",
       "name": "ICICI Bank Limited",
       "sector": "Financial Services",
-      "buy_price": 1338.9,
-      "target_price": 1687.78,
-      "potential_profit_pct": 26.06,
-      "pe": 17.31,
-      "fair_pe_used": 21.82,
+      "buy_price": 1345,
+      "target_price": 1705.68,
+      "potential_profit_pct": 26.82,
+      "pe": 17.38,
+      "fair_pe_used": 22.04,
       "roe": 16.07,
-      "market_cap_cr": 961031.33
+      "market_cap_cr": 965409.77
     },
     {
       "symbol": "SHRIRAMFIN",
       "name": "Shriram Finance Limited",
       "sector": "Financial Services",
-      "buy_price": 1010,
-      "target_price": 1235.45,
-      "potential_profit_pct": 22.32,
-      "pe": 17.84,
-      "fair_pe_used": 21.82,
+      "buy_price": 1011.8,
+      "target_price": 1248.79,
+      "potential_profit_pct": 23.42,
+      "pe": 17.86,
+      "fair_pe_used": 22.04,
       "roe": 18.5,
-      "market_cap_cr": 237657.55
+      "market_cap_cr": 238081.09
     },
     {
       "symbol": "MPHASIS",
       "name": "Mphasis Limited",
       "sector": "Technology",
-      "buy_price": 2300.4,
-      "target_price": 2773.72,
-      "potential_profit_pct": 20.58,
-      "pe": 23.01,
-      "fair_pe_used": 27.74,
+      "buy_price": 2296.2,
+      "target_price": 2745.92,
+      "potential_profit_pct": 19.59,
+      "pe": 22.95,
+      "fair_pe_used": 27.44,
       "roe": 17.74,
-      "market_cap_cr": 43895.55
+      "market_cap_cr": 43815.41
     },
     {
       "symbol": "CREDITACC",
       "name": "CreditAccess Grameen Limited",
       "sector": "Financial Services",
-      "buy_price": 1387.6,
-      "target_price": 1645.01,
-      "potential_profit_pct": 18.55,
-      "pe": 18.41,
-      "fair_pe_used": 21.82,
+      "buy_price": 1393,
+      "target_price": 1660.71,
+      "potential_profit_pct": 19.22,
+      "pe": 18.49,
+      "fair_pe_used": 22.04,
       "roe": 16.36,
-      "market_cap_cr": 22237.61
+      "market_cap_cr": 22324.15
     },
     {
       "symbol": "HEXT",
       "name": "Hexaware Technologies Limited",
       "sector": "Technology",
-      "buy_price": 524.55,
-      "target_price": 604.73,
-      "potential_profit_pct": 15.29,
-      "pe": 24.06,
-      "fair_pe_used": 27.74,
+      "buy_price": 515.25,
+      "target_price": 598.74,
+      "potential_profit_pct": 16.2,
+      "pe": 23.61,
+      "fair_pe_used": 27.44,
       "roe": 21.47,
-      "market_cap_cr": 31986.64
+      "market_cap_cr": 31419.53
     },
     {
       "symbol": "LTM",
       "name": "LTM Limited",
       "sector": "Technology",
-      "buy_price": 4275.1,
-      "target_price": 4922.19,
-      "potential_profit_pct": 15.14,
-      "pe": 24.09,
-      "fair_pe_used": 27.74,
+      "buy_price": 4280,
+      "target_price": 4833.01,
+      "potential_profit_pct": 12.92,
+      "pe": 24.3,
+      "fair_pe_used": 27.44,
       "roe": 21.97,
-      "market_cap_cr": 126740.14
+      "market_cap_cr": 126885.4
     }
   ]
 }
