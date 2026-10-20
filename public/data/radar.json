@@ -1,8 +1,20 @@
 {
-  "generated_date": "2026-10-19",
+  "generated_date": "2026-10-20",
   "methodology": "Fundamental valuation re-rating: Target Price = current EPS x fair sector-median P/E (bounded within 0.75x-1.5x of the stock's own P/E, capped at 12-40% potential upside, to avoid extreme/unreliable projections). Buy Price = current market price. Only profitable (positive EPS/PE), reasonably liquid (Market Cap > Rs 1,000 Cr) and quality (ROE >= 10%) companies are considered.",
   "disclaimer": "Educational/informational only. This is an automated, rules-based screen, NOT personalized investment advice and NOT a guarantee of returns. Past accuracy of a strategy does not predict future performance. Please do your own research and consult a SEBI-registered financial advisor before investing.",
   "stocks": [
+    {
+      "symbol": "HCLTECH",
+      "name": "HCL Technologies Limited",
+      "sector": "Technology",
+      "buy_price": 1379.9,
+      "target_price": 1914.82,
+      "potential_profit_pct": 38.77,
+      "pe": 20.42,
+      "fair_pe_used": 28.33,
+      "roe": 24.65,
+      "market_cap_cr": 373368.74
+    },
     {
       "symbol": "BAJAJHLDNG",
       "name": "Bajaj Holdings & Investment Limited",
@@ -60,7 +72,7 @@
       "potential_profit_pct": 25.88,
       "pe": 15.56,
       "fair_pe_used": 19.59,
-      "roe": 13.84,
+      "roe": 11.01,
       "market_cap_cr": 1097795.74
     },
     {
@@ -92,10 +104,10 @@
       "name": "LTM Limited",
       "sector": "Technology",
       "buy_price": 4264.9,
-      "target_price": 5036.7,
-      "potential_profit_pct": 18.1,
+      "target_price": 4990.9,
+      "potential_profit_pct": 17.02,
       "pe": 24.21,
-      "fair_pe_used": 28.59,
+      "fair_pe_used": 28.33,
       "roe": 21.04,
       "market_cap_cr": 126437.74
     },
@@ -116,10 +128,10 @@
       "name": "Mphasis Limited",
       "sector": "Technology",
       "buy_price": 2500,
-      "target_price": 2857.86,
-      "potential_profit_pct": 14.31,
+      "target_price": 2831.87,
+      "potential_profit_pct": 13.27,
       "pe": 25.01,
-      "fair_pe_used": 28.59,
+      "fair_pe_used": 28.33,
       "roe": 17.74,
       "market_cap_cr": 47717.66
     }
