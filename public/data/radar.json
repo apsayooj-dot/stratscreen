@@ -1,8 +1,20 @@
 {
-  "generated_date": "2026-11-09",
+  "generated_date": "2026-11-10",
   "methodology": "Fundamental valuation re-rating: Target Price = current EPS x fair sector-median P/E (bounded within 0.75x-1.5x of the stock's own P/E, capped at 12-40% potential upside, to avoid extreme/unreliable projections). Buy Price = current market price. Only profitable (positive EPS/PE), reasonably liquid (Market Cap > Rs 1,000 Cr) and quality (ROE >= 10%) companies are considered.",
   "disclaimer": "Educational/informational only. This is an automated, rules-based screen, NOT personalized investment advice and NOT a guarantee of returns. Past accuracy of a strategy does not predict future performance. Please do your own research and consult a SEBI-registered financial advisor before investing.",
   "stocks": [
+    {
+      "symbol": "COALINDIA",
+      "name": "Coal India Limited",
+      "sector": "Energy",
+      "buy_price": 401.5,
+      "target_price": 561.43,
+      "potential_profit_pct": 39.83,
+      "pe": 7.42,
+      "fair_pe_used": 10.37,
+      "roe": 28.33,
+      "market_cap_cr": 247433.55
+    },
     {
       "symbol": "BAYERCROP",
       "name": "Bayer CropScience Limited",
@@ -14,18 +26,6 @@
       "fair_pe_used": 29.34,
       "roe": 23.64,
       "market_cap_cr": 15656.48
-    },
-    {
-      "symbol": "COALINDIA",
-      "name": "Coal India Limited",
-      "sector": "Energy",
-      "buy_price": 401.5,
-      "target_price": 559.98,
-      "potential_profit_pct": 39.47,
-      "pe": 7.44,
-      "fair_pe_used": 10.37,
-      "roe": 28.33,
-      "market_cap_cr": 247433.55
     },
     {
       "symbol": "HCLTECH",
@@ -116,10 +116,10 @@
       "name": "NBCC (India) Limited",
       "sector": "Industrials",
       "buy_price": 80.4,
-      "target_price": 109.12,
-      "potential_profit_pct": 35.72,
+      "target_price": 109.34,
+      "potential_profit_pct": 35.99,
       "pe": 27.35,
-      "fair_pe_used": 37.12,
+      "fair_pe_used": 37.19,
       "roe": 26.14,
       "market_cap_cr": 21708
     },
@@ -128,36 +128,36 @@
       "name": "Gravita India Limited",
       "sector": "Industrials",
       "buy_price": 1496.6,
-      "target_price": 2027.96,
-      "potential_profit_pct": 35.5,
+      "target_price": 2032.06,
+      "potential_profit_pct": 35.78,
       "pe": 27.39,
-      "fair_pe_used": 37.12,
+      "fair_pe_used": 37.19,
       "roe": 16.17,
       "market_cap_cr": 10902.83
-    },
-    {
-      "symbol": "DABUR",
-      "name": "Dabur India Limited",
-      "sector": "Consumer Defensive",
-      "buy_price": 375.25,
-      "target_price": 502.81,
-      "potential_profit_pct": 33.99,
-      "pe": 32.95,
-      "fair_pe_used": 44.15,
-      "roe": 17.23,
-      "market_cap_cr": 66571.8
     },
     {
       "symbol": "AJANTPHARM",
       "name": "Ajanta Pharma Limited",
       "sector": "Healthcare",
       "buy_price": 3344,
-      "target_price": 4461.61,
-      "potential_profit_pct": 33.42,
+      "target_price": 4482.32,
+      "potential_profit_pct": 34.04,
       "pe": 33.11,
-      "fair_pe_used": 44.17,
+      "fair_pe_used": 44.38,
       "roe": 27.53,
       "market_cap_cr": 41786.3
+    },
+    {
+      "symbol": "HEXT",
+      "name": "Hexaware Technologies Limited",
+      "sector": "Technology",
+      "buy_price": 498.7,
+      "target_price": 662.3,
+      "potential_profit_pct": 32.8,
+      "pe": 21.84,
+      "fair_pe_used": 29.01,
+      "roe": 20.79,
+      "market_cap_cr": 30367.16
     },
     {
       "symbol": "IRFC",
@@ -172,40 +172,40 @@
       "market_cap_cr": 109122.03
     },
     {
-      "symbol": "COLPAL",
-      "name": "Colgate-Palmolive (India) Limited",
+      "symbol": "DABUR",
+      "name": "Dabur India Limited",
       "sector": "Consumer Defensive",
-      "buy_price": 1695,
-      "target_price": 2210.34,
-      "potential_profit_pct": 30.4,
-      "pe": 33.85,
-      "fair_pe_used": 44.15,
-      "roe": 85.12,
-      "market_cap_cr": 46101.56
+      "buy_price": 375.25,
+      "target_price": 492.6,
+      "potential_profit_pct": 31.27,
+      "pe": 33.59,
+      "fair_pe_used": 44.1,
+      "roe": 17.23,
+      "market_cap_cr": 66571.8
     },
     {
       "symbol": "BLUEJET",
       "name": "Blue Jet Healthcare Limited",
       "sector": "Healthcare",
       "buy_price": 543.55,
-      "target_price": 708.05,
-      "potential_profit_pct": 30.26,
+      "target_price": 711.33,
+      "potential_profit_pct": 30.87,
       "pe": 33.91,
-      "fair_pe_used": 44.17,
+      "fair_pe_used": 44.38,
       "roe": 16.05,
       "market_cap_cr": 9428.71
     },
     {
-      "symbol": "HEXT",
-      "name": "Hexaware Technologies Limited",
-      "sector": "Technology",
-      "buy_price": 498.7,
-      "target_price": 649.53,
-      "potential_profit_pct": 30.25,
-      "pe": 22.27,
-      "fair_pe_used": 29.01,
-      "roe": 20.79,
-      "market_cap_cr": 30367.16
+      "symbol": "COLPAL",
+      "name": "Colgate-Palmolive (India) Limited",
+      "sector": "Consumer Defensive",
+      "buy_price": 1695,
+      "target_price": 2208.09,
+      "potential_profit_pct": 30.27,
+      "pe": 33.85,
+      "fair_pe_used": 44.1,
+      "roe": 85.12,
+      "market_cap_cr": 46101.56
     },
     {
       "symbol": "PREMIERENE",
@@ -220,6 +220,30 @@
       "market_cap_cr": 40135.3
     },
     {
+      "symbol": "ABBOTINDIA",
+      "name": "Abbott India Limited",
+      "sector": "Healthcare",
+      "buy_price": 26680,
+      "target_price": 34514.88,
+      "potential_profit_pct": 29.37,
+      "pe": 34.3,
+      "fair_pe_used": 44.38,
+      "roe": 39.92,
+      "market_cap_cr": 56693.14
+    },
+    {
+      "symbol": "HDBFS",
+      "name": "HDB Financial Services Limited",
+      "sector": "Financial Services",
+      "buy_price": 544.45,
+      "target_price": 693.97,
+      "potential_profit_pct": 27.46,
+      "pe": 15.31,
+      "fair_pe_used": 19.51,
+      "roe": 14.27,
+      "market_cap_cr": 45127.96
+    },
+    {
       "symbol": "ANANTRAJ",
       "name": "Anant Raj Limited",
       "sector": "Real Estate",
@@ -232,26 +256,14 @@
       "market_cap_cr": 16178.27
     },
     {
-      "symbol": "HDBFS",
-      "name": "HDB Financial Services Limited",
-      "sector": "Financial Services",
-      "buy_price": 544.45,
-      "target_price": 685.97,
-      "potential_profit_pct": 25.99,
-      "pe": 15.48,
-      "fair_pe_used": 19.51,
-      "roe": 14.27,
-      "market_cap_cr": 45127.96
-    },
-    {
       "symbol": "IKS",
       "name": "Inventurus Knowledge Solutions Limited",
       "sector": "Healthcare",
       "buy_price": 1651.3,
-      "target_price": 2068.48,
-      "potential_profit_pct": 25.26,
+      "target_price": 2078.08,
+      "potential_profit_pct": 25.85,
       "pe": 35.26,
-      "fair_pe_used": 44.17,
+      "fair_pe_used": 44.38,
       "roe": 28.18,
       "market_cap_cr": 27701.79
     },
@@ -260,10 +272,10 @@
       "name": "Ipca Laboratories Limited",
       "sector": "Healthcare",
       "buy_price": 1959.7,
-      "target_price": 2441.72,
-      "potential_profit_pct": 24.6,
+      "target_price": 2453.05,
+      "potential_profit_pct": 25.17,
       "pe": 35.45,
-      "fair_pe_used": 44.17,
+      "fair_pe_used": 44.38,
       "roe": 15.59,
       "market_cap_cr": 49718.41
     },
@@ -301,7 +313,7 @@
       "pe": 23.43,
       "fair_pe_used": 29.01,
       "roe": 19.61,
-      "market_cap_cr": 46858.74
+      "market_cap_cr": 46896.27
     },
     {
       "symbol": "LODHA",
@@ -332,10 +344,10 @@
       "name": "Indegene Limited",
       "sector": "Healthcare",
       "buy_price": 614.6,
-      "target_price": 750.89,
-      "potential_profit_pct": 22.18,
+      "target_price": 754.38,
+      "potential_profit_pct": 22.74,
       "pe": 36.15,
-      "fair_pe_used": 44.17,
+      "fair_pe_used": 44.38,
       "roe": 13.21,
       "market_cap_cr": 14801.05
     },
@@ -344,24 +356,12 @@
       "name": "Transformers and Rectifiers (India) Limited",
       "sector": "Industrials",
       "buy_price": 310.1,
-      "target_price": 376.72,
-      "potential_profit_pct": 21.48,
+      "target_price": 377.48,
+      "potential_profit_pct": 21.73,
       "pe": 30.55,
-      "fair_pe_used": 37.12,
+      "fair_pe_used": 37.19,
       "roe": 20.5,
       "market_cap_cr": 9308.14
-    },
-    {
-      "symbol": "BPCL",
-      "name": "Bharat Petroleum Corporation Limited",
-      "sector": "Energy",
-      "buy_price": 316,
-      "target_price": 383.48,
-      "potential_profit_pct": 21.36,
-      "pe": 8.55,
-      "fair_pe_used": 10.37,
-      "roe": 16.17,
-      "market_cap_cr": 137096.78
     }
   ]
 }
