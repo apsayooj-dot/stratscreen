@@ -32,8 +32,8 @@
       "name": "Oberoi Realty Limited",
       "sector": "Real Estate",
       "buy_price": 1860,
-      "target_price": 2567.35,
-      "potential_profit_pct": 38.03,
+      "target_price": 2566.98,
+      "potential_profit_pct": 38.01,
       "pe": 25.71,
       "fair_pe_used": 35.49,
       "roe": 14.69,
@@ -50,18 +50,6 @@
       "fair_pe_used": 45,
       "roe": 27.53,
       "market_cap_cr": 41366.43
-    },
-    {
-      "symbol": "ASHOKLEY",
-      "name": "Ashok Leyland Limited",
-      "sector": "Industrials",
-      "buy_price": 158.7,
-      "target_price": 217.77,
-      "potential_profit_pct": 37.22,
-      "pe": 26.19,
-      "fair_pe_used": 35.94,
-      "roe": 22.61,
-      "market_cap_cr": 93218.07
     },
     {
       "symbol": "BAJAJHLDNG",
@@ -116,8 +104,8 @@
       "name": "Brigade Enterprises Limited",
       "sector": "Real Estate",
       "buy_price": 581.65,
-      "target_price": 789.3,
-      "potential_profit_pct": 35.7,
+      "target_price": 789.19,
+      "potential_profit_pct": 35.68,
       "pe": 26.15,
       "fair_pe_used": 35.49,
       "roe": 11.08,
@@ -128,8 +116,8 @@
       "name": "Anant Raj Limited",
       "sector": "Real Estate",
       "buy_price": 441.95,
-      "target_price": 597.65,
-      "potential_profit_pct": 35.23,
+      "target_price": 597.57,
+      "potential_profit_pct": 35.21,
       "pe": 26.24,
       "fair_pe_used": 35.49,
       "roe": 11.43,
@@ -152,7 +140,7 @@
       "name": "Abbott India Limited",
       "sector": "Healthcare",
       "buy_price": 26125,
-      "target_price": 35001.9,
+      "target_price": 35001,
       "potential_profit_pct": 33.98,
       "pe": 33.59,
       "fair_pe_used": 45,
@@ -170,6 +158,18 @@
       "fair_pe_used": 35.94,
       "roe": 16.17,
       "market_cap_cr": 10711.23
+    },
+    {
+      "symbol": "GILLETTE",
+      "name": "Gillette India Limited",
+      "sector": "Consumer Defensive",
+      "buy_price": 7116.5,
+      "target_price": 9439.65,
+      "potential_profit_pct": 32.64,
+      "pe": 33.93,
+      "fair_pe_used": 45,
+      "roe": 61.14,
+      "market_cap_cr": 23189.27
     },
     {
       "symbol": "IRFC",
@@ -230,18 +230,6 @@
       "fair_pe_used": 35.94,
       "roe": 25.2,
       "market_cap_cr": 14134.96
-    },
-    {
-      "symbol": "GILLETTE",
-      "name": "Gillette India Limited",
-      "sector": "Consumer Defensive",
-      "buy_price": 7116.5,
-      "target_price": 9239.85,
-      "potential_profit_pct": 29.84,
-      "pe": 34.66,
-      "fair_pe_used": 45,
-      "roe": 61.14,
-      "market_cap_cr": 23189.27
     },
     {
       "symbol": "DABUR",
@@ -308,9 +296,9 @@
       "name": "Lodha Developers Limited",
       "sector": "Real Estate",
       "buy_price": 1219,
-      "target_price": 1542.04,
-      "potential_profit_pct": 26.5,
-      "pe": 28.06,
+      "target_price": 1542.18,
+      "potential_profit_pct": 26.51,
+      "pe": 28.05,
       "fair_pe_used": 35.49,
       "roe": 18.64,
       "market_cap_cr": 121808.68
@@ -362,6 +350,18 @@
       "fair_pe_used": 18.95,
       "roe": 14.11,
       "market_cap_cr": 24327.79
+    },
+    {
+      "symbol": "MARUTI",
+      "name": "Maruti Suzuki India Limited",
+      "sector": "Consumer Cyclical",
+      "buy_price": 14010,
+      "target_price": 17057.18,
+      "potential_profit_pct": 21.75,
+      "pe": 32.75,
+      "fair_pe_used": 39.87,
+      "roe": 12.89,
+      "market_cap_cr": 440477.99
     }
   ]
 }
